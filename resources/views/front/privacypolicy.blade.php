@@ -1,0 +1,1 @@
+Sample page. We are uploading the privacy policy content soon.

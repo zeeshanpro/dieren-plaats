@@ -1,0 +1,1 @@
+<li><a href="adlistings/{{$row->id}}">{{ $row->title }}</a></li>

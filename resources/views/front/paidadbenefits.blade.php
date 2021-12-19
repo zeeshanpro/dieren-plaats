@@ -1,0 +1,1 @@
+The benefit of paying to promote ad on this platform

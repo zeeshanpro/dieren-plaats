@@ -1,0 +1,166 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css");
+@font-face {
+    font-family: "San Francisco";
+    font-weight: 400;
+    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+  }
+  @font-face {
+    font-family: "San Francisco Bold";
+    font-weight: 800;
+    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.woff");
+  }
+body{
+    font-family: 'San Francisco', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+* {
+    transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -o-transition: all .2s linear;
+}
+.dropdown-menu{
+    transition: none;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -o-transition: none;
+}
+a{
+    text-decoration: none;
+}
+.form-check-input{
+    width:1.2em;
+    height:1.2em;
+}
+a.red, .text-red{
+    color:#F72442;
+}
+a.red:hover{
+    color:#000;
+}
+a.grey, .text-grey{
+    color:#B2B2B2;
+}
+a.grey:hover{
+    color:#000;
+}
+a.black{
+    color:#161616;
+}
+a.black:hover{
+    color:#F72442;
+}
+.form-check-input:checked {
+    background-color: #F72442;
+    border-color: #F72442;
+}
+.btn.btn-light.dropdown-toggle{
+    color: #8E8E93;
+    padding: 14px 18px;
+    line-height: 1;
+    min-width: 140px;
+    text-align: left;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn.btn-light.dropdown-toggle::after{
+    border:none;
+    background:url('../images/down-chevron.png') no-repeat;
+    width:13px;
+    background-size: 100%;
+    height:13px;
+    opacity:0.7;
+}
+.btn-primary{
+    background:#F72442;
+    border:none;
+    box-shadow: 0 0 10px rgb(0 0 0 / 13%);
+}
+.btn-primary:hover{
+    background:#657783;
+}
+.btn.btn-lg{
+    font-size:18px;
+}
+h5{
+    font-size:22px;
+    color:#8E8E93;
+    font-weight:bold;
+}
+h2{
+    font-weight:bold;
+    color:#01133E;
+    font-size:36px;
+    font-family: 'San Francisco Bold';
+}
+h3{
+    font-size:24px;
+    color:#000;
+    font-weight: bold;
+}
+h4{
+    font-size:17px;
+    color:#01133E;
+}
+.btn-primary.btn-lg{
+    padding: 16px 59px;
+    line-height: 1;
+    font-weight: 600;
+    font-size:18px;
+}
+.btn-info{
+    background:#fff;
+    border:1px solid #D1D1D6;
+    color:#4B4B4B;
+}
+.btn-info.btn-lg{
+    padding:13px 45px;
+    line-height:1;
+    font-size:18px;
+}
+.btn-info.btn-lg-xl{
+    padding:13px 100px;
+}
+.btn-info:hover, .btn-info:focus{
+    background:#f2f2f2;
+    border:1px solid #D1D1D6;
+}
+label{
+    color:#6E6E6E;
+}
+.form-control, .form-select{
+    background-color:#f8f8f8;
+    border:none;
+    padding:13px;
+}
+
+ul.pagination .page-link{
+    border:none;
+    color:#6E6E6E;
+    font-family: 'San Francisco Bold';
+    font-size:18px;
+    border-radius:3px;
+    padding:10px 14px;
+    line-height: 1;
+}
+ul.pagination .page-item.active .page-link{
+    background:#F72442;
+    border-radius:3px;
+}
+
+.badge.bg-info{
+    color:#FF33C1;
+    background:none!important;
+    font-size:16px;
+    border:1px solid #FFD1F1;
+    border-radius:8px;
+    font-weight:normal;
+}
+.badge.bg-secondary{
+    color:#fff;
+    background:#FF1ABA!important;
+}
+
+.border-top-grey{
+    border-top:1px solid #EEEEEE;
+}

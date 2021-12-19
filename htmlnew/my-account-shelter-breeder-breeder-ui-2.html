@@ -1,0 +1,700 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="css/common.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <title>Dieren Plaats - Sales Platform for Pets</title>
+  </head>
+  <body>
+    <!--============== HEADER STARTS HERE ==============-->
+    <header>
+        <!-- TOP BAR -->
+        <div class="top_bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col col-md-8 left_panel">
+                        <div class="logo">
+                            <img src="images/logo-small.png" />
+                        </div>
+                        <nav class="navbar navbar-expand-lg navbar-light">
+                            <div class="container-fluid">
+                              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                              </button>
+                              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                                <ul class="navbar-nav">
+                                  <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                      View all<br><strong>Categories</strong>
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                      <li><a class="dropdown-item" href="#">Action</a></li>
+                                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </nav>
+                          <div class="search_box input-group">
+                            <input type="text" class="form-control" placeholder="Search the entire store" aria-label="Search the entire store" aria-describedby="button-addon2">
+                            <button class="btn btn-outline-secondary" type="button" id="button-addon2"><img src="images/ico-search.svg" /></button>
+                          </div>
+                    </div>
+                    <div class="col col-md-4 right_panel">
+                        <nav class="navbar navbar-expand-lg navbar-light">
+                            <div class="container-fluid">
+                              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                              </button>
+                              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                                <ul class="navbar-nav">
+                                  <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <img src="images/user.svg" />
+                                      Sign up
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                      <li><a class="dropdown-item" href="#">Action</a></li>
+                                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </nav>
+                          <a href="#"><img src="images/actions-heart_outlined.svg" /></a>
+                          <a href="#" class="mobile_menu" data-bs-toggle="modal" data-bs-target="#mobile_menu"><i class="bi bi-list"></i></a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- TOP BAR -->
+        <!-- MIDDLE BAR -->
+        <div class="middle_bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center">
+                        <ul>
+                            <li><a href="#">Dogs</a></li>
+                            <li><a href="#">Cats</a></li>
+                            <li><a href="#">Fish</a></li>
+                            <li><a href="#">Birds</a></li>
+                            <li><a href="#">Insects</a></li>
+                            <li><a href="#">Rodents</a></li>
+                            <li><a href="#">Fish</a></li>
+                            <li><a href="#">Reptiles</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <!-- BOTTOM BAR -->
+        <div class="bottom_bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7 left_panel">
+                        <ul>
+                            <li><a href="#"><img src="images/checkmark_circle_outlined.svg" /> Professional Breeders</a></li>
+                            <li><a href="#"><img src="images/checkmark_circle_outlined.svg" /> Clean and vaccinated pets</a></li>
+                            <li><a href="#"><img src="images/checkmark_circle_outlined.svg" /> Widest store in netherland</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-5 right_panel text-right">
+                        <ul>
+                            <li><a href="#"><img src="images/bone.svg" /> Expected babies</a></li>
+                            <li><a href="#"><img src="images/bone.svg" /> Breeders</a></li>
+                            <li><a href="#"><img src="images/headphones.svg" /> Customer Service</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>            
+    </header>
+    <!--============== HEADER ENDS HERE ==============-->
+    
+    <!--============== SEARCH BY TYPE STARS HERE ==============-->
+    <div class="inner_page_content_area">
+      <div class="container">
+          <div class="row pt-3">
+              <div class="col-md-12 col-lg-3 left_sidebar">
+                  <div class="image_box type_3 mb-4">
+                    <div class="info">
+                        <div class="row">
+                            <div class="col col-md-4 left-side">
+                                <img src="images/breeder-logo.svg">
+                            </div>
+                            <div class="col-8 col-md-8">
+                                <div class="name">
+                                  Seller Name
+                                </div>
+                                <div class="reviews pb-2">
+                                  <i class="bi bi-star-fill active"></i> <i class="bi bi-star-fill active"></i> <i class="bi bi-star-fill active"></i> <i class="bi bi-star-fill active"></i> <i class="bi bi-star-fill"></i> <span class="text-grey">(200)</span>
+                                </div>
+                                <span class="badge bg-info">Breeder</span>
+                            </div>
+                        </div>
+						<div class="row mt-3 text-center">
+                            <div class="col">
+                                <div class="stats">
+                                    20 <span class="text-grey">Ad</span>
+                                </div>
+                            </div>
+                            <div class="col-8">
+                              <div class="stats">
+                                200 <span class="text-grey">View</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                            <div class="col pt-3">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed odio a purus lacinia fringilla. Curabitur rhoncus vel nibh vel posuere. Pellentesque pharetra accumsan massa vitae consequat.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                          <div class="col">
+                              <div class="feature_list pb-2">
+                                <img src="images/paw-grey.svg" /> Dogs - Cats - Hamsters
+                              </div>
+                              <div class="feature_list pb-2">
+                                  <i class="bi bi-geo-alt-fill pe-2"></i> St.Name, City, Country
+                              </div>
+                              <div class="feature_list pb-2">
+                                <i class="bi bi-link-45deg pe-2"></i> <a href="#">ourwebsite.com</a>
+                              </div>
+                              <div class="feature_list">
+                                <i class="bi bi-telephone-fill pe-2"></i> 06666666
+                              </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col">
+                              <div class="social_links">
+                                  <a href="#"><i class="bi bi-facebook"></i></a>
+                                  <a href="#"><i class="bi bi-instagram"></i></a>
+                                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                              </div>
+                          </div>
+                        </div>    
+                    </div>  
+                  </div>
+              </div>
+              <!-- RIGHT MAIN PANEL -->
+              <div class="col-md-12 col-lg-9">
+                <div class="row">
+                    <div class="col">
+                        <div class="inner_page_top_tabs">
+                            <a href="#">Ads</a>
+                            <span>Expected Babies</span>
+                        </div>
+                    </div>
+					<div class="col text-end">
+						<a href="#" class="add_new_expected_babies text-grey" data-bs-toggle="modal" data-bs-target="#addNewExpectedBabies"><i class="bi bi-plus"></i> Add new expected babies</a>
+					</div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <div class="table_type_box_header">
+                      <div class="row top_panel text-grey">
+                          <div class="col">
+                              Parent
+                          </div>
+                          <div class="col">
+                              Kind
+                          </div>
+                          <div class="col">
+                              Rase
+                          </div>
+                          <div class="col">
+                              Coming Date
+                          </div>
+                          <div class="col">
+                              Father
+                          </div>
+                          <div class="col">
+                              Mother
+                          </div>
+                          <div class="col">
+                              Waiting list
+                          </div>
+                          <div class="col">
+                          </div>
+                      </div>
+                  </div>
+                      <!-- TABLE TYPE BOX -->
+                      <div class="table_type_box">
+                          <div class="row top_panel">
+                              <div class="col">
+                                  <img src="images/charles-deluvio.svg" class="me-2">
+                              </div>
+                              <div class="col">
+                                Dog
+                              </div>
+                              <div class="col">
+                                  Rase
+                              </div>
+                              <div class="col">
+                                  20/7/2021
+                              </div>
+                              <div class="col">
+                                  Name
+                              </div>
+                              <div class="col">
+                                  Name
+                              </div>
+                              <div class="col">
+                                  4 <a href="#" class="view_waiting_list">view</a>
+                              </div>
+                              <div class="col last edit_delete_controls">
+                                  <a href="#" class="me-5"><i class="bi bi-pencil-fill"></i></a>
+								  <a href="#" class=""><i class="bi bi-trash-fill"></a></i>
+                              </div>
+                          </div>
+                          <div class="bottom_panel hide">
+                            <div class="row">
+                                <div class="col">
+									<div class="feature_list me-4">
+                                      <strong>Waiting list</strong>
+									</div>
+                                    <div class="waiting_list">
+                                        <img src="images/charles-deluvio.svg" class="me-2">
+										User name
+                                    </div>
+									<div class="waiting_list">
+                                        <img src="images/charles-deluvio.svg" class="me-2">
+										User name
+                                    </div>
+									<div class="waiting_list">
+                                        <img src="images/charles-deluvio.svg" class="me-2">
+										User name
+                                    </div>
+									<div class="waiting_list">
+                                        <img src="images/charles-deluvio.svg" class="me-2">
+										User name
+                                    </div>
+                                </div>
+                              </div>
+                          </div>
+                      </div>
+                      <!-- TABLE TYPE BOX END -->
+						<!-- TABLE TYPE BOX -->
+                      <div class="table_type_box">
+                          <div class="row top_panel">
+                              <div class="col">
+                                  <img src="images/charles-deluvio.svg" class="me-2">
+                              </div>
+                              <div class="col">
+                                Dog
+                              </div>
+                              <div class="col">
+                                  Rase
+                              </div>
+                              <div class="col">
+                                  20/7/2021
+                              </div>
+                              <div class="col">
+                                  Name
+                              </div>
+                              <div class="col">
+                                  Name
+                              </div>
+                              <div class="col">
+                                  4 <a href="#" class="view_waiting_list">view</a>
+                              </div>
+                              <div class="col last edit_delete_controls">
+                                  <a href="#" class="me-5"><i class="bi bi-pencil-fill"></i></a>
+								  <a href="#" class=""><i class="bi bi-trash-fill"></a></i>
+                              </div>
+                          </div>
+                          <div class="bottom_panel hide">
+                            <div class="row">
+                                <div class="col">
+									<div class="feature_list me-4">
+                                      <strong>Waiting list</strong>
+									</div>
+                                    <div class="waiting_list">
+                                        <img src="images/charles-deluvio.svg" class="me-2">
+										User name
+                                    </div>
+									<div class="waiting_list">
+                                        <img src="images/charles-deluvio.svg" class="me-2">
+										User name
+                                    </div>
+									<div class="waiting_list">
+                                        <img src="images/charles-deluvio.svg" class="me-2">
+										User name
+                                    </div>
+									<div class="waiting_list">
+                                        <img src="images/charles-deluvio.svg" class="me-2">
+										User name
+                                    </div>
+                                </div>
+                              </div>
+                          </div>
+                      </div>
+                      <!-- TABLE TYPE BOX END -->	
+                      <!-- TABLE TYPE BOX -->
+                      <div class="table_type_box">
+                          <div class="row top_panel">
+                              <div class="col">
+                                  <img src="images/charles-deluvio.svg" class="me-2">
+                              </div>
+                              <div class="col">
+                                Dog
+                              </div>
+                              <div class="col">
+                                  Rase
+                              </div>
+                              <div class="col">
+                                  20/7/2021
+                              </div>
+                              <div class="col">
+                                  Name
+                              </div>
+                              <div class="col">
+                                  Name
+                              </div>
+                              <div class="col">
+                                  4 <a href="#" class="view_waiting_list">view</a>
+                              </div>
+                              <div class="col last edit_delete_controls">
+                                  <a href="#" class="me-5"><i class="bi bi-pencil-fill"></i></a>
+								  <a href="#" class=""><i class="bi bi-trash-fill"></a></i>
+                              </div>
+                          </div>
+                          <div class="bottom_panel hide">
+                            <div class="row">
+                                <div class="col">
+									<div class="feature_list me-4">
+                                      <strong>Waiting list</strong>
+									</div>
+                                    <div class="waiting_list">
+                                        <img src="images/charles-deluvio.svg" class="me-2">
+										User name
+                                    </div>
+									<div class="waiting_list">
+                                        <img src="images/charles-deluvio.svg" class="me-2">
+										User name
+                                    </div>
+									<div class="waiting_list">
+                                        <img src="images/charles-deluvio.svg" class="me-2">
+										User name
+                                    </div>
+									<div class="waiting_list">
+                                        <img src="images/charles-deluvio.svg" class="me-2">
+										User name
+                                    </div>
+                                </div>
+                              </div>
+                          </div>
+                      </div>
+                      <!-- TABLE TYPE BOX END -->
+					  <!-- TABLE TYPE BOX -->
+                      <div class="table_type_box">
+                          <div class="row top_panel">
+                              <div class="col">
+                                  <img src="images/charles-deluvio.svg" class="me-2">
+                              </div>
+                              <div class="col">
+                                Dog
+                              </div>
+                              <div class="col">
+                                  Rase
+                              </div>
+                              <div class="col">
+                                  20/7/2021
+                              </div>
+                              <div class="col">
+                                  Name
+                              </div>
+                              <div class="col">
+                                  Name
+                              </div>
+                              <div class="col">
+                                  4 <a href="#" class="view_waiting_list">view</a>
+                              </div>
+                              <div class="col last edit_delete_controls">
+                                  <a href="#" class="me-5"><i class="bi bi-pencil-fill"></i></a>
+								  <a href="#" class=""><i class="bi bi-trash-fill"></a></i>
+                              </div>
+                          </div>
+                          <div class="bottom_panel hide">
+                            <div class="row">
+                                <div class="col">
+									<div class="feature_list me-4">
+                                      <strong>Waiting list</strong>
+									</div>
+                                    <div class="waiting_list">
+                                        <img src="images/charles-deluvio.svg" class="me-2">
+										User name
+                                    </div>
+									<div class="waiting_list">
+                                        <img src="images/charles-deluvio.svg" class="me-2">
+										User name
+                                    </div>
+									<div class="waiting_list">
+                                        <img src="images/charles-deluvio.svg" class="me-2">
+										User name
+                                    </div>
+									<div class="waiting_list">
+                                        <img src="images/charles-deluvio.svg" class="me-2">
+										User name
+                                    </div>
+                                </div>
+                              </div>
+                          </div>
+                      </div>
+                      <!-- TABLE TYPE BOX END -->
+                  </div>
+              </div>
+              <!-- CONTENT BOTTOM PANEL-->
+              <div class="row mt-4 mb-4">
+                  <div class="col-auto me-auto">
+                      <nav aria-label="Page navigation example">
+                        <ul class="pagination">
+                          <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Previous">
+                              <span aria-hidden="true"><i class="bi bi-chevron-left"></i></span>
+                            </a>
+                          </li>
+                          <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                          <li class="page-item"><a class="page-link" href="#">2</a></li>
+                          <li class="page-item"><a class="page-link" href="#">3</a></li>
+                          <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                              <span aria-hidden="true"><i class="bi bi-chevron-right"></i></span>
+                            </a>
+                          </li>
+                        </ul>
+                      </nav>
+                  </div>
+                  <div class="col-auto">
+                    <div class="page_per">
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>9</option>
+                        <option value="1">15</option>
+                        <option value="2">20</option>
+                        <option value="3">30</option>
+                      </select>
+                      <label>Item per page</label>
+                    </div>
+                  </div>
+              </div>
+
+            </div>
+
+          </div>
+      </div>
+  </div> 
+  <!--============== SEARCH BY TYPE ENDS HERE ==============-->
+
+  
+
+    <!--============== FOOTER STARS HERE ==============-->
+    <footer>
+        <div class="container">
+            <!-- FOOTER TOP -->
+            <div class="footer_top">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3>Stay Informed</h3>    
+                        <p>Subscribe and stay informed about your bids and promotions</p>
+                    </div>
+                    <div class="col-md-6 right_panel">
+                      <form class="row g-3">
+                        <div class="col-auto">
+                          <input type="text" class="form-control form-control-lg" id="" placeholder="Enter your email">
+                        </div>
+                        <div class="col-auto">
+                          <button type="submit" class="btn btn-primary">Subscribe</button>
+                        </div>
+                      </form>
+                    </div>
+                </div>
+            </div>
+            <!-- FOOTER BOTTOM -->
+            <div class="footer_bottom">
+              <div class="row">
+                <div class="col-md-4">
+                    <img src="images/footer-logo.png" class="mb-3" />
+                    <p>To help you on your way to the purchase of an animal, animal place has been created. Animal place is the platform on which animals can be bought and sold. This way you can be sure that your animal will end up with a good owner and vice versa!</p>
+                </div>
+                <div class="col-md-3">
+                    <h4 class="mb-3">Advantages</h4>
+                    <ul>
+                      <li><img src="images/checkmark_circle_outlined.svg" /> Place your add free</li>
+                      <li><img src="images/checkmark_circle_outlined.svg" /> Safe place for rebuying pets</li>
+                      <li><img src="images/checkmark_circle_outlined.svg" /> Breeders are checked</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                  <h4 class="mb-3">Contact</h4>
+                  <div class="address_block">
+                    <div><img src="images/email-icon.svg"/></div>
+                    Email:<br>
+                    info@dieren-plaats.nl
+                  </div>
+                  <div class="address_block">
+                    <div><img src="images/time-icon.svg"/></div>
+                    Opening hours:<br>
+                    Mon - Fri / 9:00 - 17:00
+                  </div>
+                  <div class="social_block">
+                      <a href="#"><img src="images/facebook_square.svg"/></a>
+                      <a href="#"><img src="images/pinterest.svg"/></a>
+                      <a href="#"><img src="images/instagram.svg"/></a>
+                  </div>
+                  <div class="playful-cat">
+                    <img src="images/playful-cat-bro.svg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="copyright text-center">
+                Copyright 2021 Dieren-Plaats All Right reserved
+            </div>
+        </div>
+    </footer>
+    <!--============== FOOTER ENDS HERE ==============-->
+    <!-- MOBILE NAVIGATION -->
+    <div class="modal fade" id="mobile_menu" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="search_box input-group mt-4 mb-4">
+              <input type="text" class="form-control" placeholder="Search the entire store" aria-label="Search the entire store" aria-describedby="button-addon2">
+              <button class="btn btn-outline-secondary" type="button" id="button-addon2"><img src="images/ico-search.svg"></button>
+            </div>
+            <h6>View all Categories <i class="bi bi-chevron-down"></i></h6>
+            <nav class="nav flex-column mb-4">
+              <a class="nav-link active" aria-current="page" href="#">Active</a>
+              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link disabled">Disabled</a>
+            </nav>
+            
+            <h6>Sign up <i class="bi bi-chevron-down"></i></h6>
+            <nav class="nav flex-column">
+              <a class="nav-link active" aria-current="page" href="#">Active</a>
+              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link disabled">Disabled</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+	<!-- Modal -->
+	<div class="modal fade" id="addNewExpectedBabies" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered modal-lg">
+		<div class="modal-content">
+		  <div class="modal-header">
+			<h2 class="modal-title" id="exampleModalLabel">Ad new expected babies</h2>
+			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		  </div>
+		  <div class="modal-body">
+				<div class="row">
+					<div class="col-6">
+						<div class="mb-3 pt-2">
+						  <label for="exampleFormControlTextarea1" class="form-label">Expected date</label>
+						  <input type="text" class="form-control" id="exampleInputPassword1">
+						</div>
+					</div>
+					<div class="col-6">
+					  <div class="mb-3 pt-2">
+						<label for="exampleFormControlTextarea1" class="form-label">Subscrition</label>
+						<select class="form-select mb-3" aria-label=".form-select-lg example">
+							<option selected="">Enabled</option>
+							<option value="1">One</option>
+							<option value="2">Two</option>
+							<option value="3">Three</option>
+						  </select>
+					  </div>
+					</div>
+				  </div>
+				  <div class="row">
+					<div class="col-6">
+						<div class="mb-3 pt-2">
+						  <label for="exampleFormControlTextarea1" class="form-label">Animal kind</label>
+						  <select class="form-select mb-3" aria-label=".form-select-lg example">
+							<option selected="">Select</option>
+							<option value="1">One</option>
+							<option value="2">Two</option>
+							<option value="3">Three</option>
+						  </select>
+						</div>
+					</div>
+					<div class="col-6">
+					  <div class="mb-3 pt-2">
+						<label for="exampleFormControlTextarea1" class="form-label">Animal rase</label>
+						<select class="form-select mb-3" aria-label=".form-select-lg example">
+							<option selected="">Select</option>
+							<option value="1">One</option>
+							<option value="2">Two</option>
+							<option value="3">Three</option>
+						  </select>
+					  </div>
+					</div>
+				  </div>
+				  <div class="row">
+					<div class="col-6">
+						<div class="mb-3 pt-2">
+						  <label for="exampleFormControlTextarea1" class="form-label">Mother name</label>
+						  <input type="text" class="form-control" id="exampleInputPassword1">
+						</div>
+					</div>
+					<div class="col-6">
+					  <div class="mb-3 pt-2">
+						<label for="exampleFormControlTextarea1" class="form-label">Father name</label>
+						<input type="text" class="form-control" id="exampleInputPassword1">
+					  </div>
+					</div>
+				  </div>
+				  <div class="row">	
+					<div class="col-3">
+					  <div class="mb-3 pt-2">
+						<label for="exampleFormControlTextarea1" class="form-label">Mother photo</label>
+						  <div class="upload_pic mb-3 pt-2">
+							<div class="uploaded_pic me-3">
+								<img src="images/charles-deluvio.svg">
+							</div>
+						  </div>
+					  </div>
+					</div>
+					<div class="col-3">
+					  <div class="mb-3 pt-2">
+						<label for="exampleFormControlTextarea1" class="form-label">Father photo</label>
+						  <div class="upload_pic mb-3 pt-2">
+							<div class="custom-file text-center">
+							  <i class="bi bi-cloud-plus-fill"></i>
+							</div>
+						  </div>
+					  </div>
+					</div>
+				</div>
+		  </div>
+		  <div class="modal-footer aligned_right">
+				<button type="button" class="btn btn-lg" data-bs-dismiss="modal">Discard</button>
+				<button type="button" class="btn btn-primary btn-lg">Add</button>
+		  </div>
+		</div>
+	  </div>
+	</div>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>

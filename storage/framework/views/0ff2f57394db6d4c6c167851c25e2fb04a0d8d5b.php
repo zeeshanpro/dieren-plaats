@@ -1,0 +1,1 @@
+Sample page. We are uploading the privacy policy content soon.<?php /**PATH /home/dierenlara/domains/dieren-plaats.nl/public_html/resources/views/front/privacypolicy.blade.php ENDPATH**/ ?>

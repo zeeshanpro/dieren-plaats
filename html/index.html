@@ -1,0 +1,918 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="css/common.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <title>Dieren Plaats - Sales Platform for Pets</title>
+  </head>
+  <body>
+    <!--============== HEADER STARTS HERE ==============-->
+    <header>
+        <!-- TOP BAR -->
+        <div class="top_bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col col-md-8 left_panel">
+                        <div class="logo">
+                            <img src="images/logo-small.png" />
+                        </div>
+                        <nav class="navbar navbar-expand-lg navbar-light">
+                            <div class="container-fluid">
+                              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                              </button>
+                              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                                <ul class="navbar-nav">
+                                  <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                      View all<br><strong>Categories</strong>
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                      <li><a class="dropdown-item" href="#">Action</a></li>
+                                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </nav>
+                          <div class="search_box input-group">
+                            <input type="text" class="form-control" placeholder="Search the entire store" aria-label="Search the entire store" aria-describedby="button-addon2">
+                            <button class="btn btn-outline-secondary" type="button" id="button-addon2"><img src="images/ico-search.svg" /></button>
+                          </div>
+                    </div>
+                    <div class="col col-md-4 right_panel">
+                        <nav class="navbar navbar-expand-lg navbar-light">
+                            <div class="container-fluid">
+                              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                              </button>
+                              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                                <ul class="navbar-nav">
+                                  <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <img src="images/user.svg" />
+                                      Sign up
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                      <li><a class="dropdown-item" href="#">Action</a></li>
+                                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </nav>
+                          <a href="#"><img src="images/actions-heart_outlined.svg" /></a>
+                          <a href="#" class="mobile_menu" data-bs-toggle="modal" data-bs-target="#mobile_menu"><i class="bi bi-list"></i></a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- TOP BAR -->
+        <!-- MIDDLE BAR -->
+        <div class="middle_bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center">
+                        <ul>
+                            <li><a href="#">Dogs</a></li>
+                            <li><a href="#">Cats</a></li>
+                            <li><a href="#">Fish</a></li>
+                            <li><a href="#">Birds</a></li>
+                            <li><a href="#">Insects</a></li>
+                            <li><a href="#">Rodents</a></li>
+                            <li><a href="#">Fish</a></li>
+                            <li><a href="#">Reptiles</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <!-- BOTTOM BAR -->
+        <div class="bottom_bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7 left_panel">
+                        <ul>
+                            <li><a href="#"><img src="images/checkmark_circle_outlined.svg" /> Professional Breeders</a></li>
+                            <li><a href="#"><img src="images/checkmark_circle_outlined.svg" /> Clean and vaccinated pets</a></li>
+                            <li><a href="#"><img src="images/checkmark_circle_outlined.svg" /> Widest store in netherland</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-5 right_panel text-right">
+                        <ul>
+                            <li><a href="#"><img src="images/bone.svg" /> Expected babies</a></li>
+                            <li><a href="#"><img src="images/bone.svg" /> Breeders</a></li>
+                            <li><a href="#"><img src="images/headphones.svg" /> Customer Service</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>            
+    </header>
+    <!--============== HEADER ENDS HERE ==============-->
+    <!--============== BANNER STARS HERE ==============-->
+    <div class="banner_main">
+        <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                  <h6 class="mb-0">Welcome to Dieren-Plaats.nl</h6>
+                  <h1>Sales platform for<br>
+                  <span>pets</span></h1>
+                  <div class="search_box input-group mt-3">
+                    <input type="text" class="form-control" placeholder="Search the entire store" aria-label="Search the entire store" aria-describedby="button-addon2">
+                    <button class="btn btn-outline-secondary" type="button" id="button-addon2">Place ad</button>
+                  </div>
+              </div>
+            </div>
+        </div>
+    </div> 
+    <!--============== BANNER ENDS HERE ==============-->
+
+    <!--============== SEARCH BY TYPE STARS HERE ==============-->
+    <div class="search_by_type_panel">
+      <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center mb-5">
+                <h5>Type of pets</h5>
+                <h2>Search by type</h2>
+            </div>
+          </div>
+          <div class="row">
+              <div class="float_icon" style="margin-left:-58px;"><img src="images/dog.svg"/></div>
+              <div class="col-md-3">
+                <a href="#">
+                  <div class="type_box">
+                      <img src="images/type1.svg">
+                      <h3>Dogs</h3>
+                  </div>
+                </a>  
+              </div>
+              <div class="col-md-3">
+                <a href="#">
+                  <div class="type_box">
+                      <img src="images/type2.svg">
+                      <h3>Insects</h3>
+                  </div>
+                </a>
+            </div>
+            <div class="col-md-3">
+              <a href="#">
+                <div class="type_box">
+                    <img src="images/type3.svg">
+                    <h3>Cats</h3>
+                </div>
+              </a>
+            </div>
+              <div class="col-md-3">
+                <a href="#">
+                <div class="type_box">
+                    <img src="images/type5.svg">
+                    <h3>Rodents</h3>
+                </div>
+                </a>
+                <div class="float_icon" style="right: -80px; top: 120px;"><img src="images/pet-bowl.svg"/></div>
+              </div>
+              <div class="col-md-3">
+                <a href="#">
+                <div class="type_box">
+                    <img src="images/type5.svg">
+                    <h3>Fish</h3>
+                </div>
+                </a>
+                <div class="float_icon" style="margin-left:40px;"><img src="images/hedgehog.svg"/></div>
+              </div>
+              <div class="col-md-3">
+                <a href="#">
+                <div class="type_box">
+                    <img src="images/type6.svg">
+                    <h3>Birds</h3>
+                </div>
+                </a>
+              </div>
+              <div class="col-md-3">
+                <a href="#">
+                <div class="type_box">
+                    <img src="images/type7.svg">
+                    <h3>Reptiles</h3>
+                </div>
+                </a>
+              </div>
+              <div class="col-md-3">
+                <a href="#">
+                <div class="type_box">
+                    <img src="images/type8.svg">
+                    <h3>View All</h3>
+                </div>
+                </a>
+                <div class="float_icon" style="right:-70px;"><img src="images/cat.svg"/></div>
+              </div>
+          </div>
+      </div>
+  </div> 
+  <!--============== SEARCH BY TYPE ENDS HERE ==============-->
+
+  <!--============== HIGHLIGHTED HERE ==============-->
+  <div class="highlighted_panel">
+    <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center mb-5">
+              <h2>Highlighted</h2>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <!-- IMAGE BOX -->
+                <div class="image_box">
+                    <a href="#"><img src="images/dog-img-1.svg"></a>
+                    <div class="info">
+                        <div class="row">
+                            <div class="col col-md-8">
+                                <div class="date">
+                                    Jan 6th, 2021
+                                </div>
+                                <div class="name">
+                                    <a href="#">Border collie</a>
+                                </div>
+                                <div class="price">
+                                    <a href="#">€ 1400</a>
+                                </div>
+                                <div class="feature_list">
+                                    <img src="images/paw-red.svg" /> Chipped : No
+                                </div>
+                                <div class="feature_list">
+                                  <img src="images/paw-red.svg" /> Dewormed : Yes
+                                </div>
+                            </div>
+                            <div class="col col-md-4 text-end">
+                              <a href="javascript:void(0);" class="save_me"><i class="bi bi-heart"></i><i class="bi bi-heart-fill"></i></a>
+                                <div class="views">
+                                    <img src="images/show-icon.svg" > 200
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+            <div class="col-md-3">
+                <!-- IMAGE BOX -->
+                <div class="image_box">
+                  <img src="images/dog-img-4.svg">
+                  <div class="info">
+                      <div class="row">
+                          <div class="col col-md-8">
+                              <div class="date">
+                                  Jan 6th, 2021
+                              </div>
+                              <div class="name">
+                                  Border collie
+                              </div>
+                              <div class="price">
+                                  € 1400
+                              </div>
+                              <div class="feature_list">
+                                  <img src="images/paw-red.svg" /> Chipped : No
+                              </div>
+                              <div class="feature_list">
+                                <img src="images/paw-red.svg" /> Dewormed : Yes
+                              </div>
+                          </div>
+                          <div class="col col-md-4 text-end">
+                            <a href="javascript:void(0);" class="save_me"><i class="bi bi-heart"></i><i class="bi bi-heart-fill"></i></a>
+                              <div class="views">
+                                  <img src="images/show-icon.svg" > 200
+                              </div>
+                          </div>
+                      </div>
+                  </div>  
+              </div>
+            </div>
+            <div class="col-md-3">
+                <!-- IMAGE BOX -->
+                <div class="image_box">
+                  <img src="images/dog-img-3.svg">
+                  <div class="info">
+                      <div class="row">
+                          <div class="col col-md-8">
+                              <div class="date">
+                                  Jan 6th, 2021
+                              </div>
+                              <div class="name">
+                                  Border collie
+                              </div>
+                              <div class="price">
+                                  € 1400
+                              </div>
+                              <div class="feature_list">
+                                  <img src="images/paw-red.svg" /> Chipped : No
+                              </div>
+                              <div class="feature_list">
+                                <img src="images/paw-red.svg" /> Dewormed : Yes
+                              </div>
+                          </div>
+                          <div class="col col-md-4 text-end">
+                            <a href="javascript:void(0);" class="save_me"><i class="bi bi-heart"></i><i class="bi bi-heart-fill"></i></a>
+                              <div class="views">
+                                  <img src="images/show-icon.svg" > 200
+                              </div>
+                          </div>
+                      </div>
+                  </div>  
+              </div>
+            </div>
+            <div class="col-md-3">
+                <!-- IMAGE BOX -->
+                <div class="image_box">
+                  <img src="images/dog-img-2.svg">
+                  <div class="info">
+                      <div class="row">
+                          <div class="col col-md-8">
+                              <div class="date">
+                                  Jan 6th, 2021
+                              </div>
+                              <div class="name">
+                                  Border collie
+                              </div>
+                              <div class="price">
+                                  € 1400
+                              </div>
+                              <div class="feature_list">
+                                  <img src="images/paw-red.svg" /> Chipped : No
+                              </div>
+                              <div class="feature_list">
+                                <img src="images/paw-red.svg" /> Dewormed : Yes
+                              </div>
+                          </div>
+                          <div class="col col-md-4 text-end">
+                              <a href="javascript:void(0);" class="save_me"><i class="bi bi-heart"></i><i class="bi bi-heart-fill"></i></a>
+                              <div class="views">
+                                  <img src="images/show-icon.svg" > 200
+                              </div>
+                          </div>
+                      </div>
+                  </div>  
+              </div>
+            </div>
+        </div>
+    </div>
+  </div> 
+  <!--============== HIGHLIGHTED ENDS HERE ==============-->
+
+
+  <!--============== EXPECTED BABIES HERE ==============-->
+  <div class="expected_panel">
+    <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center mb-5">
+              <h2>Expected Babies</h2>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <!-- IMAGE BOX -->
+                <!-- IMAGE BOX -->
+				        <div class="float_icon" style="margin-left: -80px; margin-top: -30px;"><img src="images/pawprint.svg"/></div>
+                <div class="image_box type_2">
+                  <a href="#"><img src="images/dog-img-5.svg"></a>
+                  <div class="info">
+                      <div class="row g-0">
+                          <div class="col-md-12">
+                            <div class="name">
+                              <img src="images/breeder-logo.svg" /> <a href="#">Seller Name</a>
+                            </div>
+                          </div>
+                          <div class="col col-md-6">
+                              <ul class="detail_list">
+                                  <li><label>Kind</label> Dog</li>
+                                  <li><label>Father</label> Max</li>
+                                  <li><label>Mother</label> Lily</li>
+                              </ul>
+                          </div>
+                          <div class="col col-md-6">
+                            <ul class="detail_list">
+                              <li><label>Rase</label> Rase</li>
+                              <li><label>Listed</label> 6</li>
+                              <li><label>D.E</label> 20/07/2021</li>
+                          </ul>
+                          </div>
+                          <div class="col-md-12 text-center">
+                              <a href="#" class="btn btn-primary btn-lg">Subscribe</a>
+                          </div>
+                      </div>
+                  </div>  
+              </div>
+            </div>
+            <div class="col-md-3">
+                <!-- IMAGE BOX -->
+                <!-- IMAGE BOX -->
+                <div class="image_box type_2">
+                  <a href="#"><img src="images/dog-img-5.svg"></a>
+                  <div class="info">
+                      <div class="row g-0">
+                          <div class="col-md-12">
+                            <div class="name">
+                              <img src="images/breeder-logo.svg" /> <a href="#">Seller Name</a>
+                            </div>
+                          </div>
+                          <div class="col col-md-6">
+                              <ul class="detail_list">
+                                  <li><label>Kind</label> Dog</li>
+                                  <li><label>Father</label> Max</li>
+                                  <li><label>Mother</label> Lily</li>
+                              </ul>
+                          </div>
+                          <div class="col col-md-6">
+                            <ul class="detail_list">
+                              <li><label>Rase</label> Rase</li>
+                              <li><label>Listed</label> 6</li>
+                              <li><label>D.E</label> 20/07/2021</li>
+                          </ul>
+                          </div>
+                          <div class="col-md-12 text-center">
+                              <a href="#" class="btn btn-primary btn-lg">Subscribe</a>
+                          </div>
+                      </div>
+                  </div>  
+              </div>
+            </div>
+            <div class="col-md-3">
+                <!-- IMAGE BOX -->
+                <div class="image_box type_2">
+                  <a href="#"><img src="images/dog-img-5.svg"></a>
+                  <div class="info">
+                      <div class="row g-0">
+                          <div class="col-md-12">
+                            <div class="name">
+                              <img src="images/breeder-logo.svg" /> <a href="#">Seller Name</a>
+                            </div>
+                          </div>
+                          <div class="col col-md-6">
+                              <ul class="detail_list">
+                                  <li><label>Kind</label> Dog</li>
+                                  <li><label>Father</label> Max</li>
+                                  <li><label>Mother</label> Lily</li>
+                              </ul>
+                          </div>
+                          <div class="col col-md-6">
+                            <ul class="detail_list">
+                              <li><label>Rase</label> Rase</li>
+                              <li><label>Listed</label> 6</li>
+                              <li><label>D.E</label> 20/07/2021</li>
+                          </ul>
+                          </div>
+                          <div class="col-md-12 text-center">
+                              <a href="#" class="btn btn-primary btn-lg">Subscribe</a>
+                          </div>
+                      </div>
+                  </div>  
+              </div>
+            </div>
+            <div class="col-md-3">
+                <!-- IMAGE BOX -->
+                <div class="image_box type_2">
+                  <a href="#"><img src="images/dog-img-5.svg"></a>
+                  <div class="info">
+                      <div class="row g-0">
+                          <div class="col-md-12">
+                            <div class="name">
+                              <img src="images/breeder-logo.svg" /> <a href="#">Seller Name</a>
+                            </div>
+                          </div>
+                          <div class="col col-md-6">
+                              <ul class="detail_list">
+                                  <li><label>Kind</label> Dog</li>
+                                  <li><label>Father</label> Max</li>
+                                  <li><label>Mother</label> Lily</li>
+                              </ul>
+                          </div>
+                          <div class="col col-md-6">
+                            <ul class="detail_list">
+                              <li><label>Rase</label> Rase</li>
+                              <li><label>Listed</label> 6</li>
+                              <li><label>D.E</label> 20/07/2021</li>
+                          </ul>
+                          </div>
+                          <div class="col-md-12 text-center">
+                              <a href="#" class="btn btn-primary btn-lg">Subscribe</a>
+                          </div>
+                      </div>
+                  </div>  
+              </div>
+			        <div class="float_icon flip" style="right: -80px;top: 120px;"><img src="images/dog.svg"/></div>
+            </div>
+        </div>
+    </div>
+  </div> 
+  <!--============== EXPECTED BABIES ENDS HERE ==============-->
+
+  <!--============== BREEDERS PANEL HERE ==============-->
+  <div class="breeders_panel">
+    <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center mb-5">
+              <h2>Breeders</h2>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+				        <div class="float_icon" style="left: -60px;bottom:0px;"><img src="images/rabbit.svg"></div>
+                <!-- IMAGE BOX -->
+                <div class="image_box type_3">
+                  <div class="info">
+                      <div class="row">
+                          <div class="col col-md-4 left-side">
+                            <a href="#"><img src="images/breeder-logo.svg" /></a>
+                          </div>
+                          <div class="col-8 col-md-8">
+                              <div class="name">
+                                <a href="#">Seller Name</a>
+                              </div>
+                              <div class="reviews">
+                                <i class="bi bi-star-fill active"></i> <i class="bi bi-star-fill active"></i> <i class="bi bi-star-fill active"></i> <i class="bi bi-star-fill active"></i> <i class="bi bi-star-fill"></i>
+                              </div>
+                              <ul class="detail_list">
+                                  <li><label>Category</label> Category</li>
+                                  <li><label>Kind</label> Dog
+                                  <label>Ads</label> 20</li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>  
+              </div>
+            </div>
+            <div class="col-md-3">
+                <!-- IMAGE BOX -->
+                <div class="image_box type_3">
+                  <div class="info">
+                      <div class="row">
+                          <div class="col col-md-4 left-side">
+                              <img src="images/breeder-logo.svg" />
+                          </div>
+                          <div class="col-8 col-md-8">
+                              <div class="name">
+                                Seller Name
+                              </div>
+                              <div class="reviews">
+                                <i class="bi bi-star-fill active"></i> <i class="bi bi-star-fill active"></i> <i class="bi bi-star-fill active"></i> <i class="bi bi-star-fill active"></i> <i class="bi bi-star-fill"></i>
+                              </div>
+                              <ul class="detail_list">
+                                  <li><label>Category</label> Category</li>
+                                  <li><label>Kind</label> Dog
+                                  <label>Ads</label> 20</li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>  
+              </div>
+            </div>
+            <div class="col-md-3">
+                <!-- IMAGE BOX -->
+                <div class="image_box type_3">
+                  <div class="info">
+                      <div class="row">
+                          <div class="col col-md-4 left-side">
+                              <img src="images/breeder-logo.svg" />
+                          </div>
+                          <div class="col-8 col-md-8">
+                              <div class="name">
+                                Seller Name
+                              </div>
+                              <div class="reviews">
+                                <i class="bi bi-star-fill active"></i> <i class="bi bi-star-fill active"></i> <i class="bi bi-star-fill active"></i> <i class="bi bi-star-fill active"></i> <i class="bi bi-star-fill"></i>
+                              </div>
+                              <ul class="detail_list">
+                                  <li><label>Category</label> Category</li>
+                                  <li><label>Kind</label> Dog
+                                  <label>Ads</label> 20</li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>  
+              </div>
+            </div>
+            <div class="col-md-3">
+                <!-- IMAGE BOX -->
+                <div class="image_box type_3">
+                  <div class="info">
+                      <div class="row">
+                          <div class="col col-md-4 left-side">
+                              <img src="images/breeder-logo.svg" />
+                          </div>
+                          <div class="col-8 col-md-8">
+                              <div class="name">
+                                Seller Name
+                              </div>
+                              <div class="reviews">
+                                <i class="bi bi-star-fill active"></i> <i class="bi bi-star-fill active"></i> <i class="bi bi-star-fill active"></i> <i class="bi bi-star-fill active"></i> <i class="bi bi-star-fill"></i>
+                              </div>
+                              <ul class="detail_list">
+                                  <li><label>Category</label> Category</li>
+                                  <li><label>Kind</label> Dog
+                                  <label>Ads</label> 20</li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>  
+              </div>
+			  <div class="float_icon flip3" style="right: -60px;top: 40px;"><img src="images/snail.svg"></div>
+            </div>
+        </div>
+    </div>
+  </div> 
+  <!--============== BREEDERS ENDS HERE ==============-->
+
+  <!--============== OUR MISSION HERE ==============-->
+  <div class="our_mission_panel">
+    <div class="container">
+        <div class="row">
+              <div class="col-md-5 mb-4">
+                    <h5>Mission</h5>
+                    <h2 class="mb-3">Our mission</h2>
+                    <p>Especially for animal friends through animal friends there is animal place: a platform on which you can buy and sell animals. After all, you want to buy an animal that comes from a reliable animal friend. Whether you are looking for a dog or a lizard: at animal place you will find all the animals under one roof!</p>
+                    <div class="stats_panel mt-4">
+                        <div class="row">
+                          <div class="col col-md-4">
+                              <h2>25K</h2>
+                              Pets
+                          </div>
+                          <div class="col col-md-4">
+                              <h2>78K</h2>
+                              Images
+                          </div>
+                          <div class="col col-md-4">
+                            <h2>19K</h2>
+                            Happy owners
+                        </div>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-primary btn-lg">Discover Now</a>
+					<div class="float_icon" style="margin-top:20px"><img src="images/cage.svg"></div>
+              </div>  
+              <div class="col-md-2"></div>
+              <div class="col-md-5">
+                  <img src="images/ameer-basheer.svg" />
+              </div>
+        </div>
+      </div>    
+    </div>
+    <!--============== OUR MISSION ENDS HERE ==============-->     
+    
+    
+    <!--============== ABOUT US HERE ==============-->
+    <div class="about_us_panel">
+      <div class="container">
+          <div class="row">
+                <div class="col-md-7">
+					<div class="float_icon flip3" style="left: 0;bottom: -140px;"><img src="images/rabbit.svg"></div>
+                    <img src="images/illusrtation.svg" />
+                </div>
+                <div class="col-md-5">
+                      <h5>About us</h5>
+                      <h2 class="mb-4">Dieren-Plaats</h2>
+                      <p class="mb-4">You have thought about it carefully: there will be a (domestic) animal! Animals of all shapes and sizes are offered at the animal site. Both breeders and individuals are carefully screened, checked and selected at animal sites. This way all animals end up their feet!</p>
+                      <p>The goal of animal place is to link animals to a new owner and find a suitable owner for your animal. When purchasing an animal, you must of course take into account certain circumstances. What kind of animal are you looking for? What's your living situation? Do you match characters? What requirements do you place on the animal and which animal suits you?</p>
+					  <div class="float_icon flip3" style="right: 0; bottom: -140px;"><img src="images/dog.svg"></div>
+                </div>  
+          </div>
+        </div>    
+      </div>
+      <!--============== OUR MISSION ENDS HERE ==============--> 
+
+      
+      <!--============== WHY CHOOSE HERE ==============-->
+    <div class="why_choose_panel">
+      <div class="container">
+          <div class="row">
+                <div class="col-md-12 text-center">
+						<div class="float_icon flip2" style="margin-left: -40px;bottom: 0;"><img src="images/cat.svg"></div>
+                      <h5>Why us</h5>
+                      <h2 class="mb-4">Why choose Dieren-Plaats?</h2>
+                      <p>Why choose animal place? You love animals and look for the perfect match. Animal place helps you find a buddy for life. We take if for granted that your future buddy comes from a good nest. Animal place is the animal platform on which both breeders and individuals can purchase or sell animals. The breeders who are active at the animal site have been assessed by animal friends for experience and expertise. This way we help each other to deal with bread breeders. You can post a review with your breeder and read reviews from others, so that you come to an informed decision when purchasing your new roommate</p>
+					  <div class="float_icon flip3" style="right: -40px;bottom: -50px;"><img src="images/rabbit.svg"></div>
+                </div>  
+          </div>
+          <div class="blocks_section">
+            <div class="row">
+                <div class="col-md-6 pb-4">
+                      <!-- IMAGE BOX -->
+                      <div class="image_box type_4">
+                        <div class="info">
+                            <div class="row">
+                                <div class="col-md-3 text-center left-side">
+                                    <img src="images/why-icon-1.png" />
+                                </div>
+                                <div class="col-md-9">
+                                    <div class="name">
+                                      Free ads
+                                    </div>
+                                    <div class="desc">
+                                        Because the placement of an ad does not have to be budget-specific
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+                <div class="col-md-6 pb-4">
+                    <!-- IMAGE BOX -->
+                    <div class="image_box type_4">
+                      <div class="info">
+                          <div class="row">
+                              <div class="col-md-3 text-center left-side">
+                                  <img src="images/why-icon-2.png" />
+                              </div>
+                              <div class="col-md-9">
+                                  <div class="name">
+                                    Breeders are checked
+                                  </div>
+                                  <div class="desc">
+                                      Approved breeders, so you know which nest your animal comes from
+                                  </div>
+                              </div>
+                          </div>
+                      </div>  
+                  </div>
+                </div>
+                <div class="col-md-6">
+                    <!-- IMAGE BOX -->
+                    <div class="image_box type_4">
+                      <div class="info">
+                          <div class="row">
+                              <div class="col-md-3 text-center left-side">
+                                  <img src="images/why-icon-3.png" />
+                              </div>
+                              <div class="col-md-9">
+                                  <div class="name">
+                                      Visible assessment<br>breeders
+                                  </div>
+                                  <div class="desc">
+                                      The best breeders, rated by animal friends
+                                  </div>
+                              </div>
+                          </div>
+                      </div>  
+                    </div>
+                    <div class="float_icon flip2" style="margin-left: -80px; margin-top: -30px;"><img src="images/pawprint.svg"/></div>
+                </div>
+                <div class="col-md-6">
+                  <!-- IMAGE BOX -->
+                  <div class="image_box type_4">
+                    <div class="info">
+                        <div class="row">
+                            <div class="col-md-3 text-center left-side">
+                                <img src="images/why-icon-4.png" />
+                            </div>
+                            <div class="col-md-9">
+                                <div class="name">
+                                    All pets under<br>one roof
+                                </div>
+                                <div class="desc">
+                                    Really all animals except beunhaze ;-)
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                  </div>
+                </div>
+            </div>
+          </div>
+          
+        </div>    
+      </div>
+      <!--============== OUR MISSION ENDS HERE ==============--> 
+
+
+    <!--============== FOOTER STARS HERE ==============-->
+    <footer>
+        <div class="container">
+            <!-- FOOTER TOP -->
+            <div class="footer_top">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3>Stay Informed</h3>    
+                        <p>Subscribe and stay informed about your bids and promotions</p>
+                    </div>
+                    <div class="col-md-6 right_panel">
+                      <form class="row g-3">
+                        <div class="col-auto">
+                          <input type="text" class="form-control form-control-lg" id="" placeholder="Enter your email">
+                        </div>
+                        <div class="col-auto">
+                          <button type="submit" class="btn btn-primary">Subscribe</button>
+                        </div>
+                      </form>
+                    </div>
+                </div>
+            </div>
+            <!-- FOOTER BOTTOM -->
+            <div class="footer_bottom">
+              <div class="row">
+                <div class="col-md-4">
+                    <img src="images/footer-logo.png" class="mb-3" />
+                    <p>To help you on your way to the purchase of an animal, animal place has been created. Animal place is the platform on which animals can be bought and sold. This way you can be sure that your animal will end up with a good owner and vice versa!</p>
+                </div>
+                <div class="col-md-3">
+                    <h4 class="mb-3">Advantages</h4>
+                    <ul>
+                      <li><img src="images/checkmark_circle_outlined.svg" /> Place your add free</li>
+                      <li><img src="images/checkmark_circle_outlined.svg" /> Safe place for rebuying pets</li>
+                      <li><img src="images/checkmark_circle_outlined.svg" /> Breeders are checked</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                  <h4 class="mb-3">Contact</h4>
+                  <div class="address_block">
+                    <div><img src="images/email-icon.svg"/></div>
+                    Email:<br>
+                    info@dieren-plaats.nl
+                  </div>
+                  <div class="address_block">
+                    <div><img src="images/time-icon.svg"/></div>
+                    Opening hours:<br>
+                    Mon - Fri / 9:00 - 17:00
+                  </div>
+                  <div class="social_block">
+                      <a href="#"><img src="images/facebook_square.svg"/></a>
+                      <a href="#"><img src="images/pinterest.svg"/></a>
+                      <a href="#"><img src="images/instagram.svg"/></a>
+                  </div>
+                  <div class="playful-cat">
+                    <img src="images/playful-cat-bro.svg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="copyright text-center">
+                Copyright 2021 Dieren-Plaats All Right reserved
+            </div>
+        </div>
+    </footer>
+    <!--============== FOOTER ENDS HERE ==============-->
+    <!-- MOBILE NAVIGATION -->
+    <div class="modal fade" id="mobile_menu" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="search_box input-group mt-4 mb-4">
+              <input type="text" class="form-control" placeholder="Search the entire store" aria-label="Search the entire store" aria-describedby="button-addon2">
+              <button class="btn btn-outline-secondary" type="button" id="button-addon2"><img src="images/ico-search.svg"></button>
+            </div>
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                    View all Categories
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                  <div class="accordion-body">
+                    <nav class="nav flex-column">
+                      <a class="nav-link active" aria-current="page" href="#">Active</a>
+                      <a class="nav-link" href="#">Link</a>
+                      <a class="nav-link" href="#">Link</a>
+                      <a class="nav-link disabled">Disabled</a>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                    Sign up
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                  <div class="accordion-body">
+                    <nav class="nav flex-column">
+                      <a class="nav-link active" aria-current="page" href="#">Active</a>
+                      <a class="nav-link" href="#">Link</a>
+                      <a class="nav-link" href="#">Link</a>
+                      <a class="nav-link disabled">Disabled</a>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>

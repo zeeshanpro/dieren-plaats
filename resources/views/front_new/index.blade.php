@@ -12,26 +12,27 @@
     <meta name="keywords" content="Remora">
     <meta name="description" content="Remora Services">
     <meta name="author" content="Remora Services">
+
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/icons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/icons/favicon-16x16.png">
-    <link rel="manifest" href="assets/images/icons/site.html">
-    <link rel="mask-icon" href="assets/images/icons/safari-pinned-tab.svg" color="#666666">
-    <link rel="shortcut icon" href="assets/images/icons/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ URL::to('public/assets/images/icons/apple-touch-icon.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ URL::to('public/assets/images/icons/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ URL::to('public/assets/images/icons/favicon-16x16.png') }}">
+    <link rel="manifest" href="{{ URL::to('public/assets/images/icons/site.html') }}">
+    <link rel="mask-icon" href="{{ URL::to('public/assets/images/icons/safari-pinned-tab.svg') }}" color="#666666">
+    <link rel="shortcut icon" href="{{ URL::to('public/assets/images/icons/favicon.ico') }}">
     <meta name="apple-mobile-web-app-title" content="Molla">
     <meta name="application-name" content="Molla">
     <meta name="msapplication-TileColor" content="#cc9966">
-    <meta name="msapplication-config" content="assets/images/icons/browserconfig.xml">
+    <meta name="msapplication-config" content="{{ URL::to('public/assets/images/icons/browserconfig.xml') }}">
     <meta name="theme-color" content="#ffffff">
     <!-- Plugins CSS File -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/plugins/owl-carousel/owl.carousel.css">
-    <link rel="stylesheet" href="assets/css/plugins/magnific-popup/magnific-popup.css">
+    <link rel="stylesheet" href="{{ URL::to('public/assets/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ URL::to('public/assets/css/plugins/owl-carousel/owl.carousel.css') }} ">
+    <link rel="stylesheet" href="{{ URL::to('public/assets/css/plugins/magnific-popup/magnific-popup.css') }}">
     <!-- Main CSS File -->
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/skins/skin-demo-21.css">
-    <link rel="stylesheet" href="assets/css/demos/demo-21.css">
+    <link rel="stylesheet" href="{{ URL::to('public/assets/css/style.css') }}">
+    <link rel="stylesheet" href="{{ URL::to('public/assets/css/skins/skin-demo-21.css') }}">
+    <link rel="stylesheet" href="{{ URL::to('public/assets/css/demos/demo-21.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- <link rel="stylesheet" href="assets/css/all.min.css">
     <link rel="stylesheet" href="assets/css/fontawesome.min.css"> -->
@@ -52,7 +53,7 @@
                       </button>
 
                       <a href="index.html" class="logo">
-                          <img src="assets/images/demos/demo-21/logo.png" alt="Remora Logo" width="100" height="25">
+                          <img src="{{ URL::to('public/assets/images/demos/demo-21/logo.png') }}" alt="Remora Logo" width="100" height="25">
                       </a>
 
                       <nav class="main-nav">
@@ -129,7 +130,7 @@
         <main class="main">
             
             <div class="newsletter">
-                <div class="background" style="background-image: url(assets/images/slider.png); background-repeat: no-repeat; background-size: cover;">
+                <div class="background" style="background-image: url(public/assets/images/slider.png); background-repeat: no-repeat; background-size: cover;">
                     <div class="subscribe">
                         <div class="subscribe-title text-center">
                             <h1 class="intro-title2nd pt-4">Are you looking to buy equipment?</h1>
@@ -155,7 +156,7 @@
                 		<div class="col-md-6">
                 			<div class="banner">
 	                			<a href="#">
-	                				<img src="assets/images/categories/category 1.png" alt="Category1">
+	                				<img src="{{ URL::to('public/assets/images/categories/category 1.png') }}" alt="Category1">
 	                			</a>
 
 	                			<div class="banner-content">
@@ -169,7 +170,7 @@
                 		<div class="col-md-6">
                 			<div class="banner">
 	                			<a href="#">
-	                				<img src="assets/images/categories/category 2.png" alt="Banner">
+	                				<img src="{{ URL::to('public/assets//images/categories/category 2.png') }}" alt="Banner">
 	                			</a>
 
 	                			<div class="banner-content">
@@ -183,7 +184,7 @@
                         <div class="col-md-6">
                 			<div class="banner">
 	                			<a href="#">
-	                				<img src="assets/images/categories/category 3.png" alt="Category1">
+	                				<img src="{{ URL::to('public/assets/images/categories/category 3.png') }}" alt="Category1">
 	                			</a>
 
 	                			<div class="banner-content">
@@ -197,7 +198,7 @@
                 		<div class="col-md-6">
                 			<div class="banner">
 	                			<a href="#">
-	                				<img src="assets/images/categories/category 4.png" alt="Banner">
+	                				<img src="{{ URL::to('public/assets/images/categories/category 4.png') }}" alt="Banner">
 	                			</a>
 
 	                			<div class="banner-content">
@@ -223,7 +224,7 @@
                                 <div class="row">
                                     <div class="col-sm-5 col-xl-6">
                                         <figure class="store-media mb-2 mb-lg-0">
-                                            <img src="assets/images/cat-bulldozer-mike-burgquist.png" alt="image">
+                                            <img src="{{ URL::to('public/assets/images/cat-bulldozer-mike-burgquist.png') }}" alt="image">
                                         </figure><!-- End .store-media -->
                                     </div><!-- End .col-xl-6 -->
                                     <div class="col-sm-7 col-xl-6">
@@ -251,7 +252,7 @@
                                 <div class="row">
                                     <div class="col-sm-5 col-xl-6">
                                         <figure class="store-media mb-2 mb-lg-0">
-                                            <img src="assets/images/cat-bulldozer-mike-burgquist.png" alt="image">
+                                            <img src="{{ URL::to('public/assets/images/cat-bulldozer-mike-burgquist.png') }}" alt="image">
                                         </figure><!-- End .store-media -->
                                     </div><!-- End .col-xl-6 -->
 
@@ -289,7 +290,7 @@
                         <div class="row" style="padding-bottom:4%; padding-top:4%;">
 							<div class="col-md-3">
 
-                                <img src="assets/images/demos/demo-21/logo-footer.png" class="footer-logo m-auto" alt="Footer Logo" width="100" height="25">
+                                <img src="{{ URL::to('public/assets/images/demos/demo-21/logo-footer.png') }}" class="footer-logo m-auto" alt="Footer Logo" width="100" height="25">
                           </div>
 
 						   <div class="col-md-6 custom-footer-padding ">
@@ -304,9 +305,9 @@
 
                             <div class="col-md-3">
                                 <div class="social-icons social-icons-color">
-                                    <a href="#" class="social-icon social-facebook" title="Facebook" target="_blank"><img src="assets/images/facebook.png"></a>
-                                    <a href="#" class="social-icon social-twitter" title="Twitter" target="_blank"><img src="assets/images/linkdin.png"></a>
-                                    <a href="#" class="social-icon social-instagram" title="Instagram" target="_blank"><img src="assets/images/msg.png"></a>
+                                    <a href="#" class="social-icon social-facebook" title="Facebook" target="_blank"><img src="{{ URL::to('public/assets/images/facebook.png') }}"></a>
+                                    <a href="#" class="social-icon social-twitter" title="Twitter" target="_blank"><img src="{{ URL::to('public/assets/images/linkdin.png') }}"></a>
+                                    <a href="#" class="social-icon social-instagram" title="Instagram" target="_blank"><img src="{{ URL::to('public/assets/images/msg.png') }}"></a>
                                 </div><!-- End .soial-icons -->
 							            </div>
 
@@ -371,15 +372,15 @@
 
 
     <!-- Plugins JS File -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/jquery.hoverIntent.min.js"></script>
-    <script src="assets/js/jquery.waypoints.min.js"></script>
-    <script src="assets/js/superfish.min.js"></script>
-    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="{{ URL::to('public/assets/js/jquery.min.js') }}"></script>
+    <script src="{{ URL::to('public/assets/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ URL::to('public/assets/js/jquery.hoverIntent.min.js') }}"></script>
+    <script src="{{ URL::to('public/assets/js/jquery.waypoints.min.js') }}"></script>
+    <script src="{{ URL::to('public/assets/js/superfish.min.js') }}"></script>
+    <script src="{{ URL::to('public/assets/js/owl.carousel.min.js') }}"></script>
     <!-- Main JS File -->
     <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="{{ URL::to('public/assets/js/main.js') }}"></script>
     <script>
         $('.login').on('click',function(){
             window.location.href = "{{ route('login') }}";

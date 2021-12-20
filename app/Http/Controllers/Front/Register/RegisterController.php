@@ -24,7 +24,7 @@ class RegisterController extends Controller
     }
 
     public function show_forgot_password(){
-        return view('front.forgot_password');
+        return view('front_new.forgot_password');
     }
 
     public function send_forgot_password_email(Request $request)
@@ -59,7 +59,7 @@ class RegisterController extends Controller
         //     $message->subject(  config("app.name") . ': OTP Verification ');
 
         // } );
-        return view('front.register');
+        return view('front_new.register');
     }
 
     public function createUserManually( UserRequest $request ){

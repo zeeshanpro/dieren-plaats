@@ -20,7 +20,7 @@ class LoginController extends Controller
         {
             session(['url.intended' => url()->previous()]);
         }
-        return view('front.login');
+        return view('front_new.login');
     }
 
     public function loginManually( Request $request ){

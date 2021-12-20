@@ -27,7 +27,7 @@ use App\Http\Controllers\Admin\PaidAds\PaidAdsController;
 //     return view('welcome');
 // });
 Route::get('/', function () {
-    return view('front.index');
+    return view('front_new.index');
 })->name('base_url');
 
 Route::get('/logout', function () {

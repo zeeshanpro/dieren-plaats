@@ -100,7 +100,7 @@ $publicPath = env('ASSETS_PATH');
           <img src="{{ asset( $publicPath . 'admin_assets/logo.png') }}" class="img-circle elevation-2" alt="User Image" style="height:33px;width:33px;">
         </div> -->
         <div class="info">
-          <a href="{{('/admin/adminsettings')}}" class="d-block">Admin</a>
+          <a href="{{ url('/admin/adminsettings') }}" class="d-block">Admin</a>
         </div>
       </div>
       @inject( "adMaster" , 'App\Repositories\AdRepository' )

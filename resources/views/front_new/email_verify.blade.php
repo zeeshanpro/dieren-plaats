@@ -99,7 +99,7 @@
                           </form>
                       </div> -->
                       <div class="wishlist">
-                        <button type="submit" class="btn btn-outline-primary-2">
+                        <button type="submit" class="btn btn-outline-primary-2 login">
                             <span>Log in</span>
 
                         </button>
@@ -108,7 +108,7 @@
                       </div><!-- End .compare-dropdown -->
 
                       <div class="dropdown cart-dropdown">
-                        <button type="submit" class="btn btn-outline-primary-2">
+                        <button type="submit" class="btn btn-outline-primary-2 register">
                             <span>Register</span>
 
                         </button>

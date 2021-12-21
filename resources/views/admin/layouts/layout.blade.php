@@ -125,7 +125,7 @@ $publicPath = env('ASSETS_PATH');
 
           </li>
           <li class="nav-item">
-            <a href="{{url('/admin/listusers')}}" class="nav-link disabled-link">
+            <a href="{{url('/admin/listusers')}}" class="nav-link">
               <i class="nav-icon fas fa-user"></i>
               <p>
                 Users     <span class="badge badge-info right">{{$adResults['userCount']}}</span>           

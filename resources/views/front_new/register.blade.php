@@ -144,10 +144,12 @@
 							<div class="tab-content">
 
 							    <div class="tab-pane fade show active" id="signin-2" role="tabpanel" aria-labelledby="register-tab-2">
-							    	<form action="#">
+							    	<form method="post" action="{{ route('createuser') }}">
+                                    @csrf
+                                        <input type="hidden" name="usertype" value="Breeder">
 							    		<div class="form-group">
 							    			<label for="singin-email-2">Full name</label>
-							    			&nbsp;<input type="text" class="form-control"  name="singin-email" required style="padding-left:4rem;">
+							    			&nbsp;<input type="text" class="form-control"  name="name" required style="padding-left:4rem;">
                         <span class="email_icon" ><i class="fa fa-user-circle" aria-hidden="true"></i></span>
 							    		</div>
 
@@ -155,19 +157,19 @@
 
                                         <div class="form-group">
 							    			<label for="singin-email-2">Company name</label>
-							    			&nbsp;<input type="text" class="form-control" name="singin-email" required style="padding-left:4rem;">
+							    			&nbsp;<input type="text" class="form-control" name="comapny" required style="padding-left:4rem;">
                         <span class="email_icon" ><i class="fa fa-building" aria-hidden="true"></i></span>
 							    		</div>
 
                                         <div class="form-group">
 							    			<label for="singin-email-2">Country</label>
-							    			&nbsp;<input type="text" class="form-control"  name="singin-email" required style="padding-left:4rem;">
+							    			&nbsp;<input type="text" class="form-control"  name="country" required style="padding-left:4rem;">
                         <span class="email_icon" ><i class="fa fa-flag" aria-hidden="true"></i></span>
 							    		</div>
 
                                         <div class="form-group">
 							    			<label for="singin-email-2">Phone Number</label>
-							    			&nbsp;<input type="text" class="form-control"  name="singin-email" required style="padding-left:4rem;">
+							    			&nbsp;<input type="text" class="form-control"  name="phone" required style="padding-left:4rem;">
                         <span class="email_icon" ><i class="fa fa-phone" aria-hidden="true"></i></span>
 							    		</div>
                                        
@@ -176,13 +178,13 @@
 
                                         <div class="form-group">
 							    			<label for="singin-email-2">Email</label>
-							    			&nbsp;<input type="text" class="form-control"  name="singin-email" required style="padding-left:4rem;">
+							    			&nbsp;<input type="text" class="form-control"  name="email" required style="padding-left:4rem;">
                         <span class="email_icon" ><i class="fa fa-envelope" aria-hidden="true"></i></span>
 							    		</div>
 
                                         <div class="form-group">
 							    			<label for="singin-password-2">Password</label>
-							    			<input type="password" class="form-control"  name="singin-password" required style="padding-left:4rem;">
+							    			<input type="password" class="form-control"  name="password" required style="padding-left:4rem;">
                         <span class="password_icon" ><i class="fa fa-lock" aria-hidden="true"></i></span>
 
 							    		</div><!-- End .form-group -->

@@ -73,7 +73,7 @@
 <script type="text/javascript">
  $(document).ready(function(){
 
- ajaxSearch().init("/admin/search_users");
+ ajaxSearch().init("<?php echo e(url('/admin/search_users')); ?>");
      // Date frtom on change
 $( ".typechange" ).change(function() {
   if($(this).val()!="")

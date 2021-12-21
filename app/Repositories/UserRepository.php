@@ -63,7 +63,7 @@ class UserRepository implements UserInterface
         $data['result'] = User::where('usertype' , '!=' , 'Admin')
                                 ->withCount(['userAds','userExpectedBabies'])
                                 ->with(['Breeder', 'latestRenewal'])
-                                ->orderBy('name', 'ASC')
+                                ->orderBy('id', 'DESC')
                                 ->paginate(REC_PER_PAGE);
         $data['code'] =  200;
         

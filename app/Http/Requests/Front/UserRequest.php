@@ -25,6 +25,9 @@ class UserRequest extends FormRequest
         return [ 
                 'name' => 'required',
                 'email' => 'required|email|unique:users',
+                'company' => '',
+                'country' => '',
+                'phone' => '',
                 'email_verified_at' => '',
                 'email_otp' => '',
                 'password' => 'required|min:8',

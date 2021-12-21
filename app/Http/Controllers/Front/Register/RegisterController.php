@@ -74,7 +74,8 @@ class RegisterController extends Controller
     }    
 
     public function showEmailVerification(){
-        return view( 'front.emailotp' );
+        //return view( 'front.emailotp' );
+        return view( 'front_new.email_verify' );
     }
 
     public function validateEmailVerification( Request $request ){

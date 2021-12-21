@@ -100,7 +100,7 @@ $publicPath = env('ASSETS_PATH');
           <img src="<?php echo e(asset( $publicPath . 'admin_assets/logo.png')); ?>" class="img-circle elevation-2" alt="User Image" style="height:33px;width:33px;">
         </div> -->
         <div class="info">
-          <a href="<?php echo e(('/admin/adminsettings')); ?>" class="d-block">Admin</a>
+          <a href="<?php echo e(url('/admin/adminsettings')); ?>" class="d-block">Admin</a>
         </div>
       </div>
       <?php $adMaster = app('App\Repositories\AdRepository'); ?>
@@ -132,7 +132,7 @@ $publicPath = env('ASSETS_PATH');
               </p>
             </a>
           </li>
-           <li class="nav-item">
+           <li class="nav-item hide">
             <a href="<?php echo e(url('/admin/listsubscription')); ?>" class="nav-link disabled-link">
               <i class="nav-icon fas fa-registered"></i>
               <p>
@@ -140,7 +140,7 @@ $publicPath = env('ASSETS_PATH');
               </p>
             </a>
           </li>
-          <li class="nav-item has-treeview">
+          <li class="nav-item has-treeview hide">
             <a href="javascript::void(0);" class="nav-link disabled-link">
               <i class="nav-icon fab fa-buysellads"></i>
               <p>
@@ -165,7 +165,7 @@ $publicPath = env('ASSETS_PATH');
               
             </ul>
           </li>  
-          <li class="nav-item has-treeview">
+          <li class="nav-item has-treeview hide">
             <a href="<?php echo e(url('/admin/listexpectedads')); ?>" class="nav-link disabled-link">
               <i class="nav-icon fas fa-ad"></i>
               <p>
@@ -187,7 +187,7 @@ $publicPath = env('ASSETS_PATH');
           </li>
          
 
-            <li class="nav-item has-treeview">
+            <li class="nav-item has-treeview hide">
             <a href="javascript::void(0);" class="nav-link disabled-link">
               <i class="nav-icon fas fa-cog"></i>
               <p>

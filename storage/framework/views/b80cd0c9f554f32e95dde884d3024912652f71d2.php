@@ -8,16 +8,16 @@ $publicPath = env('ASSETS_PATH');
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>{{ config('app.name', 'DIEREN PLAATS') }} | {{$title[0]}}</title>
+  <title><?php echo e(config('app.name', 'DIEREN PLAATS')); ?> | <?php echo e($title[0]); ?></title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="{{ asset( $publicPath . 'admin_assets/plugins/fontawesome-free/css/all.min.css') }}">
+  <link rel="stylesheet" href="<?php echo e(asset( $publicPath . 'admin_assets/plugins/fontawesome-free/css/all.min.css')); ?>">
   <!-- Ionicons -->
   <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
   <!-- overlayScrollbars -->
-  <link rel="stylesheet" href="{{ asset( $publicPath . 'admin_assets/dist/css/adminlte.min.css') }}">
+  <link rel="stylesheet" href="<?php echo e(asset( $publicPath . 'admin_assets/dist/css/adminlte.min.css')); ?>">
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
   <style type="text/css">
@@ -31,8 +31,8 @@ $publicPath = env('ASSETS_PATH');
     }
   </style>
 <!-- dynamic css -->
-@section('optional_css')
-    @show
+<?php $__env->startSection('optional_css'); ?>
+    <?php echo $__env->yieldSection(); ?>
 
 </head>
 <body class="hold-transition sidebar-mini">
@@ -66,13 +66,13 @@ $publicPath = env('ASSETS_PATH');
     <ul class="navbar-nav ml-auto">
       <!-- Messages Dropdown Menu -->
       <li class="nav-item">
-      <form method="POST" action="{{ route('logout') }}">
-        @csrf
+      <form method="POST" action="<?php echo e(route('logout')); ?>">
+        <?php echo csrf_field(); ?>
       <button type="submit" class="btn btn-info">Logout &nbsp <i class="fa fa-sign-out-alt" aria-hidden="true"></i></button>
 
       </form>
 
-        <!-- <a title="Log out" class="nav-link" href="{{ route('logout') }}">Logout &nbsp; <i class="fa fa-sign-out-alt" aria-hidden="true"></i></a> -->
+        <!-- <a title="Log out" class="nav-link" href="<?php echo e(route('logout')); ?>">Logout &nbsp; <i class="fa fa-sign-out-alt" aria-hidden="true"></i></a> -->
       </li>
       
     </ul>
@@ -82,10 +82,10 @@ $publicPath = env('ASSETS_PATH');
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="{{url('/admin/dashboard')}}" class="brand-link text-center">
-      <!-- <img src="{{ asset( $publicPath . 'admin_assets/logo.png') }}" alt="Hoppie Logo" class="brand-image img-circle elevation-3"
+    <a href="<?php echo e(url('/admin/dashboard')); ?>" class="brand-link text-center">
+      <!-- <img src="<?php echo e(asset( $publicPath . 'admin_assets/logo.png')); ?>" alt="Hoppie Logo" class="brand-image img-circle elevation-3"
            style="opacity: .8;height:33px;width:33px"> -->
-      <span class="brand-text font-weight-light">{{ config('app.name', 'REMORA SERVICES') }}</span>
+      <span class="brand-text font-weight-light"><?php echo e(config('app.name', 'REMORA SERVICES')); ?></span>
     </a>
 
     <!-- Sidebar -->
@@ -93,16 +93,16 @@ $publicPath = env('ASSETS_PATH');
       <!-- Sidebar user panel (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex text-center">
         <!-- <div class="image">
-          <img src="{{ asset( $publicPath . 'admin_assets/logo.png') }}" class="img-circle elevation-2" alt="User Image" style="height:33px;width:33px;">
+          <img src="<?php echo e(asset( $publicPath . 'admin_assets/logo.png')); ?>" class="img-circle elevation-2" alt="User Image" style="height:33px;width:33px;">
         </div> -->
         <div class="info">
-          <a href="{{('/admin/adminsettings')}}" class="d-block">Admin</a>
+          <a href="<?php echo e(('/admin/adminsettings')); ?>" class="d-block">Admin</a>
         </div>
       </div>
-      @inject( "adMaster" , 'App\Repositories\AdRepository' )
-            @php
+      <?php $adMaster = app('App\Repositories\AdRepository'); ?>
+            <?php
                 $adResults = $adMaster->showCountsForLeftBar();
-            @endphp
+            ?>
                 
 
       <!-- Sidebar Menu -->
@@ -111,7 +111,7 @@ $publicPath = env('ASSETS_PATH');
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item ">
-            <a href="{{route('admin-dashboard')}}" class="nav-link active">
+            <a href="<?php echo e(route('admin-dashboard')); ?>" class="nav-link active">
               <i class="nav-icon fas fa-chart-line"></i>
               <p>
                 Dashboard
@@ -121,15 +121,15 @@ $publicPath = env('ASSETS_PATH');
 
           </li>
           <li class="nav-item">
-            <a href="{{url('/admin/listusers')}}" class="nav-link disabled-link">
+            <a href="<?php echo e(url('/admin/listusers')); ?>" class="nav-link disabled-link">
               <i class="nav-icon fas fa-user"></i>
               <p>
-                Users     <span class="badge badge-info right">{{$adResults['userCount']}}</span>           
+                Users     <span class="badge badge-info right"><?php echo e($adResults['userCount']); ?></span>           
               </p>
             </a>
           </li>
            <li class="nav-item">
-            <a href="{{url('/admin/listsubscription')}}" class="nav-link disabled-link">
+            <a href="<?php echo e(url('/admin/listsubscription')); ?>" class="nav-link disabled-link">
               <i class="nav-icon fas fa-registered"></i>
               <p>
                 Subscriptions                
@@ -142,18 +142,18 @@ $publicPath = env('ASSETS_PATH');
               <p>
                 Ads
                 <i class="fas fa-angle-left right"></i>
-                <span class="badge badge-info right">{{$adResults['adCount']}}</span>
+                <span class="badge badge-info right"><?php echo e($adResults['adCount']); ?></span>
               </p>
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="{{url('/admin/listads')}}" class="nav-link">
+                <a href="<?php echo e(url('/admin/listads')); ?>" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>List</p>
                 </a>
               </li>
              <!--  <li class="nav-item">
-                <a href="{{url('/admin/list_unclaimed_gifts')}}" class="nav-link">
+                <a href="<?php echo e(url('/admin/list_unclaimed_gifts')); ?>" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Unclaimed</p>
                 </a>
@@ -162,17 +162,17 @@ $publicPath = env('ASSETS_PATH');
             </ul>
           </li>  
           <li class="nav-item has-treeview">
-            <a href="{{url('/admin/listexpectedads')}}" class="nav-link disabled-link">
+            <a href="<?php echo e(url('/admin/listexpectedads')); ?>" class="nav-link disabled-link">
               <i class="nav-icon fas fa-ad"></i>
               <p>
                 Expected Ads
                 <i class="fas fa-angle-left right"></i>
-                <span class="badge badge-info right">{{$adResults['expectedBabieCount']}}</span>
+                <span class="badge badge-info right"><?php echo e($adResults['expectedBabieCount']); ?></span>
               </p>
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="{{url('/admin/listexpectedads')}}" class="nav-link disabled-link">
+                <a href="<?php echo e(url('/admin/listexpectedads')); ?>" class="nav-link disabled-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>List</p>
                 </a>
@@ -193,19 +193,19 @@ $publicPath = env('ASSETS_PATH');
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="{{url('/admin/listkind')}}" class="nav-link">
+                <a href="<?php echo e(url('/admin/listkind')); ?>" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Kind</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{url('/admin/listrace')}}" class="nav-link">
+                <a href="<?php echo e(url('/admin/listrace')); ?>" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Race</p>
                 </a>
               </li>
                <li class="nav-item">
-                <a href="{{url('/admin/listattributes')}}" class="nav-link">
+                <a href="<?php echo e(url('/admin/listattributes')); ?>" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Attributes</p>
                 </a>
@@ -227,12 +227,12 @@ $publicPath = env('ASSETS_PATH');
         <div class="row mb-2">
           <div class="col-sm-6">
 
-            <h1>{{$title[0]}}</h1>
+            <h1><?php echo e($title[0]); ?></h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">{{$title[0]}} {{isset($title[1])? "/ ". $title[1]:"" }}</li>
+              <li class="breadcrumb-item active"><?php echo e($title[0]); ?> <?php echo e(isset($title[1])? "/ ". $title[1]:""); ?></li>
             </ol>
           </div>
         </div>
@@ -240,8 +240,8 @@ $publicPath = env('ASSETS_PATH');
     </section>
 
     <!-- Main content -->
-    @section('container')
-    @show
+    <?php $__env->startSection('container'); ?>
+    <?php echo $__env->yieldSection(); ?>
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
@@ -250,7 +250,7 @@ $publicPath = env('ASSETS_PATH');
     <div class="float-right d-none d-sm-block">
       <b>Version</b> 3.0.2
     </div>
-    <strong>Copyright &copy; 2021-2025 {{ config('app.name', 'DIEREN PLAATS') }}.</strong> All rights
+    <strong>Copyright &copy; 2021-2025 <?php echo e(config('app.name', 'DIEREN PLAATS')); ?>.</strong> All rights
     reserved.
   </footer>
 
@@ -263,14 +263,14 @@ $publicPath = env('ASSETS_PATH');
 <!-- ./wrapper -->
 
 <!-- jQuery -->
-<script src="{{ asset( $publicPath . 'admin_assets/plugins/jquery/jquery.min.js') }}"></script>
+<script src="<?php echo e(asset( $publicPath . 'admin_assets/plugins/jquery/jquery.min.js')); ?>"></script>
 <!-- Bootstrap 4 -->
-<script src="{{ asset( $publicPath . 'admin_assets/plugins/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+<script src="<?php echo e(asset( $publicPath . 'admin_assets/plugins/bootstrap/js/bootstrap.bundle.min.js')); ?>"></script>
 <!-- AdminLTE App -->
-<script src="{{ asset( $publicPath . 'admin_assets/dist/js/adminlte.min.js') }}"></script>
+<script src="<?php echo e(asset( $publicPath . 'admin_assets/dist/js/adminlte.min.js')); ?>"></script>
 <!-- AdminLTE for demo purposes -->
 
-<script src="{{ asset( $publicPath . 'admin_assets/dist/js/demo.js') }}"></script>
+<script src="<?php echo e(asset( $publicPath . 'admin_assets/dist/js/demo.js')); ?>"></script>
 
 <script type="text/javascript">
  $(document).ready(function() {
@@ -295,9 +295,9 @@ $publicPath = env('ASSETS_PATH');
 </script>
 
 <!-- dynamic scripts -->
-@section('optional_scripts')
+<?php $__env->startSection('optional_scripts'); ?>
 
-    @show
+    <?php echo $__env->yieldSection(); ?>
 
 </body>
-</html>
+</html><?php /**PATH C:\xampp7.4\htdocs\remora\resources\views/admin/layouts/layout.blade.php ENDPATH**/ ?>

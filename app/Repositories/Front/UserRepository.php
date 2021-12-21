@@ -194,7 +194,7 @@ class UserRepository implements UserInterface
                         $arrayToSend = array('email'=>$newUser->email,'FORGETLINK' => $newUser->email_otp,'name' => $newUser->name);
                         Mail::send( 'mailtemplates.welcome_breeder' , $arrayToSend, function( $message ) use( $newUser ) {
                             $message->to( $newUser->email );
-                            $message->subject( 'Welkom bij Dieren-plaats Door baasjes , voor baasjes' );
+                            $message->subject( 'Welkom bij Remora services Door baasjes , voor baasjes' );
 
                         } );
                         break;        

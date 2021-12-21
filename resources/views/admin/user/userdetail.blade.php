@@ -402,19 +402,19 @@
 
 
 
-                  <div class="form-group">
+                  <div class="form-group hide">
                     <label for="fb_url">FB Url</label>
                     <input type="text" class="form-control" id="fb_url" placeholder="Enter Facebook Url" name="fb_url"   value="{{old('fb_url',$data->Breeder->fb_url ?? '')}}">
                   </div>  
 
 
-                  <div class="form-group">
+                  <div class="form-group hide">
                     <label for="insta_url">Instagram Url</label>
                     <input type="text" class="form-control" id="fb_url" placeholder="Enter Instagram Url" name="insta_url"   value="{{old('insta_url',$data->Breeder->insta_url ?? '')}}">
                   </div>  
 
 
-                  <div class="form-group">
+                  <div class="form-group hide">
                     <label for="linkedin_url">Linkedin Url</label>
                     <input type="text" class="form-control" id="linkedin_url" placeholder="Enter Website Url" name="linkedin_url"   value="{{old('linkedin_url',$data->Breeder->linkedin_url ?? '')}}">
                   </div>  

@@ -8,7 +8,7 @@
 <body style="margin:0;padding:0;">
 	<div style="background:#f72442;max-height: 60px;display: flex;justify-content: center;">
 		<a href="{{url('')}}" target="_blank" style="display:flex;text-decoration: none;">
-	 <img src="{{url('/public/front_assets/images/logo-small.png')}}" style="padding-left: 20px;" />
+	 <img src="{{url('/public/assets/images/demos/demo-21/logo.png')}}" style="padding-left: 20px;" />
 	
 		<div style="background:#f72442;max-height: 60px;display: flex;justify-content: center;color:white;align-items: center;font-size: 35px; margin-left:10px ;"></div>
 	</a>
@@ -31,7 +31,7 @@
     	</div> -->
     	<div style="background:#f72442;">
     	<div style="background:#f72442;padding:15px;color: white; display: flex;align-items: center;;width: 730px;margin: 0 auto;">
-    	<span style="display: flex;align-items: center;"> <img src="https://dieren-plaats.nl/media/wysiwyg/email-icon.png" alt="" style="padding-right:10px;width: 21px; height:21px; text-decoration:none;" >Email: <a style="color:#ffffff; text-decoration:none;" href="mailto:info@dieren-plaats.nl">info@dieren-plaats.nl</a></span>
+    	<span style="display: flex;align-items: center;"> <img src="https://dieren-plaats.nl/media/wysiwyg/email-icon.png" alt="" style="padding-right:10px;width: 21px; height:21px; text-decoration:none;" >Email: <a style="color:#ffffff; text-decoration:none;" href="mailto:info@remora.shadowis.nl">info@remora.shadowis.nl</a></span>
     	<span style="display: flex;align-items: center;"> <img src="https://dieren-plaats.nl/media/wysiwyg/time-icon.png" alt=""  style="padding-right:10px;padding-left:10px;width: 21px;height:21px;" >Opening hours: Mon - Fri / 9:00 - 17:00 </span>
     	</div>
     </div>

@@ -43,6 +43,9 @@
   color: white;
 }
 
+.hide {
+  display: none;
+}
 
 </style>
 
@@ -96,10 +99,10 @@
                     <a href="https://{{$data->Breeder->insta_url}}" class="fab facustom fa-instagram" target="_blank"></a>
                     @endif
                   </li>
-                  <li class="list-group-item">
+                  <li class="list-group-item hide">
                     <b>Sent</b> <a class="float-right"><small></small></a>
                   </li>
-                  <li class="list-group-item">
+                  <li class="list-group-item hide">
                     <b>Type: </b>{{$data->usertype??'Unknown'}}</a>
                   </li>
                  
@@ -163,12 +166,12 @@
               <div class="card-header p-2">
                 <ul class="nav nav-tabs nav-fill">
                  
-                  <li class="nav-item"><a  @class(["nav-link",
-                                   "active"=> !$errors->any() & !Session::has('message'),
+                  <li class="nav-item hide"><a  @class(["nav-link",
+                                   "active"=> $errors->any() & !Session::has('message'),
                                 ]) href="#ads" data-toggle="tab">Ads</a></li>
-                  <li class="nav-item"><a class="nav-link" href="#expectedbabies" data-toggle="tab">Expected Babies</a></li>   
+                  <li class="nav-item hide"><a class="nav-link" href="#expectedbabies" data-toggle="tab">Expected Babies</a></li>   
                    <li class="nav-item"><a @class(["nav-link",
-                                   "active"=> $errors->any() | Session::has('message'),
+                                   "active"=> !$errors->any() | Session::has('message'),
                                 ]) href="#userinfo" data-toggle="tab">User Info</a></li>
                 </ul>
               </div><!-- /.card-header -->
@@ -177,7 +180,7 @@
 
                   <!-- /.tab-pane -->
                   <div  @class(["tab-pane",
-                                   "active"=> !$errors->any() & !Session::has('message'),
+                                   "active"=> $errors->any() & !Session::has('message'),
                                 ])
                    id="ads">
                       @if(count($data->userAds) <1)
@@ -267,7 +270,7 @@
 
                    <!-- /.tab-pane -->
                   <div  @class(["tab-pane",
-                                   "active"=> $errors->any() | Session::has('message'),
+                                   "active"=> !$errors->any() | Session::has('message'),
                                 ]) id="userinfo">
 
                     <div class="row">
@@ -318,17 +321,16 @@
                     <div class="row">
                   
                       <div class="col-6">
-                         <div class="form-group">
-                    <label for="status">User Status</label>
-                    <select name="status" class="custom-select" id="status">
-                      <option value="1" {{(old('status',$data->status)=="1"?' selected':'')}}>Active</option>
-                      <option value="0" {{(old('status',$data->status)=="0"?' selected':'')}}>Block User</option>
-                      
-                    </select>
-
-                  </div>
+                        <div class="form-group">
+                          <label for="status">User Status</label>
+                          <select name="status" class="custom-select" id="status">
+                            <option value="1" {{(old('status',$data->status)=="1"?' selected':'')}}>Active</option>
+                            <option value="0" {{(old('status',$data->status)=="0"?' selected':'')}}>Block User</option>
+                            
+                          </select>
+                        </div>
                       </div>
-                      <div class="col-6">
+                      <div class="col-6 hide">
                          <div class="form-group">
                     <label for="usertype">User Type</label>
                     <select name="usertype" class="custom-select" id="usertype">

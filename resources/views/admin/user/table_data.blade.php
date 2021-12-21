@@ -34,7 +34,7 @@
                     <tr>
                       <td><a href="/admin/view_user/{{$row->id}}">{{$row->id}}</a> </td>
                       <td><a href="/admin/view_user/{{$row->id}}">{{$row->name??'No Name'}}</a> </td>
-                      <td class=" text-center">{{$row->usertype}} </td>
+                      <!-- <td class=" text-center">{{$row->usertype}} </td> -->
                       <td>
                         @if($substatus!="-")
                         <span class="badge bg-{{$substatus=="Active"?'success':'danger'}}">{{$substatus}}</span>
@@ -42,8 +42,8 @@
                         {{$substatus}}
                         @endif
                     </td>
-                      <td>{{$row->user_ads_count}}</td>
-                    <td>{{$row->user_expected_babies_count}}</td>
+                      <!-- <td>{{$row->user_ads_count}}</td>
+                    <td>{{$row->user_expected_babies_count}}</td> -->
                       <td>
                          <div class="btn-group">
                         <button type="button" class="btn btn-danger deleteuser" data-uid="{{$row->id}}">

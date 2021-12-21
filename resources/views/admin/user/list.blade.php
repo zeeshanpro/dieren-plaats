@@ -4,6 +4,12 @@
 <meta name="csrf-token" content="{{ csrf_token() }}" />
 @endsection
 @section('container')
+
+<style>
+  .hide {
+  display: none;
+}
+  </style>
 <section class="content">
 
       <!-- Default box -->
@@ -22,7 +28,7 @@
                  </div>
                </div>
 
-      <div class="card-tools  mr-4">
+      <div class="card-tools  mr-4 hide">
                  <div class="input-group input-group-sm" style="width: 150px;">
                   <label class="mr-2">Type: </label>
                   <select class="form-control filter typechange" data-filter_column="type" >
@@ -41,10 +47,10 @@
                     <tr>
                       <th>ID</th>
                       <th>Name</th>
-                      <th>Type</th>
+                      <!-- <th>Type</th> -->
                       <th> Sub. Status</th>
-                      <th># of Ads</th>
-                      <th># of Exp Ads</th>
+                      <!-- <th># of Ads</th>
+                      <th># of Exp Ads</th> -->
                       <th>Action</th>
                     </tr>
                   </thead>

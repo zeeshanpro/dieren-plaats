@@ -4,7 +4,7 @@
 
 Hoi {{$name}},<br /><br />
 
-Welkom bij Dieren-Plaats.nl! Leuk dat jullie je aansluiten bij onze database. <br />
+Welkom bij remora.shadowis.nl! Leuk dat jullie je aansluiten bij onze database. <br />
 
 Om in te loggen op onze website, gebruik je deze gegevens:<br /><br />
 

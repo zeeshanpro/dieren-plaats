@@ -29,6 +29,10 @@ $publicPath = env('ASSETS_PATH');
     .disabled-link {
       pointer-events: none;
     }
+
+    .hide {
+      display: none;
+    }
   </style>
 <!-- dynamic css -->
 <?php $__env->startSection('optional_css'); ?>

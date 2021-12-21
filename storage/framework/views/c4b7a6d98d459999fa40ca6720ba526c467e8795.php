@@ -4,7 +4,7 @@
 <?php $__env->startSection('container'); ?>
 <div class="content">
       <div class="container-fluid">
-        <div class="row">
+        <div class="row hide">
           <div class="col-12 col-sm-6 col-md-3">
             <div class="info-box">
               <span class="info-box-icon bg-info elevation-1"><i class="fas fa-calendar-alt"></i></span>
@@ -77,7 +77,7 @@
           </div>
           <!-- /.col -->
         </div>  
-        <div class="row">
+        <div class="row hide">
           <div class="col-lg-6">
             <!-- /.card -->
 

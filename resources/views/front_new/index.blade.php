@@ -3,6 +3,7 @@
 
 
 <!-- molla/login.html  22 Nov 2019 10:04:03 GMT -->
+
 <head>
     <title>Remora Services</title>
     <meta charset="UTF-8">
@@ -36,65 +37,67 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- <link rel="stylesheet" href="assets/css/all.min.css">
     <link rel="stylesheet" href="assets/css/fontawesome.min.css"> -->
-    
-    
+
+
 
 </head>
+
 <body>
     <div class="page-wrapper">
-      <header class="header">
+        <header class="header">
 
-          <div class="header-middle sticky-header">
-              <div class="container">
-                  <div class="header-left">
-                      <button class="mobile-menu-toggler">
-                          <span class="sr-only">Toggle mobile menu</span>
-                          <i class="icon-bars"></i>
-                      </button>
+            <div class="header-middle sticky-header">
+                <div class="container">
+                    <div class="header-left">
+                        <button class="mobile-menu-toggler">
+                            <span class="sr-only">Toggle mobile menu</span>
+                            <i class="icon-bars"></i>
+                        </button>
 
-                      <a href="index.html" class="logo">
-                          <img src="{{ URL::to('public/assets/images/demos/demo-21/logo.png') }}" alt="Remora Logo" width="100" height="25">
-                      </a>
+                        <a href="index.html" class="logo">
+                            <img src="{{ URL::to('public/assets/images/demos/demo-21/logo.png') }}" alt="Remora Logo" width="100" height="25">
+                        </a>
 
-                      <nav class="main-nav">
-                          <ul class="menu sf-arrows">
-                               <li>
-                                  <a href="product.html" class="sf-with-ul">Categories</a>
+                        <nav class="main-nav">
+                            <ul class="menu sf-arrows">
+                                <li>
+                                    <a href="product.html" class="sf-with-ul">Categories</a>
 
-                                  <div class="megamenu megamenu-sm">
-                                      <div class="row no-gutters">
-                                          <div class="col-md-6">
-                                              <div class="menu-col">
-                                                  <div class="menu-title">Products</div><!-- End .menu-title -->
-                                                  <ul>
-                                                      <li><a href="#">prodcut 1</a></li>
-                                                      <li><a href="#">prodcut 2</a></li>
-                                                      <li><a href="#">prodcut 3</a></li>
-                                                      <li><a href="#">prodcut 4</a></li>
-                                                      <li><a href="#">prodcut 5</a></li>
-                                                      <li><a href="#">prodcut 6</a></li>
-                                                      <li><a href="#">prodcut 7</a></li>
-                                                  </ul>
-                                              </div><!-- End .menu-col -->
-                                          </div><!-- End .col-md-6 -->
-                                      </div><!-- End .row -->
-                                  </div><!-- End .megamenu megamenu-sm -->
-                              </li>
-                              <li>
-                                  <a href="#"  >About us</a>
-                              </li>
-                              <li>
-                                  <a href="#"  >Sell Equipment</a>
-                              </li>
-                              <li>
-                                  <a href="#"  >Advertising</a>
-                              </li>
-                          </ul><!-- End .menu -->
-                      </nav><!-- End .main-nav -->
-                  </div><!-- End .header-left -->
+                                    <div class="megamenu megamenu-sm">
+                                        <div class="row no-gutters">
+                                            <div class="col-md-6">
+                                                <div class="menu-col">
+                                                    <div class="menu-title">Products</div><!-- End .menu-title -->
+                                                    <ul>
+                                                        <li><a href="#">prodcut 1</a></li>
+                                                        <li><a href="#">prodcut 2</a></li>
+                                                        <li><a href="#">prodcut 3</a></li>
+                                                        <li><a href="#">prodcut 4</a></li>
+                                                        <li><a href="#">prodcut 5</a></li>
+                                                        <li><a href="#">prodcut 6</a></li>
+                                                        <li><a href="#">prodcut 7</a></li>
+                                                    </ul>
+                                                </div><!-- End .menu-col -->
+                                            </div><!-- End .col-md-6 -->
+                                        </div><!-- End .row -->
+                                    </div><!-- End .megamenu megamenu-sm -->
+                                </li>
+                                <li>
+                                    <a href="#">About us</a>
+                                </li>
+                                <li>
+                                    <a href="#">Sell Equipment</a>
+                                </li>
+                                <li>
+                                    <a href="#">Advertising</a>
+                                </li>
 
-                  <div class="header-right">
-                      <!-- <div class="header-search">
+                            </ul><!-- End .menu -->
+                        </nav><!-- End .main-nav -->
+                    </div><!-- End .header-left -->
+
+                    <div class="header-right">
+                        <!-- <div class="header-search">
                           <a href="#" class="search-toggle" role="button" title="Search"><i class="icon-search"></i></a>
                           <form action="#" method="get">
                               <div class="header-search-wrapper">
@@ -103,32 +106,71 @@
                               </div>
                           </form>
                       </div> -->
-                      <div class="wishlist">
-                        <span> <i class="fa fa-sign-in"></i> </span>
-                        <button type="submit" class="btn btn-outline-primary-2 login">
-                            <span>Log in</span>
 
-                        </button>
-                        
-                          
-                      </div><!-- End .compare-dropdown -->
+                        @auth
+                        <div class="wishlist add-product-btn">
+                            <span> <i class="fa fa-sign-in"></i> </span>
+                            <button type="submit" class="btn btn-outline-primary-2 ">
+                                <span class="pr-2"><img src="{{ URL::to('public/assets/images/icons/add-icon.png') }}"></span> <span>Add Product</span>
 
-                      <div class="dropdown cart-dropdown wishlist">
-                        <span> <i class="fa fa-user-circle"></i> </span>
-                        <button type="submit" class="btn btn-outline-primary-2 register">
-                            <span>Register</span>
+                            </button>
 
-                        </button>
 
-                         
-                      </div><!-- End .cart-dropdown -->
-                  </div><!-- End .header-right -->
-              </div><!-- End .container -->
-          </div><!-- End .header-middle -->
-      </header><!-- End .header -->
+                        </div><!-- End .compare-dropdown -->
+                        <div class="pr-4 pl-4">
+                            <a href="#" class="pr-3"> <img src="{{ URL::to('public/assets/images/icons/ring.png') }}" alt="ring-icon"></a>
+                            <a href="#"> <img src="{{ URL::to('public/assets/images/icons/message-icon.png') }}" alt="message-icon"></a>
+                        </div>
+
+                        <div class="dropdown cart-dropdown wishlist pl-0 pr-0">
+                            <div class="dropdown compare-dropdown">
+                                <a href="javascript:void(0)" class="dropdown-toggle">
+                                    <img src="{{ URL::to('public/assets/images/dp.png') }}" alt="dp" width="40px" height="40px">
+
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right show_element_dropdown update-custom-dropdown">
+                                    <ul class="compare-products">
+                                        <li class="compare-product">
+                                            <form method="POST" action="{{ route('logout') }}">
+                                                @csrf
+                                                <button type="submit" class="compare-product-title show_element_dropdown_a pt-1">Logout &nbsp <i class="fa fa-sign-out-alt" aria-hidden="true"></i></button>
+
+                                            </form>
+                                        </li>
+                                    </ul>
+
+                                </div><!-- End .dropdown-menu -->
+                            </div>
+                        </div><!-- End .cart-dropdown -->
+                        @endauth
+                        @guest
+                        <div class="wishlist">
+                            <span> <i class="fa fa-sign-in"></i> </span>
+                            <button type="submit" class="btn btn-outline-primary-2 login">
+                                <span>Log in</span>
+
+                            </button>
+
+
+                        </div><!-- End .compare-dropdown -->
+
+                        <div class="dropdown cart-dropdown wishlist">
+                            <span> <i class="fa fa-user-circle"></i> </span>
+                            <button type="submit" class="btn btn-outline-primary-2 register">
+                                <span>Register</span>
+
+                            </button>
+
+
+                        </div><!-- End .cart-dropdown -->
+                        @endguest
+                    </div><!-- End .header-right -->
+                </div><!-- End .container -->
+            </div><!-- End .header-middle -->
+        </header><!-- End .header -->
 
         <main class="main">
-            
+
             <div class="newsletter">
                 <div class="background" style="background-image: url(public/assets/images/slider.png); background-repeat: no-repeat; background-size: cover;">
                     <div class="subscribe">
@@ -148,73 +190,73 @@
                     </div>
                 </div>
             </div>
-            
-                <div class="container">
-                	<h2 class="title text-center mb-3 mt-3">Categories</h2><!-- End .title mb-2 -->
 
-                	<div class="row">
-                		<div class="col-md-6">
-                			<div class="banner">
-	                			<a href="#">
-	                				<img src="{{ URL::to('public/assets/images/categories/category 1.png') }}" alt="Category1">
-	                			</a>
+            <div class="container">
+                <h2 class="title text-center mb-3 mt-3">Categories</h2><!-- End .title mb-2 -->
 
-	                			<div class="banner-content">
-	                				
-	                				<h3 class="banner-title text-white">Marine & Offshore</h3><!-- End .banner-title -->
-	                				
-	                			</div><!-- End .banner-content -->
-                			</div><!-- End .banner -->
-                		</div><!-- End .col-md-6 -->
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="banner">
+                            <a href="#">
+                                <img src="{{ URL::to('public/assets/images/categories/category 1.png') }}" alt="Category1">
+                            </a>
 
-                		<div class="col-md-6">
-                			<div class="banner">
-	                			<a href="#">
-	                				<img src="{{ URL::to('public/assets//images/categories/category 2.png') }}" alt="Banner">
-	                			</a>
+                            <div class="banner-content">
 
-	                			<div class="banner-content">
-	                				
-	                				<h3 class="banner-title text-white">Inland Navigation</h3><!-- End .banner-title -->
-	                				
-	                			</div><!-- End .banner-content -->
-                			</div><!-- End .banner -->
-                		</div><!-- End .col-md-6 -->
+                                <h3 class="banner-title text-white">Marine & Offshore</h3><!-- End .banner-title -->
 
-                        <div class="col-md-6">
-                			<div class="banner">
-	                			<a href="#">
-	                				<img src="{{ URL::to('public/assets/images/categories/category 3.png') }}" alt="Category1">
-	                			</a>
+                            </div><!-- End .banner-content -->
+                        </div><!-- End .banner -->
+                    </div><!-- End .col-md-6 -->
 
-	                			<div class="banner-content">
-	                				
-	                				<h3 class="banner-title text-white">Ports</h3><!-- End .banner-title -->
-	                				
-	                			</div><!-- End .banner-content -->
-                			</div><!-- End .banner -->
-                		</div><!-- End .col-md-6 -->
+                    <div class="col-md-6">
+                        <div class="banner">
+                            <a href="#">
+                                <img src="{{ URL::to('public/assets//images/categories/category 2.png') }}" alt="Banner">
+                            </a>
 
-                		<div class="col-md-6">
-                			<div class="banner">
-	                			<a href="#">
-	                				<img src="{{ URL::to('public/assets/images/categories/category 4.png') }}" alt="Banner">
-	                			</a>
+                            <div class="banner-content">
 
-	                			<div class="banner-content">
-	                				
-	                				<h3 class="banner-title text-white">Construction</h3><!-- End .banner-title -->
-	                				
-	                			</div><!-- End .banner-content -->
-                			</div><!-- End .banner -->
-                		</div><!-- End .col-md-6 -->
-                	</div><!-- End .row -->
+                                <h3 class="banner-title text-white">Inland Navigation</h3><!-- End .banner-title -->
 
-                	<hr class="mb-4">
+                            </div><!-- End .banner-content -->
+                        </div><!-- End .banner -->
+                    </div><!-- End .col-md-6 -->
 
-                	
-                </div>
-                <div class="container">
+                    <div class="col-md-6">
+                        <div class="banner">
+                            <a href="#">
+                                <img src="{{ URL::to('public/assets/images/categories/category 3.png') }}" alt="Category1">
+                            </a>
+
+                            <div class="banner-content">
+
+                                <h3 class="banner-title text-white">Ports</h3><!-- End .banner-title -->
+
+                            </div><!-- End .banner-content -->
+                        </div><!-- End .banner -->
+                    </div><!-- End .col-md-6 -->
+
+                    <div class="col-md-6">
+                        <div class="banner">
+                            <a href="#">
+                                <img src="{{ URL::to('public/assets/images/categories/category 4.png') }}" alt="Banner">
+                            </a>
+
+                            <div class="banner-content">
+
+                                <h3 class="banner-title text-white">Construction</h3><!-- End .banner-title -->
+
+                            </div><!-- End .banner-content -->
+                        </div><!-- End .banner -->
+                    </div><!-- End .col-md-6 -->
+                </div><!-- End .row -->
+
+                <hr class="mb-4">
+
+
+            </div>
+            <div class="container">
                 <div class="stores mb-4 mb-lg-5">
                     <h2 class="title text-center mb-3">Featured Products </h2><!-- End .title text-center mb-2 -->
 
@@ -230,17 +272,17 @@
                                     <div class="col-sm-7 col-xl-6">
                                         <div class="store-content">
                                             <h3 class="store-title">Winch - CAT</h3><!-- End .store-title -->
-                                            
+
                                             <div>
-                                                    <span>Condition:</span> <span>Used</span> &nbsp;&nbsp;
-                                                    <span>Brand:</span> <span>CAT</span>
-                                                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.</p>
-                                                    <span>Winch type:</span> <span style="padding-right: 20%;" class="float-right">Type</span> <br>
-                                                    <span>Load capacity:</span> <span style="padding-right: 20%;" class="float-right">1000 Kg</span> <br>
-                                                    <span>Line length:</span> <span style="padding-right: 20%;" class="float-right">100 m</span><br>
+                                                <span>Condition:</span> <span>Used</span> &nbsp;&nbsp;
+                                                <span>Brand:</span> <span>CAT</span>
+                                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.</p>
+                                                <span>Winch type:</span> <span style="padding-right: 20%;" class="float-right">Type</span> <br>
+                                                <span>Load capacity:</span> <span style="padding-right: 20%;" class="float-right">1000 Kg</span> <br>
+                                                <span>Line length:</span> <span style="padding-right: 20%;" class="float-right">100 m</span><br>
                                             </div>
 
-                                            
+
                                         </div><!-- End .store-content -->
                                     </div><!-- End .col-xl-6 -->
                                 </div><!-- End .row -->
@@ -266,7 +308,7 @@
                                                 <span>Winch type:</span> <span style="padding-right: 20%;" class="float-right">Type</span> <br>
                                                 <span>Load capacity:</span> <span style="padding-right: 20%;" class="float-right">1000 Kg</span> <br>
                                                 <span>Line length:</span> <span style="padding-right: 20%;" class="float-right">100 m</span><br>
-                                        </div>
+                                            </div>
                                         </div><!-- End .store-content -->
                                     </div><!-- End .col-xl-6 -->
                                 </div><!-- End .row -->
@@ -274,45 +316,45 @@
                         </div><!-- End .col-lg-6 -->
                     </div><!-- End .row -->
                 </div>
-                </div>
-                            
-            
+            </div>
+
+
         </main><!-- End .main -->
 
 
-           
-            
-          
+
+
+
 
 
         <footer class="footer ">
-                    <div class="container">
-                        <div class="row" style="padding-bottom:4%; padding-top:4%;">
-							<div class="col-md-3">
+            <div class="container">
+                <div class="row" style="padding-bottom:4%; padding-top:4%;">
+                    <div class="col-md-3">
 
-                                <img src="{{ URL::to('public/assets/images/demos/demo-21/logo-footer.png') }}" class="footer-logo m-auto" alt="Footer Logo" width="100" height="25">
-                          </div>
+                        <img src="{{ URL::to('public/assets/images/demos/demo-21/logo-footer.png') }}" class="footer-logo m-auto" alt="Footer Logo" width="100" height="25">
+                    </div>
 
-						   <div class="col-md-6 custom-footer-padding ">
+                    <div class="col-md-6 custom-footer-padding ">
 
-                                   <a class="pr-4" href="#">Market Place</a>
-                                     <a class="pr-4" href="#">Sell Product</a>
-                                    <a class="pr-4" href="#">About Us</a>
-                                     <a class="pr-4" href="#">Terms & Conditions</a>
-                                     <a href="#">Privacy Policy</a>
+                        <a class="pr-4" href="#">Market Place</a>
+                        <a class="pr-4" href="#">Sell Product</a>
+                        <a class="pr-4" href="#">About Us</a>
+                        <a class="pr-4" href="#">Terms & Conditions</a>
+                        <a href="#">Privacy Policy</a>
 
-							</div>
+                    </div>
 
-                            <div class="col-md-3">
-                                <div class="social-icons social-icons-color">
-                                    <a href="#" class="social-icon social-facebook" title="Facebook" target="_blank"><img src="{{ URL::to('public/assets/images/facebook.png') }}"></a>
-                                    <a href="#" class="social-icon social-twitter" title="Twitter" target="_blank"><img src="{{ URL::to('public/assets/images/linkdin.png') }}"></a>
-                                    <a href="#" class="social-icon social-instagram" title="Instagram" target="_blank"><img src="{{ URL::to('public/assets/images/msg.png') }}"></a>
-                                </div><!-- End .soial-icons -->
-							            </div>
+                    <div class="col-md-3">
+                        <div class="social-icons social-icons-color">
+                            <a href="#" class="social-icon social-facebook" title="Facebook" target="_blank"><img src="{{ URL::to('public/assets/images/facebook.png') }}"></a>
+                            <a href="#" class="social-icon social-twitter" title="Twitter" target="_blank"><img src="{{ URL::to('public/assets/images/linkdin.png') }}"></a>
+                            <a href="#" class="social-icon social-instagram" title="Instagram" target="_blank"><img src="{{ URL::to('public/assets/images/msg.png') }}"></a>
+                        </div><!-- End .soial-icons -->
+                    </div>
 
-                    </div><!-- End .container -->
-                </div><!-- End .footer-bottom -->
+                </div><!-- End .container -->
+            </div><!-- End .footer-bottom -->
         </footer><!-- End .footer -->
 
     </div><!-- End .page-wrapper -->
@@ -382,11 +424,11 @@
     <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
     <script src="{{ URL::to('public/assets/js/main.js') }}"></script>
     <script>
-        $('.login').on('click',function(){
+        $('.login').on('click', function() {
             window.location.href = "{{ route('login') }}";
         })
 
-        $('.register').on('click',function(){
+        $('.register').on('click', function() {
             window.location.href = "{{ route('register') }}";
         })
     </script>
@@ -395,4 +437,5 @@
 
 
 <!-- molla/login.html  22 Nov 2019 10:04:03 GMT -->
+
 </html>

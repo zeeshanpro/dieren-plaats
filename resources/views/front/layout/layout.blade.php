@@ -117,7 +117,7 @@ $publicPath    = env('ASSETS_PATH');
                                       <li><a class="dropdown-item" href="{{ route('createad_showkinds') }}">{{__('Create Ad')}}</a></li>
                                       <li><a class="dropdown-item" href="{{ route('messages') }}">{{__('Messages')}} 
                                          @if($unReadConversations>0)
-    <span class="badge badge-primary text-danger" style="background: beige;">{{$unReadConversations}} New</span>
+                                              <span class="badge badge-primary text-danger" style="background: beige;">{{$unReadConversations}} New</span>
                                         @endif
 
                                       </a></li>

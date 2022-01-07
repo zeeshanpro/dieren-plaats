@@ -2,7 +2,7 @@
 <html lang="en">
 
 
-<!-- molla/login.html  22 Nov 2019 10:04:03 GMT -->
+
 
 <head>
     <title>Remora Services</title>
@@ -142,8 +142,9 @@
                         @guest
                         <div class="wishlist">
                             <span> <i class="fa fa-sign-in"></i> </span>
-                            <button type="submit" class="btn btn-outline-primary-2 login">
-                                <span>Log in</span>
+                            
+                            <button type="submit" class="btn btn-primary-custom-hdr-before">Login</button>
+                               
 
                             </button>
 
@@ -152,8 +153,7 @@
 
                         <div class="dropdown cart-dropdown wishlist">
                             <span> <i class="fa fa-user-circle"></i> </span>
-                            <button type="submit" class="btn btn-outline-primary-2 register">
-                                <span>Register</span>
+                            <button type="submit" class="btn btn-primary-custom-hdr">Register</button>
 
                             </button>
 
@@ -232,7 +232,7 @@
                 </div><!-- End .container -->
             </div><!-- End .footer-bottom -->
         </footer><!-- End .footer -->
-
+        
 
     </div><!-- End .page-wrapper -->
     <button id="scroll-top" title="Back to Top"><i class="icon-arrow-up"></i></button>
@@ -313,6 +313,6 @@
 </body>
 
 
-<!-- molla/login.html  22 Nov 2019 10:04:03 GMT -->
+
 
 </html>

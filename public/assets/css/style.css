@@ -617,6 +617,10 @@ blockquote.text-white cite span {
 position:absolute;margin-top:-3.5rem;margin-left:2rem;
 opacity: 50%;
 }
+.password_icon_hide{
+	position:absolute;margin-top:-3.5rem;margin-left:40rem;
+	opacity: 50%;
+	}
 }
 
 .row {
@@ -829,11 +833,7 @@ opacity: 50%;
 	}
 }
 
-@media screen and (min-width: 1280px) {
-	.container {
-		max-width: 1200px
-	}
-}
+
 
 @media screen and (min-width: 1600px) {
 	.container-fluid {
@@ -1194,7 +1194,16 @@ opacity: 50%;
 }
 
 .header-middle {
-	border-bottom: .1rem solid #f4f4f4
+	/* border-bottom: .1rem solid #f4f4f4 */
+	position: relative;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1040;
+    animation-name: fixedHeader;
+    animation-duration: .4s;
+    background-color: #fff;
+    box-shadow: 0 3px 6px rgb(51 51 51 / 5%);
 }
 
 .header-middle .menu>li>a {
@@ -2184,7 +2193,10 @@ position:absolute;margin-top:-3.5rem;margin-left:2rem;
 opacity: 50%;
 }
 
-
+.password_icon_hide{
+	position:absolute;margin-top:-3.5rem;margin-left:48rem;
+	opacity: 50%;
+	}
 
 }
 
@@ -5318,6 +5330,17 @@ p {
 	.header-middle .menu>li>a {
 		padding: 3.2rem 2.5rem !important;
 	}
+	
+	.social-icons a img{
+		width: 80% !important;
+	}
+	.custom-footer-menu a {
+		font-weight: 500;
+		padding-right: 2rem !important;
+	}
+	.custom-footer-menu a:nth-child(1) {
+		padding-left: 0rem !important;
+	}
 }
 
 @media screen and (max-width: 1132px) {
@@ -5592,6 +5615,19 @@ p {
 	}
 	.header-13 .header-search-extended {
 		margin-right: 17rem
+	}
+	.container {
+		max-width: 1200px
+	}
+	.social-icons a img{
+		width: 100% !important;
+	}
+	.custom-footer-menu a {
+		font-weight: 500;
+		padding-right: 3rem !important;
+	}
+	.custom-footer-menu a:nth-child(1) {
+		padding-left: 4rem !important;
 	}
 }
 
@@ -10354,11 +10390,14 @@ p {
 	border: none
 }
 
-.social-icons-color .social-icon:not(:last-child),
+/* .social-icons-color .social-icon:not(:last-child),
 .social-icons-simple .social-icon:not(:last-child) {
 	margin-right: 2rem
+} */
+.social-icons-color .social-icon,
+.social-icons-simple .social-icon {
+	margin-left: 1rem
 }
-
 .social-label {
 	margin-bottom: 0;
 	margin-right: 2rem
@@ -19978,10 +20017,7 @@ button:focus {
 	content: '\f7e3'
 }
 
-.custom-footer-menu a{
-	font-weight: 500;
-	padding-right: 2rem !important;
-}
+
 .wishlist i{
 
 	color: #1091bd;
@@ -20222,15 +20258,17 @@ font-weight: bold;
 	  background-color: #1091BD;
 	  color: white;
 	  border-radius: 2rem;
+	  min-width: 120px !important;
 	
   }
   .btn-primary-custom-hdr {
 	background-color: #1091BD;
 	color: white;
 	border-radius: 3rem;
-	font-size: 16px;
+	font-size: 14px;
 	padding-top: 1.5rem;
 	padding-bottom: 1.5rem;
+	min-width: 120px !important;
   
 }
 .btn-primary-custom-hdr:hover {
@@ -20242,10 +20280,11 @@ font-weight: bold;
 	background-color: transparent;
 	color: #1091BD;
 	border-radius: 3rem;
-	font-size: 16px;
+	font-size: 14px;
 	padding-top: 1.5rem;
 	padding-bottom: 1.5rem;
 	border: 1px solid #1091BD;
+	min-width: 120px !important;
   
 }
 .btn-primary-custom-hdr-before:hover {

@@ -33,13 +33,14 @@
                                 <label for="singin-password-2">Password</label>
                                 <input type="password" class="form-control" id="singin-password-2" name="password" required style="padding-left:4rem;">
             <span class="password_icon" ><i class="fa fa-lock" aria-hidden="true"></i></span>
+            <span class="password_icon_hide" ><i class="fa fa-eye-slash" aria-hidden="true"></i></span>
 
                             </div><!-- End .form-group -->
                             <div class="form-footer">
                             <a href="{{route('show_forgot_password')}}" class="forgot-link">Forgot Password?</a>
                         </div>
                             <div class="form-footer">
-                                <button type="submit" class="btn btn-outline-primary-2">
+                                <button type="submit" class="btn btn-outline-primary-2 active mt-1">
                                     <span>LOG IN</span>
 
                                 </button>

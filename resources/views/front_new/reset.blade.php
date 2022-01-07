@@ -3,6 +3,7 @@
 
 
 <!-- molla/login.html  22 Nov 2019 10:04:03 GMT -->
+
 <head>
     <title>Remora Services</title>
     <meta charset="UTF-8">
@@ -33,67 +34,64 @@
     <link rel="stylesheet" href="{{ URL::to('public/assets/css/skins/skin-demo-21.css') }}">
     <link rel="stylesheet" href="{{ URL::to('public/assets/css/demos/demo-21.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- <link rel="stylesheet" href="assets/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/fontawesome.min.css"> -->
-    
-    
 
 </head>
+
 <body>
     <div class="page-wrapper">
-      <header class="header">
+        <header class="header">
 
-          <div class="header-middle sticky-header">
-              <div class="container">
-                  <div class="header-left">
-                      <button class="mobile-menu-toggler">
-                          <span class="sr-only">Toggle mobile menu</span>
-                          <i class="icon-bars"></i>
-                      </button>
+            <div class="header-middle sticky-header">
+                <div class="container">
+                    <div class="header-left">
+                        <button class="mobile-menu-toggler">
+                            <span class="sr-only">Toggle mobile menu</span>
+                            <i class="icon-bars"></i>
+                        </button>
 
-                      <a href="index.html" class="logo">
-                          <img src="{{ URL::to('public/assets/images/demos/demo-21/logo.png') }}" alt="Remora Logo" width="100" height="25">
-                      </a>
+                        <a href="index.html" class="logo">
+                            <img src="{{ URL::to('public/assets/images/demos/demo-21/logo.png') }}" alt="Remora Logo" width="100" height="25">
+                        </a>
 
-                      <nav class="main-nav">
-                          <ul class="menu sf-arrows">
-                               <li>
-                                  <a href="product.html" class="sf-with-ul">Categories</a>
+                        <nav class="main-nav">
+                            <ul class="menu sf-arrows">
+                                <li>
+                                    <a href="product.html" class="sf-with-ul">Categories</a>
 
-                                  <div class="megamenu megamenu-sm">
-                                      <div class="row no-gutters">
-                                          <div class="col-md-6">
-                                              <div class="menu-col">
-                                                  <div class="menu-title">Products</div><!-- End .menu-title -->
-                                                  <ul>
-                                                      <li><a href="#">prodcut 1</a></li>
-                                                      <li><a href="#">prodcut 2</a></li>
-                                                      <li><a href="#">prodcut 3</a></li>
-                                                      <li><a href="#">prodcut 4</a></li>
-                                                      <li><a href="#">prodcut 5</a></li>
-                                                      <li><a href="#">prodcut 6</a></li>
-                                                      <li><a href="#">prodcut 7</a></li>
-                                                  </ul>
-                                              </div><!-- End .menu-col -->
-                                          </div><!-- End .col-md-6 -->
-                                      </div><!-- End .row -->
-                                  </div><!-- End .megamenu megamenu-sm -->
-                              </li>
-                              <li>
-                                  <a href="#"  >About us</a>
-                              </li>
-                              <li>
-                                  <a href="#"  >Sell Equipment</a>
-                              </li>
-                              <li>
-                                  <a href="#"  >Advertising</a>
-                              </li>
-                          </ul><!-- End .menu -->
-                      </nav><!-- End .main-nav -->
-                  </div><!-- End .header-left -->
+                                    <div class="megamenu megamenu-sm">
+                                        <div class="row no-gutters">
+                                            <div class="col-md-6">
+                                                <div class="menu-col">
+                                                    <div class="menu-title">Products</div><!-- End .menu-title -->
+                                                    <ul>
+                                                        <li><a href="#">prodcut 1</a></li>
+                                                        <li><a href="#">prodcut 2</a></li>
+                                                        <li><a href="#">prodcut 3</a></li>
+                                                        <li><a href="#">prodcut 4</a></li>
+                                                        <li><a href="#">prodcut 5</a></li>
+                                                        <li><a href="#">prodcut 6</a></li>
+                                                        <li><a href="#">prodcut 7</a></li>
+                                                    </ul>
+                                                </div><!-- End .menu-col -->
+                                            </div><!-- End .col-md-6 -->
+                                        </div><!-- End .row -->
+                                    </div><!-- End .megamenu megamenu-sm -->
+                                </li>
+                                <li>
+                                    <a href="#">About us</a>
+                                </li>
+                                <li>
+                                    <a href="#">Sell Equipment</a>
+                                </li>
+                                <li>
+                                    <a href="#">Advertising</a>
+                                </li>
+                            </ul><!-- End .menu -->
+                        </nav><!-- End .main-nav -->
+                    </div><!-- End .header-left -->
 
-                  <div class="header-right">
-                      <!-- <div class="header-search">
+                    <div class="header-right">
+                        <!-- <div class="header-search">
                           <a href="#" class="search-toggle" role="button" title="Search"><i class="icon-search"></i></a>
                           <form action="#" method="get">
                               <div class="header-search-wrapper">
@@ -102,148 +100,132 @@
                               </div>
                           </form>
                       </div> -->
-                      <div class="wishlist">
-                        <button type="submit" class="btn btn-outline-primary-2 login">
-                            <span>Log in</span>
+                        <div class="wishlist">
+                            <button type="submit" class="btn btn-outline-primary-2 login">
+                                <span>Log in</span>
 
-                        </button>
-                        
-                          
-                      </div><!-- End .compare-dropdown -->
+                            </button>
 
-                      <div class="dropdown cart-dropdown">
-                        <button type="submit" class="btn btn-outline-primary-2 register">
-                            <span>Register</span>
 
-                        </button>
+                        </div><!-- End .compare-dropdown -->
 
-                         
-                      </div><!-- End .cart-dropdown -->
-                  </div><!-- End .header-right -->
-              </div><!-- End .container -->
-          </div><!-- End .header-middle -->
-      </header><!-- End .header -->
+                        <div class="dropdown cart-dropdown">
+                            <button type="submit" class="btn btn-outline-primary-2 register">
+                                <span>Register</span>
+
+                            </button>
+
+
+                        </div><!-- End .cart-dropdown -->
+                    </div><!-- End .header-right -->
+                </div><!-- End .container -->
+            </div><!-- End .header-middle -->
+        </header><!-- End .header -->
 
         <main class="main">
-            
-
             <div class="login-page bg-image pt-5 pb-5" style="background-color: white;">
-            	<div class="container">
-            		<div class="form-box">
-            			<div class="form-tab">
-	            			<ul class="nav nav-pills nav-fill" role="tablist">
-							    <li class="nav-item">
-                    <span class="nav-link">Create a free account</span>
-							        <!-- <a class="nav-link" id="signin-tab-2" data-toggle="tab" href="#signin-2" role="tab" aria-controls="signin-2" aria-selected="false">Welcome Back</a> -->
-							    </li>
+                <div class="container">
+                    <div class="form-box">
+                        <div class="form-tab">
+                            <ul class="nav nav-pills nav-fill" role="tablist">
+                                <li class="nav-item">
+                                    <span class="nav-link">Forgot Password</span>
+                                    <!-- <a class="nav-link" id="signin-tab-2" data-toggle="tab" href="#signin-2" role="tab" aria-controls="signin-2" aria-selected="false">Welcome Back</a> -->
+                                </li>
 
-							</ul>
+                            </ul>
                             <div class="text-center">
-                                <span>Register to Remora Services</span>
+                                <span>Enter your email to reset password </span>
                             </div>
-							<div class="tab-content">
-
-							    <div class="tab-pane fade show active" id="signin-2" role="tabpanel" aria-labelledby="register-tab-2">
-							    	<form method="post" action="{{ route('createuser') }}">
-                                    @csrf
-                                        <input type="hidden" name="usertype" value="Breeder">
-							    		<div class="form-group">
-							    			<label for="singin-email-2">Full name</label>
-							    			&nbsp;<input type="text" class="form-control"  name="name" required style="padding-left:4rem;">
-                        <span class="email_icon" ><i class="fa fa-user-circle" aria-hidden="true"></i></span>
-							    		</div>
-
-							    		
+                            <div class="tab-content">
+                                @error('msg') <small class="text-danger">{{$message}}</small> @enderror
+                                <div class="row">
+                                    <x-notification />
+                                </div>
+                                <div class="tab-pane fade show active" id="signin-2" role="tabpanel" aria-labelledby="register-tab-2">
+                                    <form method="post" action="{{route('update_forgot_password')}}">
+                                        @csrf
+                                        <input type="hidden" name="token" value="{{ $token }}">
 
                                         <div class="form-group">
-							    			<label for="singin-email-2">Company name</label>
-							    			&nbsp;<input type="text" class="form-control" name="comapny" required style="padding-left:4rem;">
-                        <span class="email_icon" ><i class="fa fa-building" aria-hidden="true"></i></span>
-							    		</div>
+                                            <label for="email">Email</label>
+                                            &nbsp;<input type="text" class="form-control" id="email" name="email" required style="padding-left:4rem;">
+                                            <span class="email_icon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                                        </div>
 
                                         <div class="form-group">
-							    			<label for="singin-email-2">Country</label>
-							    			&nbsp;<input type="text" class="form-control"  name="country" required style="padding-left:4rem;">
-                        <span class="email_icon" ><i class="fa fa-flag" aria-hidden="true"></i></span>
-							    		</div>
+                                            <label for="singin-password-2">Password</label>
+                                            <input type="password" class="form-control @error('password') is-invalid @enderror" id="password" name="password" required style="padding-left:4rem;">
+                                            <span class="password_icon"><i class="fa fa-lock" aria-hidden="true"></i></span>
+
+                                            @error('password')
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $message }}</strong>
+                                            </span>
+                                            @enderror
+                                        </div>
 
                                         <div class="form-group">
-							    			<label for="singin-email-2">Phone Number</label>
-							    			&nbsp;<input type="text" class="form-control"  name="phone" required style="padding-left:4rem;">
-                        <span class="email_icon" ><i class="fa fa-phone" aria-hidden="true"></i></span>
-							    		</div>
-                                       
-                                        
-                                        
-
-                                        <div class="form-group">
-							    			<label for="singin-email-2">Email</label>
-							    			&nbsp;<input type="text" class="form-control"  name="email" required style="padding-left:4rem;">
-                        <span class="email_icon" ><i class="fa fa-envelope" aria-hidden="true"></i></span>
-							    		</div>
-
-                                        <div class="form-group">
-							    			<label for="singin-password-2">Password</label>
-							    			<input type="password" class="form-control"  name="password" required style="padding-left:4rem;">
-                        <span class="password_icon" ><i class="fa fa-lock" aria-hidden="true"></i></span>
-
-							    		</div><!-- End .form-group -->
+                                            <label for="singin-password-2">Confirm Password</label>
+                                            <input type="password" class="form-control" id="password-confirm" name="password_confirmation" required style="padding-left:4rem;">
+                                            <span class="password_icon"><i class="fa fa-lock" aria-hidden="true"></i></span>
+                                            @error('password')
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $message }}</strong>
+                                            </span>
+                                            @enderror
+                                        </div>
 
                                         <div class="form-footer">
-                                        <a href="{{route('show_forgot_password')}}" class="forgot-link">Forgot Password?</a>
-                                    </div>
-							    		<div class="form-footer">
-							    			<button type="submit" class="btn btn-outline-primary-2">
-			                					<span>Register</span>
+                                            <button type="submit" class="btn btn-outline-primary-2">
+                                                <span>Submit</span>
 
-			                				</button>
+                                            </button>
+                                        </div><!-- End .form-footer -->
 
+                                    </form>
 
-							    		</div><!-- End .form-footer -->
-                                        <div class="m-4 text-center">
-                                        
-                                            <span>Have account?</span> <a href="#">Log in</a>
-                                        </div>
-							    	</form>
+                                </div><!-- .End .tab-pane -->
+                            </div><!-- End .tab-content -->
+                        </div><!-- End .tab-content -->
+                    </div><!-- End .form-tab -->
+                </div><!-- End .form-box -->
+            </div><!-- End .container -->
+    </div>
 
-							    </div><!-- .End .tab-pane -->
-							</div><!-- End .tab-content -->
-							</div><!-- End .tab-content -->
-						</div><!-- End .form-tab -->
-            		</div><!-- End .form-box -->
-            	</div><!-- End .container -->
-            </div><!-- End .login-page section-bg -->
-        </main><!-- End .main -->
+    <!-- End .container -->
+    </div><!-- End .login-page section-bg -->
+    </main><!-- End .main -->
 
-        <footer class="footer ">
-                    <div class="container">
-                        <div class="row" style="padding-bottom:4%; padding-top:4%;">
-							<div class="col-md-3">
+    <footer class="footer ">
+        <div class="container">
+            <div class="row" style="padding-bottom:4%; padding-top:4%;">
+                <div class="col-md-3">
 
-                                <img src="{{ URL::to('public/assets/images/demos/demo-21/logo-footer.png') }}" class="footer-logo m-auto" alt="Footer Logo" width="100" height="25">
-                          </div>
+                    <img src="assets/images/demos/demo-21/logo-footer.png" class="footer-logo m-auto" alt="Footer Logo" width="100" height="25">
+                </div>
 
-						   <div class="col-md-6 custom-footer-padding ">
+                <div class="col-md-6 custom-footer-padding ">
 
-                                   <a class="pr-4" href="#">Market Place</a>
-                                     <a class="pr-4" href="#">Sell Product</a>
-                                    <a class="pr-4" href="#">About Us</a>
-                                     <a class="pr-4" href="#">Terms & Conditions</a>
-                                     <a href="#">Privacy Policy</a>
+                    <a class="pr-4" href="#">Market Place</a>
+                    <a class="pr-4" href="#">Sell Product</a>
+                    <a class="pr-4" href="#">About Us</a>
+                    <a class="pr-4" href="#">Terms & Conditions</a>
+                    <a href="#">Privacy Policy</a>
 
-							</div>
+                </div>
 
-                            <div class="col-md-3">
-                                <div class="social-icons social-icons-color">
-                                    <a href="#" class="social-icon social-facebook" title="Facebook" target="_blank"><img src="{{ URL::to('public/assets/images/facebook.png') }}"></a>
-                                    <a href="#" class="social-icon social-twitter" title="Twitter" target="_blank"><img src="{{ URL::to('public/assets/images/linkdin.png') }}"></a>
-                                    <a href="#" class="social-icon social-instagram" title="Instagram" target="_blank"><img src="{{ URL::to('public/assets/images/msg.png') }}"></a>
-                                </div><!-- End .soial-icons -->
-							            </div>
+                <div class="col-md-3">
+                    <div class="social-icons social-icons-color">
+                        <a href="#" class="social-icon social-facebook" title="Facebook" target="_blank"><img src="assets/images/facebook.png"></a>
+                        <a href="#" class="social-icon social-twitter" title="Twitter" target="_blank"><img src="assets/images/linkdin.png"></a>
+                        <a href="#" class="social-icon social-instagram" title="Instagram" target="_blank"><img src="assets/images/msg.png"></a>
+                    </div><!-- End .soial-icons -->
+                </div>
 
-                    </div><!-- End .container -->
-                </div><!-- End .footer-bottom -->
-        </footer><!-- End .footer -->
+            </div><!-- End .container -->
+        </div><!-- End .footer-bottom -->
+    </footer><!-- End .footer -->
 
     </div><!-- End .page-wrapper -->
     <button id="scroll-top" title="Back to Top"><i class="icon-arrow-up"></i></button>
@@ -343,7 +325,7 @@
                                                 <label class="custom-control-label" for="signin-remember">Remember Me</label>
                                             </div><!-- End .custom-checkbox -->
 
-                                            <a href="{{route('show_forgot_password')}}" class="forgot-link">Forgot Your Password?</a>
+                                            <a href="#" class="forgot-link">Forgot Your Password?</a>
                                         </div><!-- End .form-footer -->
                                     </form>
                                     <div class="form-choice">
@@ -415,21 +397,21 @@
     </div><!-- End .modal -->
 
     <!-- Plugins JS File -->
-    <script src="{{ URL::to('public/assets/js/jquery.min.js') }}"></script>
-    <script src="{{ URL::to('public/assets/js/bootstrap.bundle.min.js') }}"></script>
-    <script src="{{ URL::to('public/assets/js/jquery.hoverIntent.min.js') }}"></script>
-    <script src="{{ URL::to('public/assets/js/jquery.waypoints.min.js') }}"></script>
-    <script src="{{ URL::to('public/assets/js/superfish.min.js') }}"></script>
-    <script src="{{ URL::to('public/assets/js/owl.carousel.min.js') }}"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jquery.hoverIntent.min.js"></script>
+    <script src="assets/js/jquery.waypoints.min.js"></script>
+    <script src="assets/js/superfish.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
     <!-- Main JS File -->
     <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
-    <script src="{{ URL::to('public/assets/js/main.js') }}"></script>
+    <script src="assets/js/main.js"></script>
     <script>
-        $('.login').on('click',function(){
+        $('.login').on('click', function() {
             window.location.href = "{{ route('login') }}";
         })
 
-        $('.register').on('click',function(){
+        $('.register').on('click', function() {
             window.location.href = "{{ route('register') }}";
         })
     </script>
@@ -437,4 +419,5 @@
 
 
 <!-- molla/login.html  22 Nov 2019 10:04:03 GMT -->
+
 </html>

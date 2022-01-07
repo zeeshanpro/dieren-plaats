@@ -17,7 +17,7 @@ class ResetPasswordController extends Controller
                         ->where('token' ,'=', $token)
                         ->first();
         if($updatePassword){
-            return view('front.forgotpass.reset', ['token' => $token]);   
+            return view('front_new.reset', ['token' => $token]);   
         } else {
             return redirect()->route('base_url');
         }

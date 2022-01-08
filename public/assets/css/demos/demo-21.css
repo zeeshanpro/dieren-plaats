@@ -378,7 +378,7 @@
     font-size:1.6rem
 }
 .product-price{
-    justify-content:center
+    justify-content:left
 }
 .ratings-container{
     display:flex;
@@ -814,7 +814,7 @@ footer.footer a:hover,footer.footer a:focus{
 }
 .mmenu-active .mobile-menu-container{
     visibility:visible;
-    transform:translateX(83px)
+    transform:translateX(280px)
 }
 @media screen and (max-width: 991px){
     .banner-container{

@@ -96,9 +96,9 @@ a:focus {
 .btn-primary:not(:disabled):not(.disabled):active,
 .btn-primary:not(:disabled):not(.disabled).active,
 .show>.btn-primary.dropdown-toggle {
-	color: #fff;
-	background-color: #a6c76c;
-	border-color: #a6c76c;
+	color: #1091bd;
+	background-color: #fff;
+	border-color: #fff;
 	box-shadow: none
 }
 
@@ -754,7 +754,7 @@ a:focus {
 }
 
 .product-price {
-	color: #1091bd
+	color: #000
 }
 
 .product-label.label-primary {

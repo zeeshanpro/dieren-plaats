@@ -12,7 +12,7 @@
                         </li>
 
                     </ul>
-                    <div class="text-center">
+                    <div class="text-center custom-ft-w8-subheading">
                         <span>Enter your email to reset password </span>
                     </div>
                     <div class="tab-content">
@@ -33,7 +33,7 @@
                                 </div>
 
                                 <div class="form-footer">
-                                    <button type="submit" class="btn btn-outline-primary-2">
+                                    <button type="submit" class="btn btn-outline-primary-2 active mt-2">
                                         <span>Submit</span>
 
                                     </button>

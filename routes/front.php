@@ -244,3 +244,16 @@ Route::group(['middleware' => ['auth','permitteduser']], function () {
     Route::post('getLatestConversationMsg',[MessageController::class, 'getLatest'])->name('get_latest_conversation_msg');    
     Route::post('deleteConversation',[MessageController::class, 'deleteConversation'])->name('delete_conversation');
 });
+
+
+Route::get('category/{slug}', function(){
+    return view('front_new.category');
+});
+
+Route::get('shop/{slug}/{slug2}', function(){
+    return view('front_new.shop');
+});
+
+Route::get('product/{slug}', function(){
+    return view('front_new.products.product_detail');
+});

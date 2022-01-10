@@ -143,7 +143,7 @@
             <div class="wishlist">
                 <span> <i class="fa fa-sign-in"></i> </span>
                 
-                <button type="submit" class="btn btn-primary-custom-hdr-before">Login</button>
+                <button type="submit" class="btn btn-primary-custom-hdr-before login">Login</button>
                    
 
                 </button>
@@ -153,7 +153,7 @@
 
             <div class="dropdown cart-dropdown wishlist">
                 <span> <i class="fa fa-user-circle"></i> </span>
-                <button type="submit" class="btn btn-primary-custom-hdr">Register</button>
+                <button type="submit" class="btn btn-primary-custom-hdr register">Register</button>
 
                 </button>
 

@@ -35,6 +35,7 @@
     <link rel="stylesheet" href="<?php echo e(URL::to('public/assets/css/skins/skin-demo-21.css')); ?>">
     <link rel="stylesheet" href="<?php echo e(URL::to('public/assets/css/demos/demo-21.css')); ?>">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet"  href="<?php echo e(URL::to('public/assets/css/skins/intlTelInput.css')); ?>">
     <!-- <link rel="stylesheet" href="assets/css/all.min.css">
     <link rel="stylesheet" href="assets/css/fontawesome.min.css"> -->
 
@@ -54,7 +55,7 @@
                 <i class="icon-bars"></i>
             </button>
 
-            <a href="index.html" class="logo">
+            <a href="<?php echo e(URL::to('/')); ?>" class="logo">
                 <img src="<?php echo e(URL::to('public/assets/images/demos/demo-21/logo.png')); ?>" alt="Remora Logo" width="100" height="25">
             </a>
 
@@ -264,6 +265,7 @@
     <script src="<?php echo e(URL::to('public/assets/js/jquery.waypoints.min.js')); ?>"></script>
     <script src="<?php echo e(URL::to('public/assets/js/superfish.min.js')); ?>"></script>
     <script src="<?php echo e(URL::to('public/assets/js/owl.carousel.min.js')); ?>"></script>
+    <script src="<?php echo e(URL::to('public/assets/js/intlTelInput.js')); ?>"></script>
     <!-- Main JS File -->
     <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
     <script src="<?php echo e(URL::to('public/assets/js/main.js')); ?>"></script>
@@ -276,7 +278,12 @@
             window.location.href = "<?php echo e(route('register')); ?>";
         })
     </script>
-
+  <script>
+        var input = document.querySelector("#phone");
+        window.intlTelInput(input, {
+          utilsScript: "<?php echo e(URL::to('public/assets/js/utils.js')); ?>",
+        });
+      </script>
 </body>
 
 

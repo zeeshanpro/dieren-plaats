@@ -35,6 +35,7 @@
     <link rel="stylesheet" href="{{ URL::to('public/assets/css/skins/skin-demo-21.css') }}">
     <link rel="stylesheet" href="{{ URL::to('public/assets/css/demos/demo-21.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet"  href="{{ URL::to('public/assets/css/skins/intlTelInput.css') }}">
     <!-- <link rel="stylesheet" href="assets/css/all.min.css">
     <link rel="stylesheet" href="assets/css/fontawesome.min.css"> -->
 
@@ -264,6 +265,7 @@
     <script src="{{ URL::to('public/assets/js/jquery.waypoints.min.js') }}"></script>
     <script src="{{ URL::to('public/assets/js/superfish.min.js') }}"></script>
     <script src="{{ URL::to('public/assets/js/owl.carousel.min.js') }}"></script>
+    <script src="{{ URL::to('public/assets/js/intlTelInput.js') }}"></script>
     <!-- Main JS File -->
     <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
     <script src="{{ URL::to('public/assets/js/main.js') }}"></script>
@@ -276,7 +278,12 @@
             window.location.href = "{{ route('register') }}";
         })
     </script>
-
+  <script>
+        var input = document.querySelector("#phone");
+        window.intlTelInput(input, {
+          utilsScript: "{{ URL::to('public/assets/js/utils.js') }}",
+        });
+      </script>
 </body>
 
 

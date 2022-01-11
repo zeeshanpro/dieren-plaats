@@ -54,7 +54,7 @@
                             <i class="icon-bars"></i>
                         </button>
 
-                        <a href="index.html" class="logo">
+                        <a href="<?php echo e(URL::to('/')); ?>" class="logo">
                             <img src="<?php echo e(URL::to('public/assets/images/demos/demo-21/logo.png')); ?>" alt="Remora Logo" width="100" height="25">
                         </a>
 
@@ -111,7 +111,7 @@
                         <div class="wishlist add-product-btn">
                             <span> <i class="fa fa-sign-in"></i> </span>
                             <button type="submit" class="btn btn-outline-primary-2 ">
-                                <span class="pr-2"><img src="<?php echo e(URL::to('public/assets/images/icons/add-icon.png')); ?>"></span> <span>Add Product</span>
+                                <span class="pr-2"><img src="<?php echo e(URL::to('public/assets/images/icons/add-icon.png')); ?>"></span> <span class="text-white">Add Product</span>
 
                             </button>
 
@@ -124,7 +124,7 @@
 
                         <div class="dropdown cart-dropdown">
                             <a href="#" class="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-display="static">
-                                <img src="assets/images/dp.png" alt="dp" width="40px" height="40px">
+                                <img src="<?php echo e(URL::to('public/assets/images/dp.png')); ?>" alt="dp" width="40px" height="40px">
 
                             </a>
 
@@ -133,8 +133,10 @@
 
 
                                 <div class="dropdown-cart-action">
-                                    <a href="cart.html" class="btn btn-primary">Log Out</a>
-
+                                    <a href="javascript:;"  class="btn btn-primary logout">Log Out</a>
+                                    <form method="POST" id="form-logout" action="<?php echo e(route('logout')); ?>">
+                                        <?php echo csrf_field(); ?>
+                                    </form>
                                 </div><!-- End .dropdown-cart-total -->
                             </div><!-- End .dropdown-menu -->
                         </div>
@@ -143,7 +145,7 @@
                         <div class="wishlist">
                             <span> <i class="fa fa-sign-in"></i> </span>
                             
-                            <button type="submit" class="btn btn-primary-custom-hdr-before">Login</button>
+                            <button type="submit" class="btn btn-primary-custom-hdr-before login">Login</button>
                                
 
                             </button>
@@ -153,7 +155,7 @@
 
                         <div class="dropdown cart-dropdown wishlist">
                             <span> <i class="fa fa-user-circle"></i> </span>
-                            <button type="submit" class="btn btn-primary-custom-hdr">Register</button>
+                            <button type="submit" class="btn btn-primary-custom-hdr register">Register</button>
 
                             </button>
 
@@ -308,6 +310,10 @@
         $('.register').on('click', function() {
             window.location.href = "<?php echo e(route('register')); ?>";
         })
+
+        $('.logout').on('click',function(){
+            $('#form-logout').submit();
+        });
     </script>
 
 </body>

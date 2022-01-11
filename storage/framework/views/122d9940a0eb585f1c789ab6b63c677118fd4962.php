@@ -51,10 +51,12 @@ unset($__errorArgs, $__bag); ?>
                                 </div>
 
                                 <div class="form-group">
-                                    <label for="singin-email-2">Phone Number</label>
-                                    &nbsp;<input type="text" class="form-control"  name="phone" required style="padding-left:4rem;">
-                <span class="email_icon" ><i class="fa fa-phone" aria-hidden="true"></i></span>
-                                </div>
+                                            <label for="singin-email-2">Phone Number</label>&nbsp;<br>
+
+                                            <input id="phone" type="tel" class="form-control" name="phone">
+                                        </div>
+
+                             
                                 
                                 
                                 

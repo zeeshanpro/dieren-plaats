@@ -25,7 +25,10 @@
                                 <div class="form-group">
                                     <label for="singin-email-2">Full name</label>
                                     &nbsp;<input type="text" class="form-control"  name="name" required style="padding-left:4rem;">
-                <span class="email_icon" ><i class="fa fa-user-circle" aria-hidden="true"></i></span>
+                <span class="email_icon" >
+                    <!-- <i class="fa fa-user-circle" aria-hidden="true"></i> -->
+                    <img src="{{ URL::to('public/assets/images/icons/user.svg') }}">
+                </span>
                 @error('name') <small class="text-danger">{{$message}}</small> @enderror
                                 </div>
 
@@ -34,13 +37,19 @@
                                 <div class="form-group">
                                     <label for="singin-email-2">Company name</label>
                                     &nbsp;<input type="text" class="form-control" name="comapny" required style="padding-left:4rem;">
-                <span class="email_icon" ><i class="fa fa-building" aria-hidden="true"></i></span>
+                <span class="email_icon" >
+                    <!-- <i class="fa fa-building" aria-hidden="true"> -->
+                    <img src="{{ URL::to('public/assets/images/icons/building.svg') }}">
+                    </i></span>
                                 </div>
 
                                 <div class="form-group">
                                     <label for="singin-email-2">Country</label>
                                     &nbsp;<input type="text" class="form-control"  name="country" required style="padding-left:4rem;">
-                <span class="email_icon" ><i class="fa fa-flag" aria-hidden="true"></i></span>
+                <span class="email_icon" >
+                    <!-- <i class="fa fa-flag" aria-hidden="true"></i> -->
+                    <img src="{{ URL::to('public/assets/images/icons/flag.svg') }}">
+                </span>
                                 </div>
 
                                 <div class="form-group">
@@ -49,22 +58,31 @@
                                             <input id="phone" type="tel" class="form-control" name="phone">
                                         </div>
 
-                             
-                                
+                                                          
                                 
                                 
 
                                 <div class="form-group">
                                     <label for="singin-email-2">Email</label>
                                     &nbsp;<input type="text" class="form-control"  name="email" required style="padding-left:4rem;">
-                <span class="email_icon" ><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                <span class="email_icon" >
+                    <!-- <i class="fa fa-envelope" aria-hidden="true"></i> -->
+                    <img src="{{ URL::to('public/assets/images/icons/envelope.svg') }}">
+                </span>
                 @error('email') <small class="text-danger">{{$message}}</small> @enderror
                                 </div>
 
                                 <div class="form-group">
                                     <label for="singin-password-2">Password</label>
                                     <input type="password" class="form-control"  name="password" required style="padding-left:4rem;">
-                <span class="password_icon" ><i class="fa fa-lock" aria-hidden="true"></i></span>
+                <div class="password_icon" >
+                    <!-- <i class="fa fa-lock" aria-hidden="true"></i> -->
+                    <img src="{{ URL::to('public/assets/images/icons/lock.svg') }}">
+                    <span class="password_icon_hide_register">
+                        
+                        <img src="{{ URL::to('public/assets/images/icons/lock.svg') }}">
+                    </span>
+                </div>
                 @error('password') <small class="text-danger">{{$message}}</small> @enderror
 
                                 </div><!-- End .form-group -->

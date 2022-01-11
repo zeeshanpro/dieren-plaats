@@ -610,17 +610,21 @@ blockquote.text-white cite span {
 }	
 	
 .email_icon{
-	position:absolute;margin-top:-3.5rem;margin-left:2rem;
-	opacity: 50%;
+	position:absolute;margin-top:-3.5rem;margin-left:1rem;
+	opacity: 100%;
 }
 .password_icon{
-position:absolute;margin-top:-3.5rem;margin-left:2rem;
-opacity: 50%;
+position:absolute;margin-top:-3.5rem;margin-left:1rem;
+opacity: 100%;
 }
 .password_icon_hide{
 	position:absolute;margin-top:-3.5rem;margin-left:40rem;
-	opacity: 50%;
+	opacity: 100%;
 	}
+.password_icon_hide_register{
+		position:absolute;margin-top:0rem;margin-left:39rem;
+		opacity: 100%;
+		}
 }
 
 .row {

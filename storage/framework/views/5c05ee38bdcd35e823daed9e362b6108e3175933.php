@@ -2,7 +2,7 @@
 <html lang="en">
 
 
-<!-- molla/login.html  22 Nov 2019 10:04:03 GMT -->
+<!-- Remora/login.html  22 Nov 2019 10:04:03 GMT -->
 
 <head>
     <title>Remora Services</title>
@@ -20,9 +20,9 @@
     <link rel="icon" type="image/png" sizes="16x16" href="<?php echo e(URL::to('public/assets/images/icons/favicon-16x16.png')); ?>">
     <link rel="manifest" href="<?php echo e(URL::to('public/assets/images/icons/site.html')); ?>">
     <link rel="mask-icon" href="<?php echo e(URL::to('public/assets/images/icons/safari-pinned-tab.svg')); ?>" color="#666666">
-    <link rel="shortcut icon" href="<?php echo e(URL::to('public/assets/images/icons/favicon.ico')); ?>">
-    <meta name="apple-mobile-web-app-title" content="Molla">
-    <meta name="application-name" content="Molla">
+    <link rel="shortcut icon" href="<?php echo e(URL::to('public/assets/images/icons/favicon_new.ico')); ?>">
+    <meta name="apple-mobile-web-app-title" content="Remora">
+    <meta name="application-name" content="Remora">
     <meta name="msapplication-TileColor" content="#cc9966">
     <meta name="msapplication-config" content="<?php echo e(URL::to('public/assets/images/icons/browserconfig.xml')); ?>">
     <meta name="theme-color" content="#ffffff">
@@ -287,6 +287,6 @@
 </body>
 
 
-<!-- molla/login.html  22 Nov 2019 10:04:03 GMT -->
+<!-- Remora/login.html  22 Nov 2019 10:04:03 GMT -->
 
 </html><?php /**PATH C:\xampp\htdocs\dieren-plaats\resources\views/front_new/layout/login_layout.blade.php ENDPATH**/ ?>

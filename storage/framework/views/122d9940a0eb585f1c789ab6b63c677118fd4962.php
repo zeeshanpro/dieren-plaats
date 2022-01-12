@@ -92,10 +92,9 @@ unset($__errorArgs, $__bag); ?>
                 <div class="password_icon" >
                     <!-- <i class="fa fa-lock" aria-hidden="true"></i> -->
                     <img src="<?php echo e(URL::to('public/assets/images/icons/lock.svg')); ?>">
-                    <span class="password_icon_hide_register">
-                        
-                        <img src="<?php echo e(URL::to('public/assets/images/icons/lock.svg')); ?>">
-                    </span>
+                                     
+                        <img class="password_icon_hide_register" src="<?php echo e(URL::to('public/assets/images/icons/eye.svg')); ?>">
+                    
                 </div>
                 <?php $__errorArgs = ['password'];
 $__bag = $errors->getBag($__errorArgs[1] ?? 'default');

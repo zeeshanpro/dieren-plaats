@@ -78,10 +78,9 @@
                 <div class="password_icon" >
                     <!-- <i class="fa fa-lock" aria-hidden="true"></i> -->
                     <img src="{{ URL::to('public/assets/images/icons/lock.svg') }}">
-                    <span class="password_icon_hide_register">
-                        
-                        <img src="{{ URL::to('public/assets/images/icons/lock.svg') }}">
-                    </span>
+                                     
+                        <img class="password_icon_hide_register" src="{{ URL::to('public/assets/images/icons/eye.svg') }}">
+                    
                 </div>
                 @error('password') <small class="text-danger">{{$message}}</small> @enderror
 

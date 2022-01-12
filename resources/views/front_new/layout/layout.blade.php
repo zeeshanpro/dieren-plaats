@@ -47,7 +47,7 @@
         <header class="header">
 
             <div class="header-middle sticky-header">
-                <div class="container">
+                <div class="container-fluid" style="height:70px;">
                     <div class="header-left">
                         <button class="mobile-menu-toggler">
                             <span class="sr-only">Toggle mobile menu</span>
@@ -174,7 +174,7 @@
 
 
         <footer class="footer ">
-            <div class="container mt-4">
+            <div class="container mt-4 pt-4">
 
                 <div class="row justify-content-center">
 
@@ -206,30 +206,29 @@
                 </div>
                 <hr class="mt-0 mb-0 " style="background-color: #00000030; height: 1px;">
 
-                <div class="row" style="padding-bottom:4%; padding-top:4%;">
-                    <div class="col-md-3">
+                <div class="row" style="padding-bottom:7rem; padding-top:5rem;">
+							<div class="col-md-3">
 
-                        <img src="{{ URL::to('public/assets/images/demos/demo-21/logo-footer.png') }}" class="footer-logo m-auto"
-                            alt="Footer Logo" width="100" height="25">
-                    </div>
+                                <img src="{{ URL::to('public/assets/images/demos/demo-21/logo-footer.png') }}" class="footer-logo m-auto" alt="Footer Logo" width="150" height="35">
+                          </div>
 
-                    <div class="col-md-6 custom-footer-padding ">
+						   <div class="col-md-7 custom-footer-menu pt-2 theme-color-gray">
 
-                        <a class="pr-4" href="#">Market Place</a>
-                        <a class="pr-4" href="#">Sell Product</a>
-                        <a class="pr-4" href="#">About Us</a>
-                        <a class="pr-4" href="#">Terms & Conditions</a>
-                        <a href="#">Privacy Policy</a>
+                                   <a  href="#">Market Place</a>
+                                   <a  href="#">Sell Product</a>
+                                    <a  href="#">About Us</a>
+                                     <a  href="#">Terms & Conditions</a>
+                                     <a href="#">Privacy Policy</a>
 
-                    </div>
+							</div>
 
-                    <div class="col-md-3">
-                        <div class="social-icons social-icons-color">
-                            <a href="#" class="social-icon social-facebook" title="Facebook" target="_blank"><img src="{{ URL::to('public/assets/images/facebook.png') }}"></a>
+                            <div class="col-md-2">
+                                <div class="social-icons social-icons-color">
+                                <a href="#" class="social-icon social-facebook" title="Facebook" target="_blank"><img src="{{ URL::to('public/assets/images/facebook.png') }}"></a>
                             <a href="#" class="social-icon social-twitter" title="Twitter" target="_blank"><img src="{{ URL::to('public/assets/images/linkdin.png') }}"></a>
                             <a href="#" class="social-icon social-instagram" title="Instagram" target="_blank"><img src="{{ URL::to('public/assets/images/msg.png') }}"></a>
                         </div><!-- End .soial-icons -->
-                    </div>
+							            </div>
 
                 </div><!-- End .container -->
             </div><!-- End .footer-bottom -->

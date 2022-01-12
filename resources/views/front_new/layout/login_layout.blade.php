@@ -48,7 +48,7 @@
     <header class="header">
 
 <div class="header-middle sticky-header">
-    <div class="container" style="height:70px;">
+    <div class="container-fluid" style="height:70px;">
         <div class="header-left">
             <button class="mobile-menu-toggler">
                 <span class="sr-only">Toggle mobile menu</span>

@@ -2,7 +2,7 @@
 <html lang="en">
 
 
-<!-- molla/login.html  22 Nov 2019 10:04:03 GMT -->
+<!-- Remora/login.html  22 Nov 2019 10:04:03 GMT -->
 
 <head>
     <title>Remora Services</title>
@@ -20,9 +20,9 @@
     <link rel="icon" type="image/png" sizes="16x16" href="{{ URL::to('public/assets/images/icons/favicon-16x16.png') }}">
     <link rel="manifest" href="{{ URL::to('public/assets/images/icons/site.html') }}">
     <link rel="mask-icon" href="{{ URL::to('public/assets/images/icons/safari-pinned-tab.svg') }}" color="#666666">
-    <link rel="shortcut icon" href="{{ URL::to('public/assets/images/icons/favicon.ico') }}">
-    <meta name="apple-mobile-web-app-title" content="Molla">
-    <meta name="application-name" content="Molla">
+    <link rel="shortcut icon" href="{{ URL::to('public/assets/images/icons/favicon_new.ico') }}">
+    <meta name="apple-mobile-web-app-title" content="Remora">
+    <meta name="application-name" content="Remora">
     <meta name="msapplication-TileColor" content="#cc9966">
     <meta name="msapplication-config" content="{{ URL::to('public/assets/images/icons/browserconfig.xml') }}">
     <meta name="theme-color" content="#ffffff">
@@ -35,6 +35,7 @@
     <link rel="stylesheet" href="{{ URL::to('public/assets/css/skins/skin-demo-21.css') }}">
     <link rel="stylesheet" href="{{ URL::to('public/assets/css/demos/demo-21.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet"  href="{{ URL::to('public/assets/css/skins/intlTelInput.css') }}">
     <!-- <link rel="stylesheet" href="assets/css/all.min.css">
     <link rel="stylesheet" href="assets/css/fontawesome.min.css"> -->
 
@@ -47,7 +48,7 @@
     <header class="header">
 
 <div class="header-middle sticky-header">
-    <div class="container" style="height:70px;">
+    <div class="container-fluid" style="height:70px;">
         <div class="header-left">
             <button class="mobile-menu-toggler">
                 <span class="sr-only">Toggle mobile menu</span>
@@ -264,6 +265,7 @@
     <script src="{{ URL::to('public/assets/js/jquery.waypoints.min.js') }}"></script>
     <script src="{{ URL::to('public/assets/js/superfish.min.js') }}"></script>
     <script src="{{ URL::to('public/assets/js/owl.carousel.min.js') }}"></script>
+    <script src="{{ URL::to('public/assets/js/intlTelInput.js') }}"></script>
     <!-- Main JS File -->
     <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
     <script src="{{ URL::to('public/assets/js/main.js') }}"></script>
@@ -276,10 +278,15 @@
             window.location.href = "{{ route('register') }}";
         })
     </script>
-
+  <script>
+        var input = document.querySelector("#phone");
+        window.intlTelInput(input, {
+          utilsScript: "{{ URL::to('public/assets/js/utils.js') }}",
+        });
+      </script>
 </body>
 
 
-<!-- molla/login.html  22 Nov 2019 10:04:03 GMT -->
+<!-- Remora/login.html  22 Nov 2019 10:04:03 GMT -->
 
 </html>

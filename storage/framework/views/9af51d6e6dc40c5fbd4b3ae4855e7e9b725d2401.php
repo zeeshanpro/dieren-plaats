@@ -1,115 +1,72 @@
-@extends('front_new/layout/login_layout')
-@section('container')
+
+<?php $__env->startSection('container'); ?>
 <main class="main">
-    
-    <div class="login-page bg-image pt-5 pb-5" style="background-color: white;">
-        <div class="container">
-            <div class="form-box">
-                <div class="form-tab">
-                    <ul class="nav nav-pills nav-fill" role="tablist">
-                        <li class="nav-item">
-            <span class="nav-link">Create a free account</span>
-                            <!-- <a class="nav-link" id="signin-tab-2" data-toggle="tab" href="#signin-2" role="tab" aria-controls="signin-2" aria-selected="false">Welcome Back</a> -->
-                        </li>
 
-                    </ul>
-                    <div class="text-center">
-                        <span>Register to Remora Services</span>
-                    </div>
-                    <div class="tab-content">
+<div class="login-page bg-image pt-5 pb-5" style="background-color: white;">
+    <div class="container">
+        <div class="form-box">
+            <div class="form-tab">
+                <ul class="nav nav-pills nav-fill" role="tablist">
+                    <li class="nav-item">
+        <span class="nav-link">Welcome Back</span>
+                        <!-- <a class="nav-link" id="signin-tab-2" data-toggle="tab" href="#signin-2" role="tab" aria-controls="signin-2" aria-selected="false">Welcome Back</a> -->
+                    </li>
 
-                        <div class="tab-pane fade show active" id="signin-2" role="tabpanel" aria-labelledby="register-tab-2">
-                            <form method="post" action="{{ route('createuser') }}">
-                            @csrf
-                                <input type="hidden" name="usertype" value="Breeder">
-                                <div class="form-group">
-                                    <label for="singin-email-2">Full name</label>
-                                    &nbsp;<input type="text" class="form-control"  name="name" required style="padding-left:4rem;">
-                <span class="email_icon" >
-                    <!-- <i class="fa fa-user-circle" aria-hidden="true"></i> -->
-                    <img src="{{ URL::to('public/assets/images/icons/user.svg') }}">
-                </span>
-                @error('name') <small class="text-danger">{{$message}}</small> @enderror
-                                </div>
-
-                                
-
-                                <div class="form-group">
-                                    <label for="singin-email-2">Company name</label>
-                                    &nbsp;<input type="text" class="form-control" name="comapny" required style="padding-left:4rem;">
-                <span class="email_icon" >
-                    <!-- <i class="fa fa-building" aria-hidden="true"> -->
-                    <img src="{{ URL::to('public/assets/images/icons/building.svg') }}">
-                    </i></span>
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="singin-email-2">Country</label>
-                                    &nbsp;<input type="text" class="form-control"  name="country" required style="padding-left:4rem;">
-                <span class="email_icon" >
-                    <!-- <i class="fa fa-flag" aria-hidden="true"></i> -->
-                    <img src="{{ URL::to('public/assets/images/icons/flag.svg') }}">
-                </span>
-                                </div>
-
-                                <div class="form-group">
-                                            <label for="singin-email-2">Phone Number</label>&nbsp;<br>
-
-                                            <input id="phone" type="tel" class="form-control" name="phone">
-                                        </div>
-
-                                                          
-                                
-                                
-
-                                <div class="form-group">
-                                    <label for="singin-email-2">Email</label>
-                                    &nbsp;<input type="text" class="form-control"  name="email" required style="padding-left:4rem;">
-                <span class="email_icon" >
-                    <!-- <i class="fa fa-envelope" aria-hidden="true"></i> -->
-                    <img src="{{ URL::to('public/assets/images/icons/envelope.svg') }}">
-                </span>
-                @error('email') <small class="text-danger">{{$message}}</small> @enderror
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="singin-password-2">Password</label>
-                                    <input type="password" class="form-control"  name="password" required style="padding-left:4rem;">
-                <div class="password_icon" >
-                    <!-- <i class="fa fa-lock" aria-hidden="true"></i> -->
-                    <img src="{{ URL::to('public/assets/images/icons/lock.svg') }}">
-                                     
-                        <img class="password_icon_hide_register" src="{{ URL::to('public/assets/images/icons/eye.svg') }}">
-                    
+                </ul>
+                <div class="text-center">
+                    <span>Login to remora services</span>
                 </div>
-                @error('password') <small class="text-danger">{{$message}}</small> @enderror
+                <div class="tab-content">
 
-                                </div><!-- End .form-group -->
-
-                                <div class="form-footer">
-                                <a href="{{route('show_forgot_password')}}" class="forgot-link">Forgot Password?</a>
+                    <div class="tab-pane fade show active" id="signin-2" role="tabpanel" aria-labelledby="register-tab-2">
+                    <?php $__errorArgs = ['msg'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?> <small class="text-danger"><?php echo e($message); ?></small> <?php unset($message);
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>
+                        <form method="post" action="<?php echo e(route('login')); ?>">
+                        <?php echo csrf_field(); ?>
+                            <div class="form-group">
+                                <label for="singin-email-2">Email</label>
+                                &nbsp;<input type="text" class="form-control" id="singin-email-2" name="email" required style="padding-left:4rem;">
+            <span class="email_icon" ><i class="fa fa-envelope" aria-hidden="true"></i></span>
                             </div>
-                                <div class="form-footer">
-                                    <button type="submit" class="btn btn-outline-primary-2 active mt-2">
-                                        <span>Register</span>
-
-                                    </button>
 
 
-                                </div><!-- End .form-footer -->
-                                <div class="m-4 text-center">
-                                
-                                    <span>Have account?</span> <a href="#">Log in</a>
-                                </div>
-                            </form>
+                            <div class="form-group">
+                                <label for="singin-password-2">Password</label>
+                                <input type="password" class="form-control" id="singin-password-2" name="password" required style="padding-left:4rem;">
+            <span class="password_icon" ><i class="fa fa-lock" aria-hidden="true"></i></span>
+            <span class="password_icon_hide" ><i class="fa fa-eye-slash" aria-hidden="true"></i></span>
 
-                        </div><!-- .End .tab-pane -->
-                    </div><!-- End .tab-content -->
-                    </div><!-- End .tab-content -->
-                </div><!-- End .form-tab -->
-            </div><!-- End .form-box -->
-        </div><!-- End .container -->
-    </div><!-- End .login-page section-bg -->
+                            </div><!-- End .form-group -->
+                            <div class="form-footer">
+                            <a href="<?php echo e(route('show_forgot_password')); ?>" class="forgot-link">Forgot Password?</a>
+                        </div>
+                            <div class="form-footer">
+                                <button type="submit" class="btn btn-outline-primary-2 active mt-1">
+                                    <span>LOG IN</span>
+
+                                </button>
+
+
+                            </div><!-- End .form-footer -->
+                            <div class="m-4 text-center">
+                            
+                                <span>Don't have an account?</span> <a href="#">Register</a>
+                            </div>
+                        </form>
+
+                    </div><!-- .End .tab-pane -->
+                </div><!-- End .tab-content -->
+                </div><!-- End .tab-content -->
+            </div><!-- End .form-tab -->
+        </div><!-- End .form-box -->
+    </div><!-- End .container -->
+</div><!-- End .login-page section-bg -->
 </main><!-- End .main -->
 
 <!-- Sign in / Register Modal -->
@@ -155,7 +112,7 @@
                                             <label class="custom-control-label" for="signin-remember">Remember Me</label>
                                         </div><!-- End .custom-checkbox -->
 
-                                        <a href="{{route('show_forgot_password')}}" class="forgot-link">Forgot Your Password?</a>
+                                        <a href="" class="forgot-link">Forgot Your Password?</a>
                                     </div><!-- End .form-footer -->
                                 </form>
                                 <div class="form-choice">
@@ -225,4 +182,6 @@
         </div><!-- End .modal-content -->
     </div><!-- End .modal-dialog -->
 </div><!-- End .modal -->
-@endsection
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('front_new/layout/login_layout', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH C:\xampp\htdocs\dieren-plaats\resources\views/front_new/login.blade.php ENDPATH**/ ?>

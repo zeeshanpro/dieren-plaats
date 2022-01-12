@@ -1196,14 +1196,14 @@ opacity: 50%;
 .header-middle {
 	/* border-bottom: .1rem solid #f4f4f4 */
 	position: relative;
-    left: 0;
+    /* left: 0;
     right: 0;
     top: 0;
     z-index: 1040;
     animation-name: fixedHeader;
     animation-duration: .4s;
-    background-color: #fff;
-    box-shadow: 0 3px 6px rgb(51 51 51 / 5%);
+    background-color: #fff; */
+    box-shadow: 0 3px 6px rgb(51 51 51 / 25%);
 }
 
 .header-middle .menu>li>a {
@@ -2388,7 +2388,7 @@ opacity: 50%;
 	font-weight: 500;
 	font-size: 1.4rem;
 	letter-spacing: -.01em;
-	padding: 3.95rem 3rem;
+	padding: 3.95rem 2rem;
 	text-transform: capitalize;
 }
 
@@ -10535,7 +10535,7 @@ p {
 	font-weight: 300;
 	color: #777;
 	background-color: #fafafa;
-	border: 1px solid #ebebeb;
+	border: 1px solid #c1c1c1;
 	border-radius: 0;
 	margin-bottom: 2rem;
 	transition: all 0.3s;
@@ -15945,7 +15945,7 @@ button:focus {
 	}
 	.form-tab .form-footer .btn {
 		margin-left: 0;
-		margin-right: 1.6rem;
+		/* margin-right: 1.6rem; */
 		order: -1;
         padding-top: 3%;
         padding-bottom: 3%;
@@ -16093,12 +16093,9 @@ button:focus {
 		left: -300px;
 		max-width: 300px
 	}
-<<<<<<< HEAD
-=======
 	.h_icons{
 		display: none;
 	}
->>>>>>> 4c8d31f4ef00217213180d85b820f2803fe8a3a4
 	.btn-custom-round{
 		border-radius: 60%;
 		color: #fff;
@@ -20033,7 +20030,6 @@ button:focus {
 	top: 12%;
 	right: 1%;
 	background-color: #1091bd;
-<<<<<<< HEAD
 
 }
 .custom-img-feat figure {
@@ -20047,21 +20043,6 @@ button:focus {
 	left: 85%;
 }
 
-=======
-
-}
-.custom-img-feat figure {
-	margin: 0rem 0rem 0rem 3rem;
-}
-.custom-img-feat img {
-	float: left;
-}
-.custom-position-tag{
-	top: 85%;
-	left: 85%;
-}
-
->>>>>>> 4c8d31f4ef00217213180d85b820f2803fe8a3a4
 .custom-icon-tag-product{
 	position: absolute;
     top: 10px;
@@ -20099,24 +20080,13 @@ button:focus {
  .wishlist .icon-search:before{
 	content: '\f2eb'!important;
  }
-<<<<<<< HEAD
- .add-product-btn button{
-	 background-color: #1091bd !important
-	 ;
-	 color: white !important;
- }
-=======
  
->>>>>>> 4c8d31f4ef00217213180d85b820f2803fe8a3a4
  .rounded-dp-img img{
 	 border-radius: 2rem;
  }
  .logout-custom-clr :hover{
 color: #1091bd;
 font-weight: bold;
-<<<<<<< HEAD
- }
-=======
  }
 
 .add-product-btn button{
@@ -20296,8 +20266,8 @@ font-weight: bold;
 	color: white;
 	border-radius: 3rem;
 	font-size: 14px;
-	padding-top: 1.5rem;
-	padding-bottom: 1.5rem;
+	padding-top: 1.2rem;
+	padding-bottom: 1.2rem;
 	min-width: 120px !important;
   
 }
@@ -20311,8 +20281,8 @@ font-weight: bold;
 	color: #1091BD;
 	border-radius: 3rem;
 	font-size: 14px;
-	padding-top: 1.5rem;
-	padding-bottom: 1.5rem;
+	padding-top: 1.2rem;
+	padding-bottom: 1.2rem;
 	border: 1px solid #1091BD;
 	min-width: 120px !important;
   
@@ -20322,4 +20292,6 @@ font-weight: bold;
 	background-color: #1091BD;
   
 }
->>>>>>> 4c8d31f4ef00217213180d85b820f2803fe8a3a4
+.custom-ft-w8-subheading{
+	font-weight:400;
+}

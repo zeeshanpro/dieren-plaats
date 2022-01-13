@@ -207,7 +207,7 @@
                 <hr class="mt-0 mb-0 " style="background-color: #00000030; height: 1px;">
 
                 <div class="row" style="padding-bottom:7rem; padding-top:5rem;">
-							<div class="col-md-3">
+							<div class="col-md-3 text-center">
 
                                 <img src="{{ URL::to('public/assets/images/demos/demo-21/logo-footer.png') }}" class="footer-logo m-auto" alt="Footer Logo" width="150" height="35">
                           </div>

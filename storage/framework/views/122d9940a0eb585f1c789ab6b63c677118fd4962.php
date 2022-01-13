@@ -111,7 +111,7 @@ unset($__errorArgs, $__bag); ?>
                                 <a href="<?php echo e(route('show_forgot_password')); ?>" class="forgot-link">Forgot Password?</a>
                             </div>
                                 <div class="form-footer">
-                                    <button type="submit" class="btn btn-outline-primary-2">
+                                    <button type="submit" class="btn btn-outline-primary-2 active mt-2">
                                         <span>Register</span>
 
                                     </button>

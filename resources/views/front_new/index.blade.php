@@ -3,14 +3,14 @@
 <main class="main">
     <div class="newsletter">
                 <div class="background"
-                    style="background-image: url(public/assets/images/slider.png); background-repeat: no-repeat; background-size: cover;padding-bottom: 25px;">
+                    style="background-image: url(public/assets/images/slider.png); background-repeat: no-repeat;  ">
                     <div class="subscribe">
                         <div class="subscribe-title text-center">
                             <h3 class="slider-title pb-1 pt-2">Are you looking to buy equipment?</h3>
                             <h5 class="slider-subheading">Find the right used/new marine equipment for your need <br> and view thousands of listings worldwide.</h5>
                         </div>
                         <form action="#">
-                            <div class="input-group">
+                            <div class="input-group custom-banner-search">
                                 <input type="email" placeholder="Search assets " aria-label="Email Adress" required="">
                                 <div class="input-group-append">
                                     <button class="btn-custom-round" type="submit">
@@ -18,16 +18,20 @@
                                         <img src="{{ URL::to('public/assets/images/icons/search-icon.svg') }}">
                                     </button>
                                 </div><!-- .End .input-group-append -->
+                              
                             </div><!-- .End .input-group -->
+                            <center><a href="#" class=" custom-submit-btn"><span>Sell
+                                    equipment</span></a></center>
 
                         </form>
-                        <center><a href="#" class=" custom-submit-btn"><span>Sell
-                                    equipment</span></a></center>
+                       
                     </div>
                 </div>
             </div>
 
     <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-10 m-auto">
         <h2 class="title-main text-center mb-5 mt-5">Categories</h2><!-- End .title mb-2 -->
 
         <div class="row">
@@ -87,10 +91,13 @@
                 </div><!-- End .banner -->
             </div><!-- End .col-md-6 -->
         </div><!-- End .row -->
-
+</div>
+</div>
         
     </div>
     <div class="container-fluid mt-3" style="background-color:#A1A1A11A; padding-top:3px; padding-bottom:3px;" >
+    <div class="row">
+            <div class="col-md-10 m-auto">
         <div class="stores mb-4 mb-lg-5">
             <h2 class="title-main text-center mb-5 mt-3">Featured Products </h2><!-- End .title text-center mb-2 -->
 
@@ -148,8 +155,12 @@
             </div><!-- End .row -->
         </div>
     </div>
+</div>
+</div>
 
     <div class="container-fluid for-you">
+    <div class="row">
+            <div class="col-md-10 m-auto">
                 <div>
                     <div class="heading-left">
                         <h2 class="title-main text-center mb-5 mt-5">New Products </h2><!-- End .title text-center mb-2 -->
@@ -160,9 +171,9 @@
 
                 <div class="products">
                     <div class="row justify-content-center">
-                        <div class="col-6 col-md-4 col-lg-3">
+                        <div class="col-6 col-md-4 col-lg-3" style="display: block;">
                             <div class="product product-2 prod-shadow-main">
-                                <figure class="product-media">
+                                <figure class="product-media" >
                                     <span class="product-label label-circle label-sale custom-position-tag">Sell</span>
                                     <a href="product.html">
                                         <img src="{{ URL::to('public/assets/images/cat-bulldozer-mike-burgquist.png') }}" alt="Product image"
@@ -202,7 +213,7 @@
                             </div><!-- End .product -->
                         </div><!-- End .col-sm-6 col-md-4 col-lg-3 -->
 
-                        <div class="col-6 col-md-4 col-lg-3">
+                        <div class="col-6 col-md-4 col-lg-3" style="display: block;">
                             <div class="product product-2 prod-shadow-main">
                                 <figure class="product-media">
                                     <span
@@ -211,41 +222,27 @@
                                         <img src="{{ URL::to('public/assets/images/cat-bulldozer-mike-burgquist.png') }}" alt="Product image"
                                             class="product-image">
                                     </a>
-
-
-
-
                                 </figure><!-- End .product-media -->
-
-
-
-
                                 <div class="product-body">
-
                                     <b>
                                         <h1 class="product-title"><a href="product.html">Winch - CAT</a></h1>
                                     </b><!-- End .product-title -->
                                     <div class="product-price mb-0">
                                         <span>€ 80,000</span>
                                         <div class="custom-icon-tag-product">
-
                                             <img src="{{ URL::to('public/assets/images/tag-prod-blue.png') }}" alt="tag">
 
                                         </div>
-
                                     </div><!-- End .product-price -->
                                     <div>
                                         <span>Condition:</span> <span>Used</span> <br>
                                         <span>Brand:</span> <span>CAT</span>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
                                     </div>
-
-
                                 </div><!-- End .product-body -->
                             </div><!-- End .product -->
                         </div><!-- End .col-sm-6 col-md-4 col-lg-3 -->
-
-                        <div class="col-6 col-md-4 col-lg-3">
+                        <div class="col-6 col-md-4 col-lg-3" style="display: block;">
                             <div class="product product-2 prod-shadow-main">
                                 <figure class="product-media">
                                     <span class="product-label label-circle label-sale custom-position-tag">Sell</span>
@@ -253,9 +250,6 @@
                                         <img src="{{ URL::to('public/assets/images/cat-bulldozer-mike-burgquist.png') }}" alt="Product image"
                                             class="product-image">
                                     </a>
-
-
-
 
                                 </figure><!-- End .product-media -->
 
@@ -287,7 +281,7 @@
                             </div><!-- End .product -->
                         </div><!-- End .col-sm-6 col-md-4 col-lg-3 -->
 
-                        <div class="col-6 col-md-4 col-lg-3">
+                        <div class="col-6 col-md-4 col-lg-3" style="display: block;">
                             <div class="product product-2 prod-shadow-main">
                                 <figure class="product-media">
                                     <span
@@ -334,7 +328,10 @@
                     </div><!-- End .col-sm-6 col-md-4 col-lg-3 -->
                 </div><!-- End .row -->
             </div><!-- End .products -->
-            <div class="container text-section mt-5 mb-5 m">
+    
+            <div class="container  mt-5 mb-5 m">
+            <div class="row">
+            <div class="text-section col-md-10 m-auto">
                 
                 <h1 class="text-center text-white"> About Company</h1>
                 <p class="text-center text-white">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
@@ -349,5 +346,9 @@
                     et ea rebum. Stet clita kasd gubergren, no sea</p>
 
             </div>
+</div>
+</div>
+    </div></div>
+
 </main><!-- End .main -->
 @endsection

@@ -32,15 +32,21 @@ unset($__errorArgs, $__bag); ?>
                             <div class="form-group">
                                 <label for="singin-email-2">Email</label>
                                 &nbsp;<input type="text" class="form-control" id="singin-email-2" name="email" required style="padding-left:4rem;">
-            <span class="email_icon" ><i class="fa fa-envelope" aria-hidden="true"></i></span>
+            <span class="email_icon" >
+                <!-- <i class="fa fa-envelope" aria-hidden="true"></i> -->
+                <img src="<?php echo e(URL::to('public/assets/images/icons/envelope.svg')); ?>">
+            </span>
                             </div>
 
 
                             <div class="form-group">
                                 <label for="singin-password-2">Password</label>
                                 <input type="password" class="form-control" id="singin-password-2" name="password" required style="padding-left:4rem;">
-            <span class="password_icon" ><i class="fa fa-lock" aria-hidden="true"></i></span>
-            <span class="password_icon_hide" ><i class="fa fa-eye-slash" aria-hidden="true"></i></span>
+            <span class="password_icon" >
+                <!-- <i class="fa fa-lock" aria-hidden="true"></i> -->
+                <img src="<?php echo e(URL::to('public/assets/images/icons/lock.svg')); ?>">
+            </span>
+            <img class="password_icon_hide_register_login" src="<?php echo e(URL::to('public/assets/images/icons/eye.svg')); ?>">
 
                             </div><!-- End .form-group -->
                             <div class="form-footer">

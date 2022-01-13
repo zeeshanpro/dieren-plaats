@@ -30,7 +30,7 @@ unset($__errorArgs, $__bag); ?>
                         <form method="post" action="<?php echo e(route('login')); ?>">
                         <?php echo csrf_field(); ?>
                             <div class="form-group">
-                                <label for="singin-email-2">Email</label>
+                                <label for="singin-email-2 cstm-pl-1">Email</label>
                                 &nbsp;<input type="text" class="form-control" id="singin-email-2" name="email" required style="padding-left:4rem;">
             <span class="email_icon" >
                 <!-- <i class="fa fa-envelope" aria-hidden="true"></i> -->

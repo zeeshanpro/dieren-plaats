@@ -1018,6 +1018,13 @@
                             .d-xxl-flex {
                                 display: flex !important
                             }
+                            .btn-custom-round1{
+                                position: absolute;
+                               border: none;
+                               top: 0.2rem;
+                               right: 50.5rem;
+                               background: transparent;
+   }
                         }
                         
                         @media screen and (min-width: 1920px) {
@@ -1026,6 +1033,13 @@
                                 margin-left: auto;
                                 margin-right: auto
                             }
+                            .btn-custom-round1{
+                                position: absolute;
+                               border: none;
+                               top: 0.2rem;
+                               right: 50rem;
+                               background: transparent;
+   }
                         }
                         
                         .header {
@@ -5776,6 +5790,13 @@
                             .custom-footer-menu a:nth-child(1) {
                                 padding-left: 4rem !important;
                             }
+                            .btn-custom-round1{
+                                position: absolute;
+                               border: none;
+                               top: 0.2rem;
+                               right: 40.5rem;
+                               background: transparent;
+   }
                         }
                         
                         .header-14 {
@@ -10688,7 +10709,7 @@
                             line-height: 1.5;
                             font-weight: 300;
                             color: #777;
-                            background-color: #fafafa;
+                            background-color: none;
                             border: 1px solid #c1c1c1;
                             border-radius: 0;
                             margin-bottom: 2rem;
@@ -20588,3 +20609,7 @@
                             right: 2.2rem;
                             background: transparent;
                         }
+
+.form-group label{
+    padding-left: 1rem;
+}

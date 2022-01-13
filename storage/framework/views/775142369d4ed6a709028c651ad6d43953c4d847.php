@@ -3,7 +3,7 @@
 <main class="main">
     <div class="newsletter">
                 <div class="background"
-                    style="background-image: url(public/assets/images/slider.png); background-repeat: no-repeat;  ">
+                    style="background-image: url(public/assets/images/slider.png); background-repeat: no-repeat; background-size:cover; ">
                     <div class="subscribe">
                         <div class="subscribe-title text-center">
                             <h3 class="slider-title pb-1 pt-2">Are you looking to buy equipment?</h3>
@@ -13,7 +13,7 @@
                             <div class="input-group custom-banner-search">
                                 <input type="email" placeholder="Search assets " aria-label="Email Adress" required="">
                                 <div class="input-group-append">
-                                    <button class="btn-custom-round" type="submit">
+                                    <button class="btn-custom-round1" type="submit">
                                         <!-- <i class="icon-search icon-flip"></i> -->
                                         <img src="<?php echo e(URL::to('public/assets/images/icons/search-icon.svg')); ?>">
                                     </button>

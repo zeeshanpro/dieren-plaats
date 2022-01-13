@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="Group_6020" data-name="Group 6020" transform="translate(1161 1991)">
+    <g id="ico_24_ui_lock" data-name="ico / 24 / ui / lock" transform="translate(-1161 -1991)">
+      <rect id="Bounding_box" data-name="Bounding box" width="24" height="24" fill="#8b8b8b" opacity="0"/>
+      <path id="Icon_color" data-name="Icon color" d="M14,20H2a2,2,0,0,1-2-2V10A2,2,0,0,1,2,8V6A6,6,0,0,1,14,6V8a2,2,0,0,1,2,2v8A2,2,0,0,1,14,20ZM7,12a1,1,0,0,0-1,1v2a1,1,0,0,0,1,1H9a1,1,0,0,0,1-1V13a1,1,0,0,0-1-1ZM8,2A4.005,4.005,0,0,0,4,6V8h8V6A4,4,0,0,0,8,2Z" transform="translate(4 2)" fill="#8b8b8b"/>
+    </g>
+  </g>
+</svg>

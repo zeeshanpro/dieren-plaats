@@ -20,7 +20,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="<?php echo e(URL::to('public/assets/images/icons/favicon-16x16.png')); ?>">
     <link rel="manifest" href="<?php echo e(URL::to('public/assets/images/icons/site.html')); ?>">
     <link rel="mask-icon" href="<?php echo e(URL::to('public/assets/images/icons/safari-pinned-tab.svg')); ?>" color="#666666">
-    <link rel="shortcut icon" href="<?php echo e(URL::to('public/assets/images/icons/favicon.ico')); ?>">
+    <link rel="shortcut icon" href="<?php echo e(URL::to('public/assets/images/icons/favicon_new.ico')); ?>">
     <meta name="apple-mobile-web-app-title" content="Molla">
     <meta name="application-name" content="Molla">
     <meta name="msapplication-TileColor" content="#cc9966">
@@ -47,14 +47,14 @@
         <header class="header">
 
             <div class="header-middle sticky-header">
-                <div class="container">
+                <div class="container-fluid" style="height:70px;">
                     <div class="header-left">
                         <button class="mobile-menu-toggler">
                             <span class="sr-only">Toggle mobile menu</span>
                             <i class="icon-bars"></i>
                         </button>
 
-                        <a href="index.html" class="logo">
+                        <a href="<?php echo e(URL::to('/')); ?>" class="logo">
                             <img src="<?php echo e(URL::to('public/assets/images/demos/demo-21/logo.png')); ?>" alt="Remora Logo" width="100" height="25">
                         </a>
 
@@ -111,7 +111,7 @@
                         <div class="wishlist add-product-btn">
                             <span> <i class="fa fa-sign-in"></i> </span>
                             <button type="submit" class="btn btn-outline-primary-2 ">
-                                <span class="pr-2"><img src="<?php echo e(URL::to('public/assets/images/icons/add-icon.png')); ?>"></span> <span>Add Product</span>
+                                <span class="pr-2"><img src="<?php echo e(URL::to('public/assets/images/icons/add-icon.png')); ?>"></span> <span class="text-white">Add Product</span>
 
                             </button>
 
@@ -124,7 +124,7 @@
 
                         <div class="dropdown cart-dropdown">
                             <a href="#" class="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-display="static">
-                                <img src="assets/images/dp.png" alt="dp" width="40px" height="40px">
+                                <img src="<?php echo e(URL::to('public/assets/images/dp.png')); ?>" alt="dp" width="40px" height="40px">
 
                             </a>
 
@@ -133,8 +133,10 @@
 
 
                                 <div class="dropdown-cart-action">
-                                    <a href="cart.html" class="btn btn-primary">Log Out</a>
-
+                                    <a href="javascript:;"  class="btn btn-primary logout">Log Out</a>
+                                    <form method="POST" id="form-logout" action="<?php echo e(route('logout')); ?>">
+                                        <?php echo csrf_field(); ?>
+                                    </form>
                                 </div><!-- End .dropdown-cart-total -->
                             </div><!-- End .dropdown-menu -->
                         </div>
@@ -143,7 +145,7 @@
                         <div class="wishlist">
                             <span> <i class="fa fa-sign-in"></i> </span>
                             
-                            <button type="submit" class="btn btn-primary-custom-hdr-before">Login</button>
+                            <button type="submit" class="btn btn-primary-custom-hdr-before login">Login</button>
                                
 
                             </button>
@@ -153,7 +155,7 @@
 
                         <div class="dropdown cart-dropdown wishlist">
                             <span> <i class="fa fa-user-circle"></i> </span>
-                            <button type="submit" class="btn btn-primary-custom-hdr">Register</button>
+                            <button type="submit" class="btn btn-primary-custom-hdr register">Register</button>
 
                             </button>
 
@@ -172,7 +174,7 @@
 
 
         <footer class="footer ">
-            <div class="container mt-4">
+            <div class="container mt-4 pt-4">
 
                 <div class="row justify-content-center">
 
@@ -204,30 +206,29 @@
                 </div>
                 <hr class="mt-0 mb-0 " style="background-color: #00000030; height: 1px;">
 
-                <div class="row" style="padding-bottom:4%; padding-top:4%;">
-                    <div class="col-md-3">
+                <div class="row" style="padding-bottom:7rem; padding-top:5rem;">
+							<div class="col-md-3 text-center">
 
-                        <img src="<?php echo e(URL::to('public/assets/images/demos/demo-21/logo-footer.png')); ?>" class="footer-logo m-auto"
-                            alt="Footer Logo" width="100" height="25">
-                    </div>
+                                <img src="<?php echo e(URL::to('public/assets/images/demos/demo-21/logo-footer.png')); ?>" class="footer-logo m-auto" alt="Footer Logo" width="150" height="35">
+                          </div>
 
-                    <div class="col-md-6 custom-footer-padding ">
+						   <div class="col-md-7 custom-footer-menu pt-2 theme-color-gray">
 
-                        <a class="pr-4" href="#">Market Place</a>
-                        <a class="pr-4" href="#">Sell Product</a>
-                        <a class="pr-4" href="#">About Us</a>
-                        <a class="pr-4" href="#">Terms & Conditions</a>
-                        <a href="#">Privacy Policy</a>
+                                   <a  href="#">Market Place</a>
+                                   <a  href="#">Sell Product</a>
+                                    <a  href="#">About Us</a>
+                                     <a  href="#">Terms & Conditions</a>
+                                     <a href="#">Privacy Policy</a>
 
-                    </div>
+							</div>
 
-                    <div class="col-md-3">
-                        <div class="social-icons social-icons-color">
-                            <a href="#" class="social-icon social-facebook" title="Facebook" target="_blank"><img src="<?php echo e(URL::to('public/assets/images/facebook.png')); ?>"></a>
+                            <div class="col-md-2">
+                                <div class="social-icons social-icons-color">
+                                <a href="#" class="social-icon social-facebook" title="Facebook" target="_blank"><img src="<?php echo e(URL::to('public/assets/images/facebook.png')); ?>"></a>
                             <a href="#" class="social-icon social-twitter" title="Twitter" target="_blank"><img src="<?php echo e(URL::to('public/assets/images/linkdin.png')); ?>"></a>
                             <a href="#" class="social-icon social-instagram" title="Instagram" target="_blank"><img src="<?php echo e(URL::to('public/assets/images/msg.png')); ?>"></a>
                         </div><!-- End .soial-icons -->
-                    </div>
+							            </div>
 
                 </div><!-- End .container -->
             </div><!-- End .footer-bottom -->
@@ -308,6 +309,10 @@
         $('.register').on('click', function() {
             window.location.href = "<?php echo e(route('register')); ?>";
         })
+
+        $('.logout').on('click',function(){
+            $('#form-logout').submit();
+        });
     </script>
 
 </body>

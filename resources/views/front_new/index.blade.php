@@ -1,30 +1,22 @@
 @extends('front_new/layout/layout')
 @section('container')
 <main class="main">
-    <div class="newsletter">
-                <div class="background"
-                    style="background-image: url(public/assets/images/slider.png); background-repeat: no-repeat; background-size:cover; ">
+
+<div class="container newsletter custom-top-search-banner">
+                <div class="background slider-image" style="background-image: url(public/assets/images/slider.png); background-repeat: no-repeat; background-size:cover; ">
                     <div class="subscribe">
-                        <div class="subscribe-title text-center">
+                    <div class="subscribe-title text-center">
                             <h3 class="slider-title pb-1 pt-2">Are you looking to buy equipment?</h3>
                             <h5 class="slider-subheading">Find the right used/new marine equipment for your need <br> and view thousands of listings worldwide.</h5>
                         </div>
-                        <form action="#">
-                            <div class="input-group custom-banner-search">
-                                <input type="email" placeholder="Search assets " aria-label="Email Adress" required="">
-                                <div class="input-group-append">
-                                    <button class="btn-custom-round1" type="submit">
-                                        <!-- <i class="icon-search icon-flip"></i> -->
-                                        <img src="{{ URL::to('public/assets/images/icons/search-icon.svg') }}">
-                                    </button>
-                                </div><!-- .End .input-group-append -->
-                              
-                            </div><!-- .End .input-group -->
-                            <center><a href="#" class=" custom-submit-btn"><span>Sell
-                                    equipment</span></a></center>
+                        <form action="#" method="get" class="mobile-search custom-search-form-top">
+                    <label for="mobile-search" class="sr-only">Search</label>
+                    <input type="search" class="form-control" name="mobile-search" id="mobile-search" placeholder="Search in..." required="">
+                    <button class="btn btn-primary custom-btn-top-search" type="submit"><i class="icon-search icon-flip"></i></button>                 
 
-                        </form>
-                       
+                </form>
+                <center><a href="#" class=" custom-submit-btn"><span>Sell
+                                    equipment</span></a></center>
                     </div>
                 </div>
             </div>

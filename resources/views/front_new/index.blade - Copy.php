@@ -1,22 +1,30 @@
-
-<?php $__env->startSection('container'); ?>
+@extends('front_new/layout/layout')
+@section('container')
 <main class="main">
-
-<div class="container newsletter custom-top-search-banner">
-                <div class="background slider-image" style="background-image: url(public/assets/images/slider.png); background-repeat: no-repeat; background-size:cover; ">
+    <div class="newsletter">
+                <div class="background"
+                    style="background-image: url(public/assets/images/slider.png); background-repeat: no-repeat; background-size:cover; ">
                     <div class="subscribe">
-                    <div class="subscribe-title text-center">
+                        <div class="subscribe-title text-center">
                             <h3 class="slider-title pb-1 pt-2">Are you looking to buy equipment?</h3>
                             <h5 class="slider-subheading">Find the right used/new marine equipment for your need <br> and view thousands of listings worldwide.</h5>
                         </div>
-                        <form action="#" method="get" class="mobile-search custom-search-form-top">
-                    <label for="mobile-search" class="sr-only">Search</label>
-                    <input type="search" class="form-control" name="mobile-search" id="mobile-search" placeholder="Search in..." required="">
-                    <button class="btn btn-primary custom-btn-top-search" type="submit"><i class="icon-search icon-flip"></i></button>                 
-
-                </form>
-                <center><a href="#" class=" custom-submit-btn"><span>Sell
+                        <form action="#">
+                            <div class="input-group custom-banner-search">
+                                <input type="email" placeholder="Search assets " aria-label="Email Adress" required="">
+                                <div class="input-group-append">
+                                    <button class="btn-custom-round" type="submit">
+                                        <!-- <i class="icon-search icon-flip"></i> -->
+                                        <img src="{{ URL::to('public/assets/images/icons/search-icon.svg') }}">
+                                    </button>
+                                </div><!-- .End .input-group-append -->
+                              
+                            </div><!-- .End .input-group -->
+                            <center><a href="#" class=" custom-submit-btn"><span>Sell
                                     equipment</span></a></center>
+
+                        </form>
+                       
                     </div>
                 </div>
             </div>
@@ -30,7 +38,7 @@
             <div class="col-md-6">
                 <div class="banner custom-bg-img">
                     <a href="#">
-                        <img src="<?php echo e(URL::to('public/assets/images/categories/category-1.png')); ?>" alt="Category1">
+                        <img src="{{ URL::to('public/assets/images/categories/category-1.png') }}" alt="Category1">
                     </a>
 
                     <div class="banner-content">
@@ -44,7 +52,7 @@
             <div class="col-md-6">
                 <div class="banner custom-bg-img">
                     <a href="#">
-                        <img src="<?php echo e(URL::to('public/assets//images/categories/category-2.png')); ?>" alt="Banner">
+                        <img src="{{ URL::to('public/assets//images/categories/category-2.png') }}" alt="Banner">
                     </a>
 
                     <div class="banner-content">
@@ -58,7 +66,7 @@
             <div class="col-md-6">
                 <div class="banner custom-bg-img">
                     <a href="#">
-                        <img src="<?php echo e(URL::to('public/assets/images/categories/category-3.png')); ?>" alt="Category1">
+                        <img src="{{ URL::to('public/assets/images/categories/category-3.png') }}" alt="Category1">
                     </a>
 
                     <div class="banner-content">
@@ -72,7 +80,7 @@
             <div class="col-md-6">
                 <div class="banner custom-bg-img">
                     <a href="#">
-                        <img src="<?php echo e(URL::to('public/assets/images/categories/category-4.png')); ?>" alt="Banner">
+                        <img src="{{ URL::to('public/assets/images/categories/category-4.png') }}" alt="Banner">
                     </a>
 
                     <div class="banner-content">
@@ -100,7 +108,7 @@
                         <div class="row align-items-center cstm-ftrd-prod mr-3 ml-5">
 		                		<div class="col-md-6 mb-3 mb-md-0">
                                 <figure class="store-media mb-2 mb-lg-0">
-                                    <img style="margin-left: -1rem;" src="<?php echo e(URL::to('public/assets/images/cat-bulldozer-mike-burgquist.png')); ?>" alt="image">
+                                    <img style="margin-left: -1rem;" src="{{ URL::to('public/assets/images/cat-bulldozer-mike-burgquist.png') }}" alt="image">
                                 </figure>
 		                		</div><!-- End .col-md-6 -->
 		                		<div class="col-md-6">
@@ -125,7 +133,7 @@
                     <div class="row align-items-center cstm-ftrd-prod ml-3 mr-5">
 		                		<div class="col-md-6 mb-3 mb-md-0">
                                 <figure class="store-media mb-2 mb-lg-0">
-                                    <img style="margin-left: -1rem;" src="<?php echo e(URL::to('public/assets/images/cat-bulldozer-mike-burgquist.png')); ?>" alt="image">
+                                    <img style="margin-left: -1rem;" src="{{ URL::to('public/assets/images/cat-bulldozer-mike-burgquist.png') }}" alt="image">
                                 </figure>
 		                		</div><!-- End .col-md-6 -->
 		                		<div class="col-md-6">
@@ -168,7 +176,7 @@
                                 <figure class="product-media" >
                                     <span class="product-label label-circle label-sale custom-position-tag">Sell</span>
                                     <a href="product.html">
-                                        <img src="<?php echo e(URL::to('public/assets/images/cat-bulldozer-mike-burgquist.png')); ?>" alt="Product image"
+                                        <img src="{{ URL::to('public/assets/images/cat-bulldozer-mike-burgquist.png') }}" alt="Product image"
                                             class="product-image">
                                     </a>
 
@@ -189,7 +197,7 @@
                                         <span>€ 80,000</span>
                                         <div class="custom-icon-tag-product">
 
-                                            <img src="<?php echo e(URL::to('public/assets/images/tag-prod.png')); ?>" alt="tag">
+                                            <img src="{{ URL::to('public/assets/images/tag-prod.png') }}" alt="tag">
 
                                         </div>
 
@@ -211,7 +219,7 @@
                                     <span
                                         class="product-label label-circle label-sale custom-position-tag product-label-rent">Rent</span>
                                     <a href="product.html">
-                                        <img src="<?php echo e(URL::to('public/assets/images/cat-bulldozer-mike-burgquist.png')); ?>" alt="Product image"
+                                        <img src="{{ URL::to('public/assets/images/cat-bulldozer-mike-burgquist.png') }}" alt="Product image"
                                             class="product-image">
                                     </a>
                                 </figure><!-- End .product-media -->
@@ -222,7 +230,7 @@
                                     <div class="product-price mb-0">
                                         <span>€ 80,000</span>
                                         <div class="custom-icon-tag-product">
-                                            <img src="<?php echo e(URL::to('public/assets/images/tag-prod-blue.png')); ?>" alt="tag">
+                                            <img src="{{ URL::to('public/assets/images/tag-prod-blue.png') }}" alt="tag">
 
                                         </div>
                                     </div><!-- End .product-price -->
@@ -239,7 +247,7 @@
                                 <figure class="product-media">
                                     <span class="product-label label-circle label-sale custom-position-tag">Sell</span>
                                     <a href="product.html">
-                                        <img src="<?php echo e(URL::to('public/assets/images/cat-bulldozer-mike-burgquist.png')); ?>" alt="Product image"
+                                        <img src="{{ URL::to('public/assets/images/cat-bulldozer-mike-burgquist.png') }}" alt="Product image"
                                             class="product-image">
                                     </a>
 
@@ -257,7 +265,7 @@
                                         <span>€ 80,000</span>
                                         <div class="custom-icon-tag-product">
 
-                                            <img src="<?php echo e(URL::to('public/assets/images/Icon color.png')); ?>" alt="tag">
+                                            <img src="{{ URL::to('public/assets/images/Icon color.png') }}" alt="tag">
 
                                         </div>
 
@@ -279,7 +287,7 @@
                                     <span
                                         class="product-label label-circle label-sale custom-position-tag product-label-rent">Rent</span>
                                     <a href="product.html">
-                                        <img src="<?php echo e(URL::to('public/assets/images/cat-bulldozer-mike-burgquist.png')); ?>" alt="Product image"
+                                        <img src="{{ URL::to('public/assets/images/cat-bulldozer-mike-burgquist.png') }}" alt="Product image"
                                             class="product-image">
                                     </a>
 
@@ -343,6 +351,4 @@
     </div></div>
 
 </main><!-- End .main -->
-<?php $__env->stopSection(); ?>
-
-<?php echo $__env->make('front_new/layout/layout', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH C:\xampp\htdocs\dieren-plaats\resources\views/front_new/index.blade.php ENDPATH**/ ?>
+@endsection

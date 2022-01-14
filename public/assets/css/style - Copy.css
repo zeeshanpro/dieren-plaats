@@ -636,9 +636,6 @@
                                 right: 0%!important;
                                 background: transparent;
                             } */
-                            .slider-image {
-                                height: 380px;
-                            }
                             h1,
                             .h1 {
                                 font-size: 5rem
@@ -1021,13 +1018,14 @@
                             .d-xxl-flex {
                                 display: flex !important
                             }
-                            .btn-custom-round1 {
+                            .btn-custom-round1{
                                 position: absolute;
-                                border: none;
-                                top: 0.2rem!important;
-                                right: 41.5rem!important;
-                                background: transparent;
-                            }
+                               border: none;
+                               top: 0.2rem!important;
+                               right: 41.5rem!important;
+                               background: transparent;
+                             }
+                            
                         }
                         
                         @media screen and (min-width: 1920px) {
@@ -1036,13 +1034,14 @@
                                 margin-left: auto;
                                 margin-right: auto
                             }
-                            .btn-custom-round1 {
+                            .btn-custom-round1{
                                 position: absolute;
-                                border: none;
-                                top: 0.2rem!important;
-                                right: 57.5rem!important;
-                                background: transparent;
-                            }
+                               border: none;
+                               top: 0.2rem!important;
+                               right: 57.5rem!important;
+                               background: transparent;
+                             }
+                            
                         }
                         
                         .header {
@@ -2150,6 +2149,7 @@
                                 right: auto;
                                 width: 1170px
                             }
+                            
                         }
                         
                         @media screen and (max-width: 1199px) {
@@ -2280,9 +2280,6 @@
                         }
                         
                         @media screen and (max-width: 767px) {
-                            .custom-search-form-top {
-                                padding: 0% 5% 0% 17%!important;
-                            }
                             /* .btn-custom-round {
                                 color: #fff;
                                 position: absolute;
@@ -3426,7 +3423,7 @@
                             line-height: 1.5;
                             padding: .8rem 1.5rem;
                             max-width: calc(100% - 36px);
-                            background-color: white;
+                            background-color: #333;
                             border-color: rgba(255, 255, 255, 0.1);
                             border-right-width: 0
                         }
@@ -5775,15 +5772,14 @@
                                 margin-right: 11rem
                             }
                         }
-                        
-                        @media screen and (min-width: 1440px) {
-                            .btn-custom-round1 {
+                        @media screen and (min-width: 1440px){
+                            .btn-custom-round1{
                                 position: absolute;
-                                border: none;
-                                top: 0.2rem!important;
-                                right: 33.5rem !important;
-                                background: transparent;
-                            }
+                               border: none;
+                               top: 0.2rem!important;
+                               right: 33.5rem !important;
+                               background: transparent;
+                             }
                         }
                         
                         @media screen and (min-width: 1280px) {
@@ -5813,6 +5809,7 @@
                                right: 25.5rem !important;
                                background: transparent;
                              } */
+                           
                         }
                         
                         .header-14 {
@@ -6197,9 +6194,6 @@
                         }
                         
                         @media screen and (min-width: 768px) {
-                            .custom-search-form-top {
-                                padding: 0% 21% 0% 23%!important;
-                            }
                             .header-14 .header-middle .header-right {
                                 max-width: 84%
                             }
@@ -6212,9 +6206,6 @@
                         }
                         
                         @media screen and (min-width: 1600px) {
-                            .custom-search-form-top {
-                                padding: 0% 29.5% 0% 30%!important;
-                            }
                             .header-14 .container-fluid .megamenu-container {
                                 position: static
                             }
@@ -10736,7 +10727,7 @@
                             margin-bottom: 2rem;
                             transition: all 0.3s;
                             box-shadow: none;
-                            /* border-radius: 2rem; */
+                            border-radius: 2rem;
                         }
                         
                         select.form-control:not([size]):not([multiple]) {
@@ -20551,7 +20542,7 @@
                         .icon-flip::before {
                             content: '\f2eb';
                             transform: scaleX(-1) !important;
-                            font-size: 18px;
+                            font-size: 20px;
                         }
                         
                         .title-main {
@@ -20630,47 +20621,20 @@
                             right: 2.2rem;
                             background: transparent;
                         }
-                        
-                        .form-group label {
-                            padding-left: 1rem;
-                        }
-                        
-                        .custom-banner-search {
-                            position: relative;
-                        }
-                        
-                        .custom-banner-search i {
-                            position: absolute;
-                            left: 0;
-                            top: 8px;
-                            padding: 9px 8px;
-                            color: #fff;
-                            background-color: #1091bd;
-                            border-radius: 50%;
-                            transition: 0.3s;
-                        }
-                        
-                        .custom-top-search-banner {
-                            padding: 0px!important;
-                            width: 100%;
-                            max-width: 100%!important;
-                        }
-                        
-                        .custom-top-search-banner .custom-top-search-btn {
-                            border-radius: 50px!important;
-                        }
-                        
-                        .custom-search-form-top .form-control {
-                            background-color: white!important;
-                        }
-                        
-                        .custom-search-form-top .custom-btn-top-search {
-                            display: block!important;
-                            border-radius: 26px;
-                        }
-                        
-                        .custom-search-form-top input {
-                            height: 55px!important;
-                            color: black!important;
-                            margin-right: -52px;
-                        }
+
+.form-group label{
+    padding-left: 1rem;
+}
+.custom-banner-search{
+    position: relative;
+}
+.custom-banner-search i {
+    position: absolute;
+  left: 0;
+  top: 8px;
+  padding: 9px 8px;
+  color: #fff;
+  background-color: #1091bd;
+  border-radius: 50%;
+  transition: 0.3s;
+}

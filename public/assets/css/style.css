@@ -6762,7 +6762,7 @@
                         
                         .breadcrumb-item {
                             font-weight: 300;
-                            font-size: 1.4rem;
+                            font-size: 15px;
                             line-height: 1.5;
                             letter-spacing: 0;
                             text-transform: capitalize
@@ -20673,4 +20673,8 @@
                             height: 55px!important;
                             color: black!important;
                             margin-right: -52px;
+                        }
+                        
+                        .theme-color-blue>a {
+                            color: #1091bd !important;
                         }

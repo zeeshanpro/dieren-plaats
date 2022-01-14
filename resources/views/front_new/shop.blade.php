@@ -3,7 +3,7 @@
 <main class="main">
 
     <div class="container d-flex align-items-center">
-        <ol class="breadcrumb">
+        <ol class="breadcrumb mt-2">
             <li class="breadcrumb-item theme-color-blue "><a href="index.html">Home</a></li>
             <li class="breadcrumb-item " aria-current="page">Marine & Offshore</li>
             <li class="breadcrumb-item active " aria-current="page">Deck Equipment</li>
@@ -602,24 +602,24 @@
                                         <div class="filter-item">
                                             <div class="custom-control custom-checkbox">
                                                 <input type="checkbox" class="custom-control-input" id="size-1">
-                                                <label class="custom-control-label" for="size-1">Deck Equipment</label>
-                                                <span class="item-count">(2)</span>
+                                                <label class="custom-control-label" for="size-1">Deck Equipment &nbsp; <span> (2) </span></label>
+                                                <!-- <span class="item-count">(2)</span> -->
                                             </div><!-- End .custom-checkbox -->
                                         </div><!-- End .filter-item -->
 
                                         <div class="filter-item filter-items-count">
                                             <div class="custom-control custom-checkbox">
                                                 <input type="checkbox" class="custom-control-input" id="size-2">
-                                                <label class="custom-control-label" for="size-2">Subsea equipment</label>
-                                                <span class="item-count">(2)</span>
+                                                <label class="custom-control-label" for="size-2">Subsea equipment &nbsp; <span> (2) </span></label>
+                                                
                                             </div><!-- End .custom-checkbox -->
                                         </div><!-- End .filter-item -->
 
                                         <div class="filter-item filter-items-count">
                                             <div class="custom-control custom-checkbox">
                                                 <input type="checkbox" class="custom-control-input" checked="" id="size-3">
-                                                <label class="custom-control-label" for="size-3">Renewables</label>
-                                                <span class="item-count">(2)</span>
+                                                <label class="custom-control-label" for="size-3">Renewables &nbsp; <span> (2) </span></label>
+                                                
                                             </div><!-- End .custom-checkbox -->
                                         </div><!-- End .filter-item -->
 
@@ -631,85 +631,66 @@
 
                         <div class="widget widget-collapsible">
                             <h3 class="widget-title">
-                                <a data-toggle="collapse" href="#widget-3" role="button" aria-expanded="true" aria-controls="widget-3">
-                                    Type:
+                                <a data-toggle="collapse" href="#widget-2" role="button" aria-expanded="true" aria-controls="widget-2">
+                                    Sub-category:
                                 </a>
                             </h3><!-- End .widget-title -->
 
-                            <div class="collapse show" id="widget-3">
+                            <div class="collapse show" id="widget-2">
                                 <div class="widget-body">
-                                    <div class="filter-colors">
-                                        <a href="#" style="background: #b87145;"><span class="sr-only">Color Name</span></a>
-                                        <a href="#" style="background: #f0c04a;"><span class="sr-only">Color Name</span></a>
-                                        <a href="#" style="background: #333333;"><span class="sr-only">Color Name</span></a>
-                                        <a href="#" class="selected" style="background: #cc3333;"><span class="sr-only">Color Name</span></a>
-                                        <a href="#" style="background: #3399cc;"><span class="sr-only">Color Name</span></a>
-                                        <a href="#" style="background: #669933;"><span class="sr-only">Color Name</span></a>
-                                        <a href="#" style="background: #f2719c;"><span class="sr-only">Color Name</span></a>
-                                        <a href="#" style="background: #ebebeb;"><span class="sr-only">Color Name</span></a>
-                                    </div><!-- End .filter-colors -->
+                                    <div class="filter-items filter-items-count">
+                                        <div class="filter-item">
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="size-1">
+                                                <label class="custom-control-label" for="size-1">Deck Equipment &nbsp; <span> (2) </span></label>
+                                                
+                                            </div><!-- End .custom-checkbox -->
+                                        </div><!-- End .filter-item -->
+
+                                        
+
+                                        <div class="filter-item filter-items-count">
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" checked="" id="size-3">
+                                                <label class="custom-control-label" for="size-3">Renewables &nbsp; <span> (2) </span></label>
+                                                
+                                            </div><!-- End .custom-checkbox -->
+                                        </div><!-- End .filter-item -->
+
+
+                                    </div><!-- End .filter-items -->
                                 </div><!-- End .widget-body -->
                             </div><!-- End .collapse -->
                         </div><!-- End .widget -->
 
                         <div class="widget widget-collapsible">
                             <h3 class="widget-title">
-                                <a data-toggle="collapse" href="#widget-4" role="button" aria-expanded="true" aria-controls="widget-4">
-                                    Condition:
+                                <a data-toggle="collapse" href="#widget-2" role="button" aria-expanded="true" aria-controls="widget-2">
+                                    Sub-category:
                                 </a>
                             </h3><!-- End .widget-title -->
 
-                            <div class="collapse show" id="widget-4">
+                            <div class="collapse show" id="widget-2">
                                 <div class="widget-body">
-                                    <div class="filter-items">
+                                    <div class="filter-items filter-items-count">
                                         <div class="filter-item">
                                             <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="brand-1">
-                                                <label class="custom-control-label" for="brand-1">Next</label>
+                                                <input type="checkbox" class="custom-control-input" id="size-1">
+                                                <label class="custom-control-label" for="size-1">Deck Equipment &nbsp; <span> (2) </span></label>
+                                                
                                             </div><!-- End .custom-checkbox -->
                                         </div><!-- End .filter-item -->
 
-                                        <div class="filter-item">
+                                        
+
+                                        <div class="filter-item filter-items-count">
                                             <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="brand-2">
-                                                <label class="custom-control-label" for="brand-2">River Island</label>
+                                                <input type="checkbox" class="custom-control-input" checked="" id="size-3">
+                                                <label class="custom-control-label" for="size-3">Renewables &nbsp; <span> (2) </span></label>
+                                                
                                             </div><!-- End .custom-checkbox -->
                                         </div><!-- End .filter-item -->
 
-                                        <div class="filter-item">
-                                            <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="brand-3">
-                                                <label class="custom-control-label" for="brand-3">Geox</label>
-                                            </div><!-- End .custom-checkbox -->
-                                        </div><!-- End .filter-item -->
-
-                                        <div class="filter-item">
-                                            <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="brand-4">
-                                                <label class="custom-control-label" for="brand-4">New Balance</label>
-                                            </div><!-- End .custom-checkbox -->
-                                        </div><!-- End .filter-item -->
-
-                                        <div class="filter-item">
-                                            <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="brand-5">
-                                                <label class="custom-control-label" for="brand-5">UGG</label>
-                                            </div><!-- End .custom-checkbox -->
-                                        </div><!-- End .filter-item -->
-
-                                        <div class="filter-item">
-                                            <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="brand-6">
-                                                <label class="custom-control-label" for="brand-6">F&amp;F</label>
-                                            </div><!-- End .custom-checkbox -->
-                                        </div><!-- End .filter-item -->
-
-                                        <div class="filter-item">
-                                            <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="brand-7">
-                                                <label class="custom-control-label" for="brand-7">Nike</label>
-                                            </div><!-- End .custom-checkbox -->
-                                        </div><!-- End .filter-item -->
 
                                     </div><!-- End .filter-items -->
                                 </div><!-- End .widget-body -->

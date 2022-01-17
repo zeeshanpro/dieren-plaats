@@ -5,61 +5,42 @@
     <div class="container d-flex align-items-center">
         <ol class="breadcrumb">
             <li class="breadcrumb-item theme-color-blue "><a href="index.html">Home</a></li>
-            <li class="breadcrumb-item active " aria-current="page">Marine & Offshore</li>
+            <li class="breadcrumb-item active " aria-current="page">{{$kind->title}}</li>
         </ol>
 
 
     </div>
     <div class="container">
-        <h2 class="theme-color-blue mt-1">Marine & Offshore</h2>
+        <h2 class="theme-color-blue mt-1">{{$kind->title}}</h2>
         <div class="heading-left">
             <h2 class="title  mb-3 theme-color-gray">Subcategories</h2><!-- End .title text-center mb-2 -->
         </div><!-- End .heading-left -->
     </div>
+
+    @inject( "adAttributeObj" , 'App\Repositories\Front\AdAttributeRepository' )
+    @php
+    $attributesResults = $adAttributeObj->listAttributes( $kindId );
+    @endphp
+
     <div class="container">
 
         <div class="row justify-content-center">
+        @foreach ($attributesResults['race'] as $attributeValues)
             <div class="col-md-6 col-lg-4">
                 <div class="banner">
-                    <a href="#">
+                    <a href="{{ route('shop',['category' => $kind->title_slug , 'subcategory' => $attributeValues->title_slug]) }}">
                         <img src="{{ URL::to('public/assets/images/banners/3cols/banner-4.jpg') }}" alt="Banner">
                     </a>
 
                     <div class="banner-content">
 
-                        <h3 class="banner-title text-white">Deck Equipment</h3><!-- End .banner-title -->
+                        <h3 class="banner-title text-white">{{$attributeValues->title}}</h3><!-- End .banner-title -->
 
                     </div><!-- End .banner-content -->
                 </div><!-- End .banner -->
             </div><!-- End .col-md-6 -->
-
-            <div class="col-md-6 col-lg-4">
-                <div class="banner">
-                    <a href="#">
-                        <img src="{{ URL::to('public/assets/images/banners/3cols/banner-5.jpg') }}" alt="Banner">
-                    </a>
-
-                    <div class="banner-content">
-
-                        <h3 class="banner-title text-white">Subsea equipment parts</h3><!-- End .banner-title -->
-
-                    </div><!-- End .banner-content -->
-                </div><!-- End .banner -->
-            </div><!-- End .col-md-6 -->
-
-            <div class="col-md-6 col-lg-4">
-                <div class="banner">
-                    <a href="#">
-                        <img src="{{ URL::to('public/assets/images/banners/3cols/banner-6.jpg') }}" alt="Banner">
-                    </a>
-
-                    <div class="banner-content">
-
-                        <h3 class="banner-title text-white">Renewables </h3><!-- End .banner-title -->
-
-                    </div><!-- End .banner-content -->
-                </div><!-- End .banner -->
-            </div><!-- End .col-md-6 -->
+            @endforeach
+            
         </div><!-- End .row -->
     </div>
     <div class="container for-you">
@@ -429,4 +410,3 @@
     </div><!-- End .heading-left -->
 </main><!-- End .main -->
 @endsection
-

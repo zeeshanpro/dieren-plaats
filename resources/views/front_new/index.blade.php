@@ -29,7 +29,7 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="banner custom-bg-img">
-                    <a href="#">
+                    <a href="{{route( 'category_byslug', [ 'slug' => 'marine-offshore' ] )}}">
                         <img src="{{ URL::to('public/assets/images/categories/category-1.png') }}" alt="Category1">
                     </a>
 
@@ -43,7 +43,7 @@
 
             <div class="col-md-6">
                 <div class="banner custom-bg-img">
-                    <a href="#">
+                    <a href="{{route( 'category_byslug', [ 'slug' =>  'inland-navigation' ] )}}">
                         <img src="{{ URL::to('public/assets//images/categories/category-2.png') }}" alt="Banner">
                     </a>
 
@@ -57,7 +57,7 @@
 
             <div class="col-md-6">
                 <div class="banner custom-bg-img">
-                    <a href="#">
+                    <a href="{{route( 'category_byslug', [ 'slug' => 'ports' ] )}}">
                         <img src="{{ URL::to('public/assets/images/categories/category-3.png') }}" alt="Category1">
                     </a>
 
@@ -71,7 +71,7 @@
 
             <div class="col-md-6">
                 <div class="banner custom-bg-img">
-                    <a href="#">
+                    <a href="{{route( 'category_byslug', [ 'slug' => 'construction' ] )}}">
                         <img src="{{ URL::to('public/assets/images/categories/category-4.png') }}" alt="Banner">
                     </a>
 

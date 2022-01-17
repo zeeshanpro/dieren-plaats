@@ -243,7 +243,7 @@ class AdRepository implements AdInterface
                 } ] );
 
             if( isset($request->kindId) and is_numeric($request->kindId) ) {
-                $kindRec = Kind::select('id', 'title')->where('id', '=', $request->kindId)->where('status', '=', '1');
+                $kindRec = Kind::select('id', 'title','title_slug')->where('id', '=', $request->kindId)->where('status', '=', '1');
                 if( $kindRec->count() > 0 ) {
                     $data['kind'] = $kindRec->first();
                 }
@@ -255,7 +255,7 @@ class AdRepository implements AdInterface
                                     } ] );
 
             $sqlObj->where( 'kind_id', '=', $request->kindId );
-            $kindRec = Kind::select('id', 'title')->where('id', '=', $request->kindId)->where('status', '=', '1');
+            $kindRec = Kind::select('id', 'title','title_slug')->where('id', '=', $request->kindId)->where('status', '=', '1');
             if( $kindRec->count() > 0 ) {
                 $data['kind'] = $kindRec->first();
             } else if( $createdByUserId == 0 ){

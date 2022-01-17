@@ -16,7 +16,8 @@ use App\Http\Controllers\Auth\GoogleController;
 use App\Http\Controllers\Front\ForgotPassword\ResetPasswordController;
 use App\Http\Controllers\Front\PaidAdStripe\PaidAdController;
 use App\Http\Controllers\Front\Import\ImportCSVController;
-
+use App\Http\Controllers\Remora_front\Category\CategoryController;
+use App\Http\Controllers\Remora_front\Shop\ShopController;
 
 // Route::get('/test', function () {
 //     return view('test');
@@ -246,13 +247,12 @@ Route::group(['middleware' => ['auth','permitteduser']], function () {
 });
 
 
-Route::get('category/{slug}', function(){
-    return view('front_new.category');
-});
+Route::get('category/{slug}',[CategoryController::class, 'index'])->name('category_byslug'); // main working
+Route::get('shop/{category}/{subcategory}',[ShopController::class, 'index'])->name('shop');
 
-Route::get('shop/{slug}/{slug2}', function(){
-    return view('front_new.shop');
-});
+// Route::get('shop/{slug}/{slug2}', function(){
+//     return view('front_new.shop');
+// });
 
 Route::get('product/{slug}', function(){
     return view('front_new.products.product_detail');

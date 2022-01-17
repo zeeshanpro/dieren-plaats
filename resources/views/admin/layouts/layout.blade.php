@@ -187,8 +187,8 @@ $publicPath = env('ASSETS_PATH');
           </li>
          
 
-            <li class="nav-item has-treeview hide">
-            <a href="javascript::void(0);" class="nav-link disabled-link">
+            <li class="nav-item has-treeview">
+            <a href="javascript::void(0);" class="nav-link">
               <i class="nav-icon fas fa-cog"></i>
               <p>
                 Settings

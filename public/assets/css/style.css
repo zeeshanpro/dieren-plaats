@@ -20411,8 +20411,9 @@
                             left: 0;
                             height: 18px;
                             width: 18px;
-                            background-color: #eee;
+                            /* background-color: #eee; */
                             border-radius: 50%;
+                            border: 1.5px solid #eee;
                         }
                         
                         .custom-font-styling-label {
@@ -20439,7 +20440,8 @@
                         /* When the radio button is checked, add a blue background */
                         
                         .custom-font-styling-label input:checked~.checkmark {
-                            background-color: #000;
+                            background-color: white;
+                            border: 1.5px solid #1091BD;
                         }
                         /* Create the indicator (the dot/circle - hidden when not checked) */
                         
@@ -20461,7 +20463,22 @@
                             width: 8px;
                             height: 8px;
                             border-radius: 50%;
-                            background-color: #000;
+                            /* background-color: #000; */
+                        }
+                        /* Show the indicator (dot/circle) when checked */
+                        
+                        .custom-font-styling-label input:checked~.checkmark:after {
+                            display: block;
+                        }
+                        /* Style the indicator (dot/circle) */
+                        
+                        .custom-font-styling-label .checkmark:after {
+                            top: 4px;
+                            left: 4px;
+                            width: 8px;
+                            height: 8px;
+                            border-radius: 50%;
+                            background: #1091bd;
                         }
                         
                         .btn-primary-custom {
@@ -20677,4 +20694,59 @@
                         
                         .theme-color-blue>a {
                             color: #1091bd !important;
+                        }
+                        
+                        .chip-custom {
+                            background-color: #1091BD10;
+                            padding: 0.5rem 1rem 1rem 0.5rem;
+                            color: #1091BD;
+                            font-weight: 500;
+                            margin-left: 1rem;
+                            border-radius: 0.5rem;
+                        }
+                        
+                        .custom-dropdown-menu {
+                            position: absolute;
+                            top: 100%;
+                            left: 0;
+                            z-index: 1000;
+                            display: none;
+                            float: left;
+                            min-width: 18.5rem;
+                            padding: 0.5rem 0;
+                            font-size: 1rem;
+                            color: #212529;
+                            text-align: left;
+                            list-style: none;
+                            background-color: #fff;
+                            background-clip: padding-box;
+                            border: 1px solid rgba(0, 0, 0, .15);
+                            border-radius: 0.25rem;
+                        }
+                        
+                        input[type="radio" i] {
+                            background-color: initial;
+                            cursor: default;
+                            appearance: auto;
+                            box-sizing: border-box;
+                            margin: 3px 3px 0px 5px;
+                            padding: initial;
+                            border: initial;
+                            background-color: #1091BD;
+                            width: 20px;
+                            height: 20px;
+                        }
+                        
+                        input[type='radio']:checked+label:after {
+                            width: 15px;
+                            height: 15px;
+                            top: 1.9px;
+                            left: 1.5px;
+                            border-radius: 20px;
+                            position: relative;
+                            background-color: #1091BD;
+                            content: '';
+                            display: inline-block;
+                            visibility: visible;
+                            border: 2px solid white;
                         }

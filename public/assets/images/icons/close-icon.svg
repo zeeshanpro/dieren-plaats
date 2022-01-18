@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <g id="Group_6016" data-name="Group 6016" transform="translate(-3808 262)">
+    <g id="ico_24_actions_clear_circle" data-name="ico / 24 / actions / clear_circle" transform="translate(3808 -262)">
+      <rect id="Bounding_box" data-name="Bounding box" width="20" height="20" fill="#1091bd" opacity="0"/>
+      <path id="Icon_color" data-name="Icon color" d="M8,16a8,8,0,1,1,8-8A8.009,8.009,0,0,1,8,16ZM8,8.992H8l1.488,1.479a.383.383,0,0,0,.56,0l.423-.423a.383.383,0,0,0,0-.56L8.992,8l1.48-1.488a.382.382,0,0,0,0-.559l-.423-.424a.383.383,0,0,0-.56,0L8,7.008,6.512,5.528a.382.382,0,0,0-.559,0l-.424.424a.382.382,0,0,0,0,.559L7.008,8,5.528,9.488a.383.383,0,0,0,0,.56l.424.423a.382.382,0,0,0,.559,0L8,8.993Z" transform="translate(2 2)" fill="#1091bd"/>
+    </g>
+  </g>
+</svg>

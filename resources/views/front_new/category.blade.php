@@ -3,7 +3,7 @@
 <main class="main">
 
     <div class="container d-flex align-items-center">
-        <ol class="breadcrumb">
+        <ol class="breadcrumb mt-2">
             <li class="breadcrumb-item theme-color-blue "><a href="index.html">Home</a></li>
             <li class="breadcrumb-item active " aria-current="page">{{$kind->title}}</li>
         </ol>

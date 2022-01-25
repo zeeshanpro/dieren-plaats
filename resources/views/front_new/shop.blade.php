@@ -38,15 +38,16 @@
                             <div class="toolbox-sort">
                                 <!-- <label for="sortby">Sort by:</label> -->
 
-                                <img src="{{ URL::to('public/assets/images/icons/close-icon.svg') }}" >
+
                                 <div class="select-custom">
+                                    <img class="sort-icon" src="{{ URL::to('public/assets/images/icons/sort-icon.svg') }}">
                                     <select name="sortby" id="sortby" class="form-control">
-                                    <option value="" disabled selected hidden >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sort By:</option> 
-                                        <option value="">Lowest price</option>
-                                        <option value="">Highest price</option>
-                                        <option value="">Alphabet A-z</option>
-                                        <option value="">Alphabet Z-a</option>
-                                        
+                                        <option value="" disabled selected hidden>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sort By:</option>
+                                        <option value="">&nbsp;&nbsp;&nbsp;&nbsp;Lowest price</option>
+                                        <option value="">&nbsp;&nbsp;&nbsp;&nbsp;Highest price</option>
+                                        <option value="">&nbsp;&nbsp;&nbsp;&nbsp;Alphabet A-z</option>
+                                        <option value="">&nbsp;&nbsp;&nbsp;&nbsp;Alphabet Z-a</option>
+
                                     </select>
                                 </div>
                             </div>
@@ -583,32 +584,29 @@
                             <div class="collapse show" id="widget-1">
                                 <div class="widget-body">
                                     <div class="filter-items filter-items-count">
-  
-                                        <div class="custom-font-styling-label">
-                                            <label class="custom-font-styling-label">One
-                                                <!-- <input type="radio" name="radio"> -->
-                                                <input type="radio" name="radio" checked>
-                                                <span class="checkmark"></span>
-                                            </label>
-                                            <label class="custom-font-styling-label">two
-                                                <input type="radio" name="radio">
-                                                <span class="checkmark"></span>
-                                            </label>
-                                            <label class="custom-font-styling-label">three
-                                                <input type="radio" name="radio">
-                                                <span class="checkmark"></span>
-                                            </label>
-                                            <!-- <input type="radio"  style="background-color: red;">
-                                            <label class="checkmark" for="html">HTML</label><br>
-                                            <span class="item-count">(3)</span>
-                                            <input type="radio" id="css" name="fav_language" value="CSS">
-                                            <label for="css">CSS</label><br>
-                                            <span class="item-count">(3)</span>
-                                            <input type="radio" id="javascript" name="fav_language" value="JavaScript">
-                                            <label for="javascript">JavaScript</label>
-                                            <span class="item-count">(3)</span> -->
-
-                                            <!-- </div> -->
+                                    
+                                            <div>
+                                                <label class="custom-font-styling-label">
+                                                    <input type="radio" name="radio"> 
+                                                    <span class="checkmark"></span>                                                   
+                                                   <p class="custom-category-text"> Marine & Offshore &nbsp; <span> (2) </span></p>
+                                                </label>
+                                                <label class="custom-font-styling-label">
+                                                    <input type="radio" name="radio"> 
+                                                    <span class="checkmark"></span>                                                   
+                                                   <p class="custom-category-text"> Inland Navigation &nbsp; <span> (2) </span></p>
+                                                </label>
+                                                <label class="custom-font-styling-label">
+                                                    <input type="radio" name="radio"> 
+                                                    <span class="checkmark"></span>                                                   
+                                                   <p class="custom-category-text"> Ports &nbsp; <span> (2) </span></p>
+                                                </label>
+                                                <label class="custom-font-styling-label">
+                                                    <input type="radio" name="radio"> 
+                                                    <span class="checkmark"></span>                                                   
+                                                   <p class="custom-category-text"> Construction &nbsp; <span> (2) </span></p>
+                                                </label>
+                                            </div>
 
                                         </div>
                                     </div><!-- End .widget-body -->
@@ -732,32 +730,21 @@
 
                                 <div class="collapse show" id="widget-5">
                                     <div class="widget-body">
-                                        <div class="filter-price">
-                                            <div class="filter-price-text">
-                                                Price Range:
-                                                <span id="filter-price-range">$0 - $750</span>
-                                            </div><!-- End .filter-price-text -->
-
-                                            <div id="price-slider" class="noUi-target noUi-ltr noUi-horizontal">
-                                                <div class="noUi-base">
-                                                    <div class="noUi-connects">
-                                                        <div class="noUi-connect" style="transform: translate(0%, 0px) scale(0.75, 1);"></div>
-                                                    </div>
-                                                    <div class="noUi-origin" style="transform: translate(-100%, 0px); z-index: 5;">
-                                                        <div class="noUi-handle noUi-handle-lower" data-handle="0" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="0.0" aria-valuemax="550.0" aria-valuenow="0.0" aria-valuetext="$0">
-                                                            <div class="noUi-touch-area"></div>
-                                                            <div class="noUi-tooltip">$0</div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="noUi-origin" style="transform: translate(-25%, 0px); z-index: 4;">
-                                                        <div class="noUi-handle noUi-handle-upper" data-handle="1" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="200.0" aria-valuemax="1000.0" aria-valuenow="750.0" aria-valuetext="$750">
-                                                            <div class="noUi-touch-area"></div>
-                                                            <div class="noUi-tooltip">$750</div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div><!-- End #price-slider -->
-                                        </div><!-- End .filter-price -->
+                                    <div class="pl-1">
+                                    Min:
+                                    <input class="custom-price-input"  type="number" name="number">
+                                        <span class="euro_icon">
+                                        <img src="{{ URL::to('public/assets/images/icons/€.svg') }}">
+                                        </span>
+                                </div>
+                                <div class="pt-1">
+                                    Max:
+                                    <input class="custom-price-input" type="number" name="number">
+                                        <span class="euro_icon">
+                                        <img src="{{ URL::to('public/assets/images/icons/€.svg') }}">
+                                        </span>
+                                </div>
+                                        <!-- End #price-slider -->
                                     </div><!-- End .widget-body -->
                                 </div><!-- End .collapse -->
                             </div><!-- End .widget -->

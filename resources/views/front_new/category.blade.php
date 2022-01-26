@@ -8,7 +8,6 @@
             <li class="breadcrumb-item active " aria-current="page">{{$kind->title}}</li>
         </ol>
 
-
     </div>
     <div class="container">
         <h2 class="theme-color-blue mt-1">{{$kind->title}}</h2>

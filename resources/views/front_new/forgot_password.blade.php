@@ -10,7 +10,6 @@
                             <span class="nav-link">Forgot Password</span>
                             <!-- <a class="nav-link" id="signin-tab-2" data-toggle="tab" href="#signin-2" role="tab" aria-controls="signin-2" aria-selected="false">Welcome Back</a> -->
                         </li>
-
                     </ul>
                     <div class="text-center custom-ft-w8-subheading">
                         <span>Enter your email to reset password </span>

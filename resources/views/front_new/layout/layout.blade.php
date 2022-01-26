@@ -1,9 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
-
-
-
 <head>
     <title>Remora Services</title>
     <meta charset="UTF-8">

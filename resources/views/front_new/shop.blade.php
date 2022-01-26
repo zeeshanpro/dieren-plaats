@@ -1,7 +1,6 @@
 @extends('front_new/layout/layout')
 @section('container')
 <main class="main">
-
     <div class="container d-flex align-items-center">
         <ol class="breadcrumb mt-2">
             <li class="breadcrumb-item theme-color-blue "><a href="index.html">Home</a></li>

@@ -11,7 +11,6 @@
         <span class="nav-link">Welcome Back</span>
                         <!-- <a class="nav-link" id="signin-tab-2" data-toggle="tab" href="#signin-2" role="tab" aria-controls="signin-2" aria-selected="false">Welcome Back</a> -->
                     </li>
-
                 </ul>
                 <div class="text-center">
                     <span>Login to remora services</span>

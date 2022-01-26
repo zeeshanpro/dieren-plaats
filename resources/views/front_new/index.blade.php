@@ -1,7 +1,6 @@
 @extends('front_new/layout/layout')
 @section('container')
 <main class="main">
-
 <div class="container newsletter custom-top-search-banner">
                 <div class="background slider-image" style="background-image: url(assets/images/slider.png); background-repeat: no-repeat; background-size:cover; ">
                     <div class="subscribe">

@@ -27,7 +27,7 @@
                                     &nbsp;<input type="text" class="form-control"  name="name" required style="padding-left:4rem;">
                 <span class="email_icon" >
                     <!-- <i class="fa fa-user-circle" aria-hidden="true"></i> -->
-                    <img src="{{ URL::to('public/assets/images/icons/user.svg') }}">
+                    <img src="{{ URL::to('assets/images/icons/user.svg') }}">
                 </span>
                 @error('name') <small class="text-danger">{{$message}}</small> @enderror
                                 </div>
@@ -39,7 +39,7 @@
                                     &nbsp;<input type="text" class="form-control" name="comapny" required style="padding-left:4rem;">
                 <span class="email_icon" >
                     <!-- <i class="fa fa-building" aria-hidden="true"> -->
-                    <img src="{{ URL::to('public/assets/images/icons/building.svg') }}">
+                    <img src="{{ URL::to('assets/images/icons/building.svg') }}">
                     </i></span>
                                 </div>
 
@@ -48,7 +48,7 @@
                                     &nbsp;<input type="text" class="form-control"  name="country" required style="padding-left:4rem;">
                 <span class="email_icon" >
                     <!-- <i class="fa fa-flag" aria-hidden="true"></i> -->
-                    <img src="{{ URL::to('public/assets/images/icons/flag.svg') }}">
+                    <img src="{{ URL::to('assets/images/icons/flag.svg') }}">
                 </span>
                                 </div>
 
@@ -67,7 +67,7 @@
                                     &nbsp;<input type="text" class="form-control"  name="email" required style="padding-left:4rem;">
                 <span class="email_icon" >
                     <!-- <i class="fa fa-envelope" aria-hidden="true"></i> -->
-                    <img src="{{ URL::to('public/assets/images/icons/envelope.svg') }}">
+                    <img src="{{ URL::to('assets/images/icons/envelope.svg') }}">
                 </span>
                 @error('email') <small class="text-danger">{{$message}}</small> @enderror
                                 </div>
@@ -77,9 +77,9 @@
                                     <input type="password" class="form-control"  name="password" required style="padding-left:4rem;">
                 <div class="password_icon" >
                     <!-- <i class="fa fa-lock" aria-hidden="true"></i> -->
-                    <img src="{{ URL::to('public/assets/images/icons/lock.svg') }}">
+                    <img src="{{ URL::to('assets/images/icons/lock.svg') }}">
                                      
-                        <img class="password_icon_hide_register" src="{{ URL::to('public/assets/images/icons/eye.svg') }}">
+                        <img class="password_icon_hide_register" src="{{ URL::to('assets/images/icons/eye.svg') }}">
                     
                 </div>
                 @error('password') <small class="text-danger">{{$message}}</small> @enderror

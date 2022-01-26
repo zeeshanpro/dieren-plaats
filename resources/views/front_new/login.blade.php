@@ -27,7 +27,7 @@
                                 &nbsp;<input type="text" class="form-control" id="singin-email-2" name="email" required style="padding-left:4rem;">
             <span class="email_icon" >
                 <!-- <i class="fa fa-envelope" aria-hidden="true"></i> -->
-                <img src="{{ URL::to('public/assets/images/icons/envelope.svg') }}">
+                <img src="{{ URL::to('assets/images/icons/envelope.svg') }}">
             </span>
                             </div>
 
@@ -37,9 +37,9 @@
                                 <input type="password" class="form-control" id="singin-password-2" name="password" required style="padding-left:4rem;">
             <span class="password_icon" >
                 <!-- <i class="fa fa-lock" aria-hidden="true"></i> -->
-                <img src="{{ URL::to('public/assets/images/icons/lock.svg') }}">
+                <img src="{{ URL::to('assets/images/icons/lock.svg') }}">
             </span>
-            <img class="password_icon_hide_register_login" src="{{ URL::to('public/assets/images/icons/eye.svg') }}">
+            <img class="password_icon_hide_register_login" src="{{ URL::to('assets/images/icons/eye.svg') }}">
 
                             </div><!-- End .form-group -->
                             <div class="form-footer">

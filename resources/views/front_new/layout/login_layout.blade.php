@@ -15,27 +15,27 @@
     <meta name="author" content="Remora Services">
 
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="{{ URL::to('public/assets/images/icons/apple-touch-icon.png') }}">
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ URL::to('public/assets/images/icons/favicon-32x32.png') }}">
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ URL::to('public/assets/images/icons/favicon-16x16.png') }}">
-    <link rel="manifest" href="{{ URL::to('public/assets/images/icons/site.html') }}">
-    <link rel="mask-icon" href="{{ URL::to('public/assets/images/icons/safari-pinned-tab.svg') }}" color="#666666">
-    <link rel="shortcut icon" href="{{ URL::to('public/assets/images/icons/favicon_new.ico') }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ URL::to('assets/images/icons/apple-touch-icon.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ URL::to('assets/images/icons/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ URL::to('assets/images/icons/favicon-16x16.png') }}">
+    <link rel="manifest" href="{{ URL::to('assets/images/icons/site.html') }}">
+    <link rel="mask-icon" href="{{ URL::to('assets/images/icons/safari-pinned-tab.svg') }}" color="#666666">
+    <link rel="shortcut icon" href="{{ URL::to('assets/images/icons/favicon_new.ico') }}">
     <meta name="apple-mobile-web-app-title" content="Remora">
     <meta name="application-name" content="Remora">
     <meta name="msapplication-TileColor" content="#cc9966">
-    <meta name="msapplication-config" content="{{ URL::to('public/assets/images/icons/browserconfig.xml') }}">
+    <meta name="msapplication-config" content="{{ URL::to('assets/images/icons/browserconfig.xml') }}">
     <meta name="theme-color" content="#ffffff">
     <!-- Plugins CSS File -->
-    <link rel="stylesheet" href="{{ URL::to('public/assets/css/bootstrap.min.css') }}">
-    <link rel="stylesheet" href="{{ URL::to('public/assets/css/plugins/owl-carousel/owl.carousel.css') }} ">
-    <link rel="stylesheet" href="{{ URL::to('public/assets/css/plugins/magnific-popup/magnific-popup.css') }}">
+    <link rel="stylesheet" href="{{ URL::to('assets/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ URL::to('assets/css/plugins/owl-carousel/owl.carousel.css') }} ">
+    <link rel="stylesheet" href="{{ URL::to('assets/css/plugins/magnific-popup/magnific-popup.css') }}">
     <!-- Main CSS File -->
-    <link rel="stylesheet" href="{{ URL::to('public/assets/css/style.css') }}">
-    <link rel="stylesheet" href="{{ URL::to('public/assets/css/skins/skin-demo-21.css') }}">
-    <link rel="stylesheet" href="{{ URL::to('public/assets/css/demos/demo-21.css') }}">
+    <link rel="stylesheet" href="{{ URL::to('assets/css/style.css') }}">
+    <link rel="stylesheet" href="{{ URL::to('assets/css/skins/skin-demo-21.css') }}">
+    <link rel="stylesheet" href="{{ URL::to('assets/css/demos/demo-21.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet"  href="{{ URL::to('public/assets/css/skins/intlTelInput.css') }}">
+    <link rel="stylesheet"  href="{{ URL::to('assets/css/skins/intlTelInput.css') }}">
     <!-- <link rel="stylesheet" href="assets/css/all.min.css">
     <link rel="stylesheet" href="assets/css/fontawesome.min.css"> -->
 
@@ -56,7 +56,7 @@
             </button>
 
             <a href="{{ URL::to('/') }}" class="logo">
-                <img src="{{ URL::to('public/assets/images/demos/demo-21/logo.png') }}" alt="Remora Logo" width="100" height="25">
+                <img src="{{ URL::to('assets/images/demos/demo-21/logo.png') }}" alt="Remora Logo" width="100" height="25">
             </a>
 
             <nav class="main-nav">
@@ -112,15 +112,15 @@
             <div class="wishlist add-product-btn">
                 <span> <i class="fa fa-sign-in"></i> </span>
                 <button type="submit" class="btn btn-outline-primary-2 ">
-                    <span class="pr-2"><img src="{{ URL::to('public/assets/images/icons/add-icon.png') }}"></span> <span>Add Product</span>
+                    <span class="pr-2"><img src="{{ URL::to('assets/images/icons/add-icon.png') }}"></span> <span>Add Product</span>
 
                 </button>
 
 
             </div><!-- End .compare-dropdown -->
             <div class="pr-4 pl-4">
-                <a href="#" class="pr-3"> <img src="{{ URL::to('public/assets/images/icons/ring.png') }}" alt="ring-icon"></a>
-                <a href="#"> <img src="{{ URL::to('public/assets/images/icons/message-icon.png') }}" alt="message-icon"></a>
+                <a href="#" class="pr-3"> <img src="{{ URL::to('assets/images/icons/ring.png') }}" alt="ring-icon"></a>
+                <a href="#"> <img src="{{ URL::to('assets/images/icons/message-icon.png') }}" alt="message-icon"></a>
             </div>
 
             <div class="dropdown cart-dropdown">
@@ -177,7 +177,7 @@
                         <div class="row" style="padding-bottom:7rem; padding-top:5rem;">
 							<div class="col-md-3">
 
-                                <img src="{{ URL::to('public/assets/images/demos/demo-21/logo-footer.png') }}" class="footer-logo m-auto" alt="Footer Logo" width="150" height="35">
+                                <img src="{{ URL::to('assets/images/demos/demo-21/logo-footer.png') }}" class="footer-logo m-auto" alt="Footer Logo" width="150" height="35">
                           </div>
 
 						   <div class="col-md-7 custom-footer-menu pt-2 theme-color-gray">
@@ -192,9 +192,9 @@
 
                             <div class="col-md-2">
                                 <div class="social-icons social-icons-color">
-                                <a href="#" class="social-icon social-facebook" title="Facebook" target="_blank"><img src="{{ URL::to('public/assets/images/facebook.png') }}"></a>
-                            <a href="#" class="social-icon social-twitter" title="Twitter" target="_blank"><img src="{{ URL::to('public/assets/images/linkdin.png') }}"></a>
-                            <a href="#" class="social-icon social-instagram" title="Instagram" target="_blank"><img src="{{ URL::to('public/assets/images/msg.png') }}"></a>
+                                <a href="#" class="social-icon social-facebook" title="Facebook" target="_blank"><img src="{{ URL::to('assets/images/facebook.png') }}"></a>
+                            <a href="#" class="social-icon social-twitter" title="Twitter" target="_blank"><img src="{{ URL::to('assets/images/linkdin.png') }}"></a>
+                            <a href="#" class="social-icon social-instagram" title="Instagram" target="_blank"><img src="{{ URL::to('assets/images/msg.png') }}"></a>
                         </div><!-- End .soial-icons -->
 							            </div>
 
@@ -259,16 +259,16 @@
 
 
     <!-- Plugins JS File -->
-    <script src="{{ URL::to('public/assets/js/jquery.min.js') }}"></script>
-    <script src="{{ URL::to('public/assets/js/bootstrap.bundle.min.js') }}"></script>
-    <script src="{{ URL::to('public/assets/js/jquery.hoverIntent.min.js') }}"></script>
-    <script src="{{ URL::to('public/assets/js/jquery.waypoints.min.js') }}"></script>
-    <script src="{{ URL::to('public/assets/js/superfish.min.js') }}"></script>
-    <script src="{{ URL::to('public/assets/js/owl.carousel.min.js') }}"></script>
-    <script src="{{ URL::to('public/assets/js/intlTelInput.js') }}"></script>
+    <script src="{{ URL::to('assets/js/jquery.min.js') }}"></script>
+    <script src="{{ URL::to('assets/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ URL::to('assets/js/jquery.hoverIntent.min.js') }}"></script>
+    <script src="{{ URL::to('assets/js/jquery.waypoints.min.js') }}"></script>
+    <script src="{{ URL::to('assets/js/superfish.min.js') }}"></script>
+    <script src="{{ URL::to('assets/js/owl.carousel.min.js') }}"></script>
+    <script src="{{ URL::to('assets/js/intlTelInput.js') }}"></script>
     <!-- Main JS File -->
     <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
-    <script src="{{ URL::to('public/assets/js/main.js') }}"></script>
+    <script src="{{ URL::to('assets/js/main.js') }}"></script>
     <script>
         $('.login').on('click', function() {
             window.location.href = "{{ route('login') }}";
@@ -281,7 +281,7 @@
   <script>
         var input = document.querySelector("#phone");
         window.intlTelInput(input, {
-          utilsScript: "{{ URL::to('public/assets/js/utils.js') }}",
+          utilsScript: "{{ URL::to('assets/js/utils.js') }}",
         });
       </script>
 </body>

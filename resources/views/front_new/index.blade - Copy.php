@@ -3,7 +3,7 @@
 <main class="main">
     <div class="newsletter">
                 <div class="background"
-                    style="background-image: url(public/assets/images/slider.png); background-repeat: no-repeat; background-size:cover; ">
+                    style="background-image: url(assets/images/slider.png); background-repeat: no-repeat; background-size:cover; ">
                     <div class="subscribe">
                         <div class="subscribe-title text-center">
                             <h3 class="slider-title pb-1 pt-2">Are you looking to buy equipment?</h3>
@@ -15,7 +15,7 @@
                                 <div class="input-group-append">
                                     <button class="btn-custom-round" type="submit">
                                         <!-- <i class="icon-search icon-flip"></i> -->
-                                        <img src="{{ URL::to('public/assets/images/icons/search-icon.svg') }}">
+                                        <img src="{{ URL::to('assets/images/icons/search-icon.svg') }}">
                                     </button>
                                 </div><!-- .End .input-group-append -->
                               
@@ -38,7 +38,7 @@
             <div class="col-md-6">
                 <div class="banner custom-bg-img">
                     <a href="#">
-                        <img src="{{ URL::to('public/assets/images/categories/category-1.png') }}" alt="Category1">
+                        <img src="{{ URL::to('assets/images/categories/category-1.png') }}" alt="Category1">
                     </a>
 
                     <div class="banner-content">
@@ -52,7 +52,7 @@
             <div class="col-md-6">
                 <div class="banner custom-bg-img">
                     <a href="#">
-                        <img src="{{ URL::to('public/assets//images/categories/category-2.png') }}" alt="Banner">
+                        <img src="{{ URL::to('assets//images/categories/category-2.png') }}" alt="Banner">
                     </a>
 
                     <div class="banner-content">
@@ -66,7 +66,7 @@
             <div class="col-md-6">
                 <div class="banner custom-bg-img">
                     <a href="#">
-                        <img src="{{ URL::to('public/assets/images/categories/category-3.png') }}" alt="Category1">
+                        <img src="{{ URL::to('assets/images/categories/category-3.png') }}" alt="Category1">
                     </a>
 
                     <div class="banner-content">
@@ -80,7 +80,7 @@
             <div class="col-md-6">
                 <div class="banner custom-bg-img">
                     <a href="#">
-                        <img src="{{ URL::to('public/assets/images/categories/category-4.png') }}" alt="Banner">
+                        <img src="{{ URL::to('assets/images/categories/category-4.png') }}" alt="Banner">
                     </a>
 
                     <div class="banner-content">
@@ -108,7 +108,7 @@
                         <div class="row align-items-center cstm-ftrd-prod mr-3 ml-5">
 		                		<div class="col-md-6 mb-3 mb-md-0">
                                 <figure class="store-media mb-2 mb-lg-0">
-                                    <img style="margin-left: -1rem;" src="{{ URL::to('public/assets/images/cat-bulldozer-mike-burgquist.png') }}" alt="image">
+                                    <img style="margin-left: -1rem;" src="{{ URL::to('assets/images/cat-bulldozer-mike-burgquist.png') }}" alt="image">
                                 </figure>
 		                		</div><!-- End .col-md-6 -->
 		                		<div class="col-md-6">
@@ -133,7 +133,7 @@
                     <div class="row align-items-center cstm-ftrd-prod ml-3 mr-5">
 		                		<div class="col-md-6 mb-3 mb-md-0">
                                 <figure class="store-media mb-2 mb-lg-0">
-                                    <img style="margin-left: -1rem;" src="{{ URL::to('public/assets/images/cat-bulldozer-mike-burgquist.png') }}" alt="image">
+                                    <img style="margin-left: -1rem;" src="{{ URL::to('assets/images/cat-bulldozer-mike-burgquist.png') }}" alt="image">
                                 </figure>
 		                		</div><!-- End .col-md-6 -->
 		                		<div class="col-md-6">
@@ -176,7 +176,7 @@
                                 <figure class="product-media" >
                                     <span class="product-label label-circle label-sale custom-position-tag">Sell</span>
                                     <a href="product.html">
-                                        <img src="{{ URL::to('public/assets/images/cat-bulldozer-mike-burgquist.png') }}" alt="Product image"
+                                        <img src="{{ URL::to('assets/images/cat-bulldozer-mike-burgquist.png') }}" alt="Product image"
                                             class="product-image">
                                     </a>
 
@@ -197,7 +197,7 @@
                                         <span>€ 80,000</span>
                                         <div class="custom-icon-tag-product">
 
-                                            <img src="{{ URL::to('public/assets/images/tag-prod.png') }}" alt="tag">
+                                            <img src="{{ URL::to('assets/images/tag-prod.png') }}" alt="tag">
 
                                         </div>
 
@@ -219,7 +219,7 @@
                                     <span
                                         class="product-label label-circle label-sale custom-position-tag product-label-rent">Rent</span>
                                     <a href="product.html">
-                                        <img src="{{ URL::to('public/assets/images/cat-bulldozer-mike-burgquist.png') }}" alt="Product image"
+                                        <img src="{{ URL::to('assets/images/cat-bulldozer-mike-burgquist.png') }}" alt="Product image"
                                             class="product-image">
                                     </a>
                                 </figure><!-- End .product-media -->
@@ -230,7 +230,7 @@
                                     <div class="product-price mb-0">
                                         <span>€ 80,000</span>
                                         <div class="custom-icon-tag-product">
-                                            <img src="{{ URL::to('public/assets/images/tag-prod-blue.png') }}" alt="tag">
+                                            <img src="{{ URL::to('assets/images/tag-prod-blue.png') }}" alt="tag">
 
                                         </div>
                                     </div><!-- End .product-price -->
@@ -247,7 +247,7 @@
                                 <figure class="product-media">
                                     <span class="product-label label-circle label-sale custom-position-tag">Sell</span>
                                     <a href="product.html">
-                                        <img src="{{ URL::to('public/assets/images/cat-bulldozer-mike-burgquist.png') }}" alt="Product image"
+                                        <img src="{{ URL::to('assets/images/cat-bulldozer-mike-burgquist.png') }}" alt="Product image"
                                             class="product-image">
                                     </a>
 
@@ -265,7 +265,7 @@
                                         <span>€ 80,000</span>
                                         <div class="custom-icon-tag-product">
 
-                                            <img src="{{ URL::to('public/assets/images/Icon color.png') }}" alt="tag">
+                                            <img src="{{ URL::to('assets/images/Icon color.png') }}" alt="tag">
 
                                         </div>
 
@@ -287,7 +287,7 @@
                                     <span
                                         class="product-label label-circle label-sale custom-position-tag product-label-rent">Rent</span>
                                     <a href="product.html">
-                                        <img src="{{ URL::to('public/assets/images/cat-bulldozer-mike-burgquist.png') }}" alt="Product image"
+                                        <img src="{{ URL::to('assets/images/cat-bulldozer-mike-burgquist.png') }}" alt="Product image"
                                             class="product-image">
                                     </a>
 

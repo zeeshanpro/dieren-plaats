@@ -26,11 +26,11 @@
                             </div>End .toolbox-info -->
                             <div class="chip chip-custom">
                                 Marine & Offshore
-                                <img src="{{ URL::to('public/assets/images/icons/close-icon.svg') }}">
+                                <img src="{{ URL::to('assets/images/icons/close-icon.svg') }}">
                             </div>
                             <div class="chip chip-custom">
                                 Deck Equipment
-                                <img src="{{ URL::to('public/assets/images/icons/close-icon.svg') }}">
+                                <img src="{{ URL::to('assets/images/icons/close-icon.svg') }}">
                             </div>
                         </div><!-- End .toolbox-left -->
 
@@ -38,7 +38,7 @@
                             <div class="toolbox-sort">
                                 <!-- <label for="sortby">Sort by:</label> -->
 
-                                <img src="{{ URL::to('public/assets/images/icons/close-icon.svg') }}" >
+                                <img src="{{ URL::to('assets/images/icons/close-icon.svg') }}" >
                                 <div class="select-custom">
                                     <select name="sortby" id="sortby" class="form-control">
                                     <option value="" disabled selected hidden >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sort By:</option> 
@@ -52,7 +52,7 @@
                             </div>
                             <!-- <div class="btn-group">
                                 <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              <span><img src="{{ URL::to('public/assets/images/icons/close-icon.svg') }}"></span>  Sort by:
+                              <span><img src="{{ URL::to('assets/images/icons/close-icon.svg') }}"></span>  Sort by:
                                 </button>
                                 <div class="dropdown-menu">
                                     <button class="dropdown-item" type="button">Action</button>
@@ -78,7 +78,7 @@
                                     <figure class="product-media">
                                         <span class="product-label label-circle label-sale custom-position-tag">Sell</span>
                                         <a href="product.html">
-                                            <img src="{{ URL::to('public/assets/images/cat-bulldozer-mike-burgquist.png') }}" alt="Product image" class="product-image">
+                                            <img src="{{ URL::to('assets/images/cat-bulldozer-mike-burgquist.png') }}" alt="Product image" class="product-image">
                                         </a>
 
 
@@ -98,7 +98,7 @@
                                             <span>€ 80,000</span>
                                             <div class="custom-icon-tag-product">
 
-                                                <img src="{{ URL::to('public/assets/images/tag-prod.png') }}" alt="tag">
+                                                <img src="{{ URL::to('assets/images/tag-prod.png') }}" alt="tag">
 
                                             </div>
 
@@ -119,7 +119,7 @@
                                     <figure class="product-media">
                                         <span class="product-label label-circle label-sale custom-position-tag product-label-rent">Rent</span>
                                         <a href="product.html">
-                                            <img src="{{ URL::to('public/assets/images/cat-bulldozer-mike-burgquist.png') }}" alt="Product image" class="product-image">
+                                            <img src="{{ URL::to('assets/images/cat-bulldozer-mike-burgquist.png') }}" alt="Product image" class="product-image">
                                         </a>
 
 
@@ -139,7 +139,7 @@
                                             <span>€ 80,000</span>
                                             <div class="custom-icon-tag-product">
 
-                                                <img src="{{ URL::to('public/assets/images/tag-prod-blue.png') }}" alt="tag">
+                                                <img src="{{ URL::to('assets/images/tag-prod-blue.png') }}" alt="tag">
 
                                             </div>
 
@@ -160,7 +160,7 @@
                                     <figure class="product-media">
                                         <span class="product-label label-circle label-sale custom-position-tag">Sell</span>
                                         <a href="product.html">
-                                            <img src="{{ URL::to('public/assets/images/cat-bulldozer-mike-burgquist.png') }}" alt="Product image" class="product-image">
+                                            <img src="{{ URL::to('assets/images/cat-bulldozer-mike-burgquist.png') }}" alt="Product image" class="product-image">
                                         </a>
 
 
@@ -180,7 +180,7 @@
                                             <span>€ 80,000</span>
                                             <div class="custom-icon-tag-product">
 
-                                                <img src="{{ URL::to('public/assets/images/tag-prod.png') }}" alt="tag">
+                                                <img src="{{ URL::to('assets/images/tag-prod.png') }}" alt="tag">
 
                                             </div>
 
@@ -201,7 +201,7 @@
                                     <figure class="product-media">
                                         <span class="product-label label-circle label-sale custom-position-tag">Sell</span>
                                         <a href="product.html">
-                                            <img src="{{ URL::to('public/assets/images/cat-bulldozer-mike-burgquist.png') }}" alt="Product image" class="product-image">
+                                            <img src="{{ URL::to('assets/images/cat-bulldozer-mike-burgquist.png') }}" alt="Product image" class="product-image">
                                         </a>
 
 
@@ -221,7 +221,7 @@
                                             <span>€ 80,000</span>
                                             <div class="custom-icon-tag-product">
 
-                                                <img src="{{ URL::to('public/assets/images/tag-prod.png') }}" alt="tag">
+                                                <img src="{{ URL::to('assets/images/tag-prod.png') }}" alt="tag">
 
                                             </div>
 
@@ -242,7 +242,7 @@
                                     <figure class="product-media">
                                         <span class="product-label label-circle label-sale custom-position-tag product-label-rent">Rent</span>
                                         <a href="product.html">
-                                            <img src="{{ URL::to('public/assets/images/cat-bulldozer-mike-burgquist.png') }}" alt="Product image" class="product-image">
+                                            <img src="{{ URL::to('assets/images/cat-bulldozer-mike-burgquist.png') }}" alt="Product image" class="product-image">
                                         </a>
 
 
@@ -262,7 +262,7 @@
                                             <span>€ 80,000</span>
                                             <div class="custom-icon-tag-product">
 
-                                                <img src="{{ URL::to('public/assets/images/tag-prod-blue.png') }}" alt="tag">
+                                                <img src="{{ URL::to('assets/images/tag-prod-blue.png') }}" alt="tag">
 
                                             </div>
 
@@ -283,7 +283,7 @@
                                     <figure class="product-media">
                                         <span class="product-label label-circle label-sale custom-position-tag">Sell</span>
                                         <a href="product.html">
-                                            <img src="{{ URL::to('public/assets/images/cat-bulldozer-mike-burgquist.png') }}" alt="Product image" class="product-image">
+                                            <img src="{{ URL::to('assets/images/cat-bulldozer-mike-burgquist.png') }}" alt="Product image" class="product-image">
                                         </a>
 
 
@@ -303,7 +303,7 @@
                                             <span>€ 80,000</span>
                                             <div class="custom-icon-tag-product">
 
-                                                <img src="{{ URL::to('public/assets/images/tag-prod.png') }}" alt="tag">
+                                                <img src="{{ URL::to('assets/images/tag-prod.png') }}" alt="tag">
 
                                             </div>
 
@@ -323,7 +323,7 @@
                                     <figure class="product-media">
                                         <span class="product-label label-circle label-sale custom-position-tag">Sell</span>
                                         <a href="product.html">
-                                            <img src="{{ URL::to('public/assets/images/cat-bulldozer-mike-burgquist.png') }}" alt="Product image" class="product-image">
+                                            <img src="{{ URL::to('assets/images/cat-bulldozer-mike-burgquist.png') }}" alt="Product image" class="product-image">
                                         </a>
 
 
@@ -343,7 +343,7 @@
                                             <span>€ 80,000</span>
                                             <div class="custom-icon-tag-product">
 
-                                                <img src="{{ URL::to('public/assets/images/tag-prod.png') }}" alt="tag">
+                                                <img src="{{ URL::to('assets/images/tag-prod.png') }}" alt="tag">
 
                                             </div>
 
@@ -364,7 +364,7 @@
                                     <figure class="product-media">
                                         <span class="product-label label-circle label-sale custom-position-tag product-label-rent">Rent</span>
                                         <a href="product.html">
-                                            <img src="{{ URL::to('public/assets/images/cat-bulldozer-mike-burgquist.png') }}" alt="Product image" class="product-image">
+                                            <img src="{{ URL::to('assets/images/cat-bulldozer-mike-burgquist.png') }}" alt="Product image" class="product-image">
                                         </a>
 
 
@@ -384,7 +384,7 @@
                                             <span>€ 80,000</span>
                                             <div class="custom-icon-tag-product">
 
-                                                <img src="{{ URL::to('public/assets/images/tag-prod-blue.png') }}" alt="tag">
+                                                <img src="{{ URL::to('assets/images/tag-prod-blue.png') }}" alt="tag">
 
                                             </div>
 
@@ -405,7 +405,7 @@
                                     <figure class="product-media">
                                         <span class="product-label label-circle label-sale custom-position-tag">Sell</span>
                                         <a href="product.html">
-                                            <img src="{{ URL::to('public/assets/images/cat-bulldozer-mike-burgquist.png') }}" alt="Product image" class="product-image">
+                                            <img src="{{ URL::to('assets/images/cat-bulldozer-mike-burgquist.png') }}" alt="Product image" class="product-image">
                                         </a>
 
 
@@ -425,7 +425,7 @@
                                             <span>€ 80,000</span>
                                             <div class="custom-icon-tag-product">
 
-                                                <img src="{{ URL::to('public/assets/images/tag-prod.png') }}" alt="tag">
+                                                <img src="{{ URL::to('assets/images/tag-prod.png') }}" alt="tag">
 
                                             </div>
 
@@ -445,7 +445,7 @@
                                     <figure class="product-media">
                                         <span class="product-label label-circle label-sale custom-position-tag">Sell</span>
                                         <a href="product.html">
-                                            <img src="{{ URL::to('public/assets/images/cat-bulldozer-mike-burgquist.png') }}" alt="Product image" class="product-image">
+                                            <img src="{{ URL::to('assets/images/cat-bulldozer-mike-burgquist.png') }}" alt="Product image" class="product-image">
                                         </a>
 
 
@@ -465,7 +465,7 @@
                                             <span>€ 80,000</span>
                                             <div class="custom-icon-tag-product">
 
-                                                <img src="{{ URL::to('public/assets/images/tag-prod.png') }}" alt="tag">
+                                                <img src="{{ URL::to('assets/images/tag-prod.png') }}" alt="tag">
 
                                             </div>
 
@@ -486,7 +486,7 @@
                                     <figure class="product-media">
                                         <span class="product-label label-circle label-sale custom-position-tag product-label-rent">Rent</span>
                                         <a href="product.html">
-                                            <img src="{{ URL::to('public/assets/images/cat-bulldozer-mike-burgquist.png') }}" alt="Product image" class="product-image">
+                                            <img src="{{ URL::to('assets/images/cat-bulldozer-mike-burgquist.png') }}" alt="Product image" class="product-image">
                                         </a>
 
 
@@ -506,7 +506,7 @@
                                             <span>€ 80,000</span>
                                             <div class="custom-icon-tag-product">
 
-                                                <img src="{{ URL::to('public/assets/images/tag-prod-blue.png') }}" alt="tag">
+                                                <img src="{{ URL::to('assets/images/tag-prod-blue.png') }}" alt="tag">
 
                                             </div>
 
@@ -527,7 +527,7 @@
                                     <figure class="product-media">
                                         <span class="product-label label-circle label-sale custom-position-tag">Sell</span>
                                         <a href="product.html">
-                                            <img src="{{ URL::to('public/assets/images/cat-bulldozer-mike-burgquist.png') }}" alt="Product image" class="product-image">
+                                            <img src="{{ URL::to('assets/images/cat-bulldozer-mike-burgquist.png') }}" alt="Product image" class="product-image">
                                         </a>
 
 
@@ -547,7 +547,7 @@
                                             <span>€ 80,000</span>
                                             <div class="custom-icon-tag-product">
 
-                                                <img src="{{ URL::to('public/assets/images/tag-prod.png') }}" alt="tag">
+                                                <img src="{{ URL::to('assets/images/tag-prod.png') }}" alt="tag">
 
                                             </div>
 

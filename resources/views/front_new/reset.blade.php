@@ -14,25 +14,25 @@
     <meta name="description" content="Remora Services">
     <meta name="author" content="Remora Services">
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="{{ URL::to('public/assets/images/icons/apple-touch-icon.png') }}">
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ URL::to('public/assets/images/icons/favicon-32x32.png') }}">
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ URL::to('public/assets/images/icons/favicon-16x16.png') }}">
-    <link rel="manifest" href="{{ URL::to('public/assets/images/icons/site.html') }}">
-    <link rel="mask-icon" href="{{ URL::to('public/assets/images/icons/safari-pinned-tab.svg') }}" color="#666666">
-    <link rel="shortcut icon" href="{{ URL::to('public/assets/images/icons/favicon.ico') }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ URL::to('assets/images/icons/apple-touch-icon.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ URL::to('assets/images/icons/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ URL::to('assets/images/icons/favicon-16x16.png') }}">
+    <link rel="manifest" href="{{ URL::to('assets/images/icons/site.html') }}">
+    <link rel="mask-icon" href="{{ URL::to('assets/images/icons/safari-pinned-tab.svg') }}" color="#666666">
+    <link rel="shortcut icon" href="{{ URL::to('assets/images/icons/favicon.ico') }}">
     <meta name="apple-mobile-web-app-title" content="Molla">
     <meta name="application-name" content="Molla">
     <meta name="msapplication-TileColor" content="#cc9966">
-    <meta name="msapplication-config" content="{{ URL::to('public/assets/images/icons/browserconfig.xml') }}">
+    <meta name="msapplication-config" content="{{ URL::to('assets/images/icons/browserconfig.xml') }}">
     <meta name="theme-color" content="#ffffff">
     <!-- Plugins CSS File -->
-    <link rel="stylesheet" href="{{ URL::to('public/assets/css/bootstrap.min.css') }}">
-    <link rel="stylesheet" href="{{ URL::to('public/assets/css/plugins/owl-carousel/owl.carousel.css') }} ">
-    <link rel="stylesheet" href="{{ URL::to('public/assets/css/plugins/magnific-popup/magnific-popup.css') }}">
+    <link rel="stylesheet" href="{{ URL::to('assets/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ URL::to('assets/css/plugins/owl-carousel/owl.carousel.css') }} ">
+    <link rel="stylesheet" href="{{ URL::to('assets/css/plugins/magnific-popup/magnific-popup.css') }}">
     <!-- Main CSS File -->
-    <link rel="stylesheet" href="{{ URL::to('public/assets/css/style.css') }}">
-    <link rel="stylesheet" href="{{ URL::to('public/assets/css/skins/skin-demo-21.css') }}">
-    <link rel="stylesheet" href="{{ URL::to('public/assets/css/demos/demo-21.css') }}">
+    <link rel="stylesheet" href="{{ URL::to('assets/css/style.css') }}">
+    <link rel="stylesheet" href="{{ URL::to('assets/css/skins/skin-demo-21.css') }}">
+    <link rel="stylesheet" href="{{ URL::to('assets/css/demos/demo-21.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
@@ -50,7 +50,7 @@
                         </button>
 
                         <a href="index.html" class="logo">
-                            <img src="{{ URL::to('public/assets/images/demos/demo-21/logo.png') }}" alt="Remora Logo" width="100" height="25">
+                            <img src="{{ URL::to('assets/images/demos/demo-21/logo.png') }}" alt="Remora Logo" width="100" height="25">
                         </a>
 
                         <nav class="main-nav">
